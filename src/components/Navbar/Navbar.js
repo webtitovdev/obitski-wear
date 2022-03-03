@@ -7,12 +7,12 @@ import avatar from "../../images/avatar.svg";
 
 const Navbar = () => {
   return (
-    <header class="header">
-      <div class="header_inner d-flex flex-row align-items-center justify-content-start">
-        <div class="logo">
+    <header className="header">
+      <div className="header_inner d-flex flex-row align-items-center justify-content-start">
+        <div className="logo">
           <a href="#">Wish</a>
         </div>
-        <nav class="main_nav">
+        <nav className="main_nav">
           <ul>
             <li>
               <a href="#">home</a>
@@ -31,45 +31,53 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <div class="header_content ml-auto">
-          <div class="search header_search">
+        <div className="header_content ml-auto">
+          <div className="search header_search">
             <form action="#">
-              <input type="search" class="search_input" required="required" />
-              <button type="submit" id="search_button" class="search_button">
-                <img src="images/magnifying-glass.svg" alt="" />
+              <input
+                type="search"
+                className="search_input"
+                required="required"
+              />
+              <button
+                type="submit"
+                id="search_button"
+                className="search_button"
+              >
+                <img src={magnifyingGlass} alt="" />
               </button>
             </form>
           </div>
-          <div class="shopping">
+          <div className="shopping">
             <a href="#">
-              <div class="cart">
-                <img src="images/shopping-bag.svg" alt="" />
-                <div class="cart_num_container">
-                  <div class="cart_num_inner">
-                    <div class="cart_num">1</div>
+              <div className="cart">
+                <img src={shopingBag} alt="" />
+                <div className="cart_num_container">
+                  <div className="cart_num_inner">
+                    <div className="cart_num">1</div>
                   </div>
                 </div>
               </div>
             </a>
             <a href="#">
-              <div class="star">
-                <img src="images/star.svg" alt="" />
-                <div class="star_num_container">
-                  <div class="star_num_inner">
-                    <div class="star_num">0</div>
+              <div className="star">
+                <img src={star} alt="" />
+                <div className="star_num_container">
+                  <div className="star_num_inner">
+                    <div className="star_num">0</div>
                   </div>
                 </div>
               </div>
             </a>
             <a href="#">
-              <div class="avatar">
-                <img src="images/avatar.svg" alt="" />
+              <div className="avatar">
+                <img src={avatar} alt="" />
               </div>
             </a>
           </div>
         </div>
 
-        <div class="burger_container d-flex flex-column align-items-center justify-content-around menu_mm">
+        <div className="burger_container d-flex flex-column align-items-center justify-content-around menu_mm">
           <div></div>
           <div></div>
           <div></div>
