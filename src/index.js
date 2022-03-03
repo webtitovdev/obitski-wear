@@ -6,7 +6,7 @@ import App from "./components/app/App";
 
 import { store } from "./store";
 
-import "./index.css";
+import "./style_purged.css";
 
 ReactDOM.render(
   <React.StrictMode>
