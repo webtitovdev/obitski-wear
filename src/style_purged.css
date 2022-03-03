@@ -1,4 +1,5 @@
-@charset "utf-8";
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
@@ -2114,6 +2115,15 @@ section {
 }
 .accordion_panel p {
   padding-top: 28px;
+}
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: 92vh !important;
+}
+.image-gallery-slide .image-gallery-image {
+  object-fit: cover !important;
+}
+.image-gallery-bullets .image-gallery-bullet {
+  background-color: #937c6f !important;
 }
 .accordion_panel p:last-child {
   margin-bottom: 0;
