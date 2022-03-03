@@ -1189,13 +1189,13 @@ section {
   margin-top: 98px;
 }
 .product_grid {
-  width: calc(100% + 30px);
-  margin-left: -15px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .product {
   width: calc(100% / 3);
   margin-bottom: 40px;
-  padding: 94px 15px 98px;
+  padding: 10px 10px 20px;
   background: #fff;
 }
 .product:nth-child(3n) {
@@ -1382,6 +1382,7 @@ section {
   padding-bottom: 98px;
 }
 .sidebar_section {
+  overflow: auto;
   width: 100%;
   border: solid 1px #e0e3e4;
   margin-bottom: 44px;
@@ -3727,7 +3728,7 @@ section {
 }
 @media only screen and (max-width: 575px) {
   .home {
-    height: 100vh;
+    height: 45vh;
   }
   .header {
     height: 70px;

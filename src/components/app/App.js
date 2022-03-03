@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
-import Cart from "./../../pages/Cart";
+import Categories from "./../../pages/Categories";
 import Footer from "../footer/Footer";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <Cart />
+      <Categories />
       <Footer />
     </>
   );
