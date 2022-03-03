@@ -374,6 +374,7 @@ section {
   height: 20px;
 }
 .burger_container {
+  visibility: hidden;
   position: absolute;
   top: calc(50% + 4px);
   -webkit-transform: translateY(-50%);
@@ -2702,6 +2703,9 @@ section {
   }
 }
 @media only screen and (max-width: 1380px) {
+  .burger_container {
+    visibility: visible;
+  }
   .main_nav {
     padding-left: 60px;
   }

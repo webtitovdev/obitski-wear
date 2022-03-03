@@ -1,8 +1,14 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
+import Navbar from "../navbar/Navbar";
+import Main from "./../../pages/Main";
 
 const App = () => {
-  return <Navbar />;
+  return (
+    <>
+      <Navbar />
+      <Main />
+    </>
+  );
 };
 
 export default App;
