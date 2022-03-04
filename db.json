@@ -1,9 +1,24 @@
 {
-  "posts": [
+  "headSliderImages": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "alt": "Банер",
+      "original": "https://sun9-32.userapi.com/impg/Yq7CsaHdMHnF4BljzI9Bx8s6TWiYG8eOFm9zAw/h5n5yWkGKN4.jpg?size=1920x904&quality=95&sign=94ee88e8eee8ea0762eb06dd74c24320&type=album"
+    },
+    {
+      "id": 2,
+      "alt": "Банер2",
+      "original": "https://sun9-32.userapi.com/impg/Yq7CsaHdMHnF4BljzI9Bx8s6TWiYG8eOFm9zAw/h5n5yWkGKN4.jpg?size=1920x904&quality=95&sign=94ee88e8eee8ea0762eb06dd74c24320&type=album"
+    },
+    {
+      "id": 3,
+      "alt": "Банер3",
+      "original": "https://sun9-32.userapi.com/impg/Yq7CsaHdMHnF4BljzI9Bx8s6TWiYG8eOFm9zAw/h5n5yWkGKN4.jpg?size=1920x904&quality=95&sign=94ee88e8eee8ea0762eb06dd74c24320&type=album"
+    },
+    {
+      "id": 4,
+      "alt": "Банер4",
+      "original": "https://sun9-25.userapi.com/impg/9YjxCU2rmKVmsrLY3ymyG552oFjIq-WlvxmDfg/eyXO1xhtorQ.jpg?size=1794x616&quality=95&sign=2fb91cc5436299c88e729a8fb128c726&type=album"
     }
   ],
   "comments": [

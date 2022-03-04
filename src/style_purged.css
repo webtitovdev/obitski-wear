@@ -2128,7 +2128,7 @@ section {
   padding-top: 28px;
 }
 .image-gallery-content .image-gallery-slide .image-gallery-image {
-  max-height: 92vh !important;
+  height: 92vh !important;
 }
 .image-gallery-slide .image-gallery-image {
   object-fit: cover !important;
@@ -2490,11 +2490,13 @@ section {
 }
 .owl-item {
   margin: auto;
+  padding: 10px;
 }
 
 .gallery_slider_container {
   display: flex !important;
   margin-top: 55px;
+  flex-wrap: wrap !important;
 }
 .testimonials {
   width: 100%;

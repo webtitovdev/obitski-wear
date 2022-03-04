@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 
 import App from "./components/app/App";
 
-import { store } from "./store";
+import { store } from "./store/index";
 
 import "./style_purged.css";
 

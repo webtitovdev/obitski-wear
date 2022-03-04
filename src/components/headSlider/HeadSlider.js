@@ -1,20 +1,10 @@
-import React from "react";
+import { useGetDataQuery } from "../../api/api";
 
 import ImageGallery from "react-image-gallery";
-import banner from "../../images/home_slider_1.jpg";
 
 const HeadSlider = () => {
-  const images = [
-    {
-      original: banner,
-    },
-    {
-      original: banner,
-    },
-    {
-      original: banner,
-    },
-  ];
+  const { data, isLoading } = useGetDataQuery("headSliderImages");
+
   return (
     <div className="home">
       <div className="home_slider_container">
@@ -27,7 +17,8 @@ const HeadSlider = () => {
           autoPlay={true}
           slideDuration={600}
           slideInterval={8000}
-          items={images}
+          lazyLoad={true}
+          items={isLoading ? [] : data}
         />
       </div>
     </div>
