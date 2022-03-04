@@ -12,7 +12,7 @@ const PromoDiscountItem = ({ src, title, subtitle }) => {
           </div>
         </div>
         <div className="promo_link">
-          <a href="#">Shop Now</a>
+          <a href="#">КУПИТЬ СЕЙЧАС</a>
         </div>
       </div>
     </div>

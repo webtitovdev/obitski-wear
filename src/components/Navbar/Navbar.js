@@ -13,24 +13,21 @@ const Navbar = () => {
       <header className="header">
         <div className="header_inner d-flex flex-row align-items-center justify-content-start">
           <div className="logo">
-            <a href="#">Wish</a>
+            <a href="#">Obitski</a>
           </div>
           <nav className="main_nav">
             <ul>
               <li>
-                <a href="#">home</a>
+                <a href="#">Главная</a>
               </li>
               <li>
-                <a href="categories.html">clothes</a>
+                <a href="categories.html">Каталог</a>
               </li>
               <li>
-                <a href="categories.html">accessories</a>
+                <a href="categories.html">Доставка и оплата</a>
               </li>
               <li>
-                <a href="categories.html">lingerie</a>
-              </li>
-              <li>
-                <a href="contact.html">contact</a>
+                <a href="contact.html">Контакты</a>
               </li>
             </ul>
           </nav>

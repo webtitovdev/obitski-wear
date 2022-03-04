@@ -24,24 +24,24 @@
   "promoDiscount": [
     {
       "id": 5,
-      "subtitle": "ONLY THE BEST",
-      "title": "PROMO PRICES",
-      "turn":"false",
+      "subtitle": "Акции",
+      "title": "Акционные цены",
+      "turn":"true",
       "item": [
         {
-        "title": "-30% off",
-        "subtitle": "on all bags",
+        "title": "-30% ",
+        "subtitle": "на все футболки",
         "link": "link",
         "src": "https://sun9-49.userapi.com/impg/xVi1kzoxGiSfv3yW7LPBk-fnmJMmp_Fo6VtN5A/LDTSzxnSYoY.jpg?size=690x572&quality=96&sign=6fd79e7927ac51fd511e7334ef38a013&type=album"
       }, { 
-        "title": "-30% off", 
-        "subtitle": "on all bags",
+        "title": "-30% ", 
+        "subtitle": "на все костюмы",
         "link":"link", 
         "src": "https://sun9-79.userapi.com/impg/0pKAORIisaMqoTNms5jP7LHHay79uEaHKTy-GA/Sg9W9O5iIu0.jpg?size=690x572&quality=96&sign=e7192265364eb10b5801d3e7d93094d7&type=album"
         },
         { 
-          "title": "-30% off", 
-          "subtitle": "on all bags",
+          "title": "-30% ", 
+          "subtitle": "на юбки",
           "link":"link", 
           "src": "https://sun7-9.userapi.com/impg/5xW0Io0sZJ9-fjUbIzwIWNrLBAOZqrxOsj8tWg/F8LKrcL-VuE.jpg?size=690x572&quality=96&sign=23fcb50795faafbaeb9038e7f502a55e&type=album"
           }
@@ -56,7 +56,7 @@
       "color": ["Черный", "Молочный", "Оливковый"],
       "size": ["XS-S", "M-L"],
       "composition": "95% хлопок, 5% эластан",
-      "src": "typicode",
+      "src": "https://sun9-85.userapi.com/impg/_v-0lS6f9xb7eOJ91VBput97hIRCOV9_L-H40g/-iztez5eSaY.jpg?size=1620x2160&quality=96&sign=60b1d549b5e6684f5b8db88bccc84ffc&type=album",
       "price": "5500"
     },
     {
@@ -66,7 +66,7 @@
       "color": "",
       "size": ["XS-S", "M-L"],
       "composition": "80% полиэстер, 17% вискоза, 3%эластан; подклада 100% полиэстер",
-      "src": "typicode",
+      "src": "https://sun9-85.userapi.com/impg/gADFOzl1uAF3tgXdoOTkZQH77WUEAdDhTxRBdg/kmoli_WatBs.jpg?size=1620x2160&quality=96&sign=69607b9c38be8351c4740b99a79cf216&type=album",
       "price": "7400"
     },
     {
@@ -76,7 +76,7 @@
       "color": "",
       "size": ["XS-S", "M-L"],
       "composition": "80% полиэстер, 17% вискоза, 3%эластан; подклада 100% полиэстер",
-      "src": "typicode",
+      "src": "https://sun9-22.userapi.com/impg/SGdPbpVOYxD_2mT-4BJNgcl2CE3-i9D3A7Kruw/YxGdtavCnDQ.jpg?size=1620x2160&quality=96&sign=c75147cb79d04eead177208ae11fbc97&type=album",
       "price": "3900"
     },
     {
@@ -86,7 +86,7 @@
       "color": "",
       "size": ["XS-S", "M-L"],
       "composition": "80% полиэстер, 17% вискоза, 3%эластан",
-      "src": "typicode",
+      "src": "https://sun9-82.userapi.com/impg/FRrwB3jA2HD6FzeJEjcyTsmkPmo0SEMQ0kXr4Q/DTJRr7GLcRw.jpg?size=1620x2160&quality=96&sign=3013874981e5137d9d4be9f138232d56&type=album",
       "price": "3900"
     },
     {
@@ -96,7 +96,7 @@
       "color": "",
       "size": "One size",
       "composition": "100% хлопок",
-      "src": "typicode",
+      "src": "https://sun9-8.userapi.com/impg/_8_9rQ2N_oX6miXw3OzB8HpqUBu9ZXGcGcg95w/j7Hq2hNTlJw.jpg?size=1620x2160&quality=96&sign=526e0a85fc7fd6215b43ec64d206c31f&type=album",
       "price": "3900"
     },
     {
@@ -106,8 +106,26 @@
       "color": ["Черный", "Коричневый"],
       "size": ["XS-S", "M-L"],
       "composition": "80% полиэстер, 17% вискоза, 3%эластан",
-      "src": "typicode",
+      "src": "https://sun9-80.userapi.com/impg/V-qDB0H2TIH0NQtZSGhFxInXWHZLxxCZqOETvg/SY1x9rIIICU.jpg?size=1620x2160&quality=96&sign=af50c9ddd212f674d068156965fd43ea&type=album",
       "price": "4900"
+    }
+  ],
+  "news": [
+    {
+      "id": "7",
+      "image":"https://sun9-74.userapi.com/impg/C4b3cdn84vz1JFvNlQag_pSow4n5wq6cv_ARAA/X7GZ2cfQ32w.jpg?size=883x616&quality=95&sign=e49c2c59d4203f3d12366f33b68fde45&type=album",
+      "title": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "text": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "link": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "discount": "20%"
+    },
+    {
+      "id": "8",
+      "image": "https://sun9-11.userapi.com/impg/135ts0UlDFj4yuWIfCsrpTT98Bc1wQa6uBq-7g/DP_pMg8JgTI.jpg?size=883x616&quality=95&sign=1ead5bf63b941c38ab28a004249b24b8&type=album",
+      "title": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "text": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "link": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "discount": "30%"
     }
   ]
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import shoppingBagW from "../../images/shopping-bag-white.svg";
+import star from "../../images/star.svg";
 
 const PreviewShopItem = ({ image, name, price }) => {
   return (
@@ -13,7 +14,7 @@ const PreviewShopItem = ({ image, name, price }) => {
             <div className="product_name">
               <a href="product.html">{name}</a>
             </div>
-            <div className="product_price">${price}</div>
+            <div className="product_price">{price} &#8381;</div>
           </div>
           <div className="product_options">
             <div className="product_buy product_option">

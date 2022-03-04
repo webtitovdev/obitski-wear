@@ -6,13 +6,9 @@ import Spinner from "../spinner/Spinner";
 
 const PromoDiscountList = () => {
   const { data, isLoading } = useGetDataQuery("promoDiscount");
-  // console.log(data[0].turn);
 
   if (isLoading) {
     return <Spinner />;
-  }
-  if (!isLoading || data[0].turn === false) {
-    return null;
   }
   const render = data[0].item.map((item, i) => (
     <PromoDiscountItem
