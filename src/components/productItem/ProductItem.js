@@ -59,12 +59,7 @@ const ProductItem = () => {
                 <div className="product_item_quantity_container">
                   <span>Quantity</span>
                   <div className="product_quantity clearfix">
-                    <input
-                      id="quantity_input"
-                      type="text"
-                      pattern="[0-9]*"
-                      value="1"
-                    />
+                    <input id="quantity_input" type="text" pattern="[0-9]*" />
                     <div className="quantity_buttons">
                       <div
                         id="quantity_inc_button"
@@ -92,7 +87,7 @@ const ProductItem = () => {
                           name="product_radio"
                           className="regular_radio radio_1"
                         />
-                        <label for="radio_1">XS</label>
+                        <label htmlFor="radio_1">XS</label>
                       </li>
                       <li>
                         <input
@@ -100,9 +95,8 @@ const ProductItem = () => {
                           id="radio_2"
                           name="product_radio"
                           className="regular_radio radio_2"
-                          checked
                         />
-                        <label for="radio_2">S</label>
+                        <label htmlFor="radio_2">S</label>
                       </li>
                       <li>
                         <input
@@ -111,7 +105,7 @@ const ProductItem = () => {
                           name="product_radio"
                           className="regular_radio radio_3"
                         />
-                        <label for="radio_3">M</label>
+                        <label htmlFor="radio_3">M</label>
                       </li>
                       <li>
                         <input
@@ -120,7 +114,7 @@ const ProductItem = () => {
                           name="product_radio"
                           className="regular_radio radio_4"
                         />
-                        <label for="radio_4">L</label>
+                        <label htmlFor="radio_4">L</label>
                       </li>
                       <li>
                         <input
@@ -129,7 +123,7 @@ const ProductItem = () => {
                           name="product_radio"
                           className="regular_radio radio_5"
                         />
-                        <label for="radio_5">XL</label>
+                        <label htmlFor="radio_5">XL</label>
                       </li>
                     </ul>
                   </div>
