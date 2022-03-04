@@ -21,14 +21,154 @@
       "original": "https://sun9-25.userapi.com/impg/9YjxCU2rmKVmsrLY3ymyG552oFjIq-WlvxmDfg/eyXO1xhtorQ.jpg?size=1794x616&quality=95&sign=2fb91cc5436299c88e729a8fb128c726&type=album"
     }
   ],
-  "comments": [
+  "promoDiscount": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 5,
+      "subtitle": "ONLY THE BEST",
+      "title": "PROMO PRICES",
+      "turn":"false",
+      "item": [
+        {
+        "title": "-30% off",
+        "subtitle": "on all bags",
+        "link": "link",
+        "src": "https://sun9-49.userapi.com/impg/xVi1kzoxGiSfv3yW7LPBk-fnmJMmp_Fo6VtN5A/LDTSzxnSYoY.jpg?size=690x572&quality=96&sign=6fd79e7927ac51fd511e7334ef38a013&type=album"
+      }, { 
+        "title": "-30% off", 
+        "subtitle": "on all bags",
+        "link":"link", 
+        "src": "https://sun9-79.userapi.com/impg/0pKAORIisaMqoTNms5jP7LHHay79uEaHKTy-GA/Sg9W9O5iIu0.jpg?size=690x572&quality=96&sign=e7192265364eb10b5801d3e7d93094d7&type=album"
+        },
+        { 
+          "title": "-30% off", 
+          "subtitle": "on all bags",
+          "link":"link", 
+          "src": "https://sun7-9.userapi.com/impg/5xW0Io0sZJ9-fjUbIzwIWNrLBAOZqrxOsj8tWg/F8LKrcL-VuE.jpg?size=690x572&quality=96&sign=23fcb50795faafbaeb9038e7f502a55e&type=album"
+          }
+        ]
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "productItem": [
+    {
+      "id": "1",
+      "name": "Костюм pizhama",
+      "about": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "color": ["Черный", "Молочный", "Оливковый"],
+      "size": ["XS-S", "M-L"],
+      "composition": "typicode",
+      "src": "typicode",
+      "price": "5500"
+    },
+    {
+      "id": "1",
+      "name": "Костюм pizhama",
+      "about": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "color": ["Черный", "Молочный", "Оливковый"],
+      "size": ["XS-S", "M-L"],
+      "composition": "typicode",
+      "src": "typicode",
+      "price": "5500"
+    },
+    {
+      "id": "1",
+      "name": "Костюм pizhama",
+      "about": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "color": ["Черный", "Молочный", "Оливковый"],
+      "size": ["XS-S", "M-L"],
+      "composition": "typicode",
+      "src": "typicode",
+      "price": "5500"
+    },
+    {
+      "id": "1",
+      "name": "Костюм pizhama",
+      "about": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "color": ["Черный", "Молочный", "Оливковый"],
+      "size": ["XS-S", "M-L"],
+      "composition": "typicode",
+      "src": "typicode",
+      "price": "5500"
+    },
+    {
+      "id": "1",
+      "name": "Костюм pizhama",
+      "about": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "color": ["Черный", "Молочный", "Оливковый"],
+      "size": ["XS-S", "M-L"],
+      "composition": "typicode",
+      "src": "typicode",
+      "price": "5500"
+    },
+    {
+      "id": "1",
+      "name": "Костюм pizhama",
+      "about": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "color": ["Черный", "Молочный", "Оливковый"],
+      "size": ["XS-S", "M-L"],
+      "composition": "typicode",
+      "src": "typicode",
+      "price": "5500"
+    },
+    {
+      "id": "1",
+      "name": "Костюм pizhama",
+      "about": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "color": ["Черный", "Молочный", "Оливковый"],
+      "size": ["XS-S", "M-L"],
+      "composition": "typicode",
+      "src": "typicode",
+      "price": "5500"
+    },
+    {
+      "id": "1",
+      "name": "Костюм pizhama",
+      "about": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "color": ["Черный", "Молочный", "Оливковый"],
+      "size": ["XS-S", "M-L"],
+      "composition": "typicode",
+      "src": "typicode",
+      "price": "5500"
+    },
+    {
+      "id": "1",
+      "name": "Костюм pizhama",
+      "about": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "color": ["Черный", "Молочный", "Оливковый"],
+      "size": ["XS-S", "M-L"],
+      "composition": "typicode",
+      "src": "typicode",
+      "price": "5500"
+    },
+    {
+      "id": "1",
+      "name": "Костюм pizhama",
+      "about": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "color": ["Черный", "Молочный", "Оливковый"],
+      "size": ["XS-S", "M-L"],
+      "composition": "typicode",
+      "src": "typicode",
+      "price": "5500"
+    },
+    {
+      "id": "1",
+      "name": "Костюм pizhama",
+      "about": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "color": ["Черный", "Молочный", "Оливковый"],
+      "size": ["XS-S", "M-L"],
+      "composition": "typicode",
+      "src": "typicode",
+      "price": "5500"
+    },
+    {
+      "id": "1",
+      "name": "Костюм pizhama",
+      "about": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "color": ["Черный", "Молочный", "Оливковый"],
+      "size": ["XS-S", "M-L"],
+      "composition": "typicode",
+      "src": "typicode",
+      "price": "5500"
+    }
+
+  ]
 }

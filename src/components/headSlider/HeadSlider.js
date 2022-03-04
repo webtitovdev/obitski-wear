@@ -1,9 +1,12 @@
 import { useGetDataQuery } from "../../api/api";
-
 import ImageGallery from "react-image-gallery";
+import Spinner from "./../spinner/Spinner";
 
 const HeadSlider = () => {
   const { data, isLoading } = useGetDataQuery("headSliderImages");
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   return (
     <div className="home">
@@ -18,7 +21,7 @@ const HeadSlider = () => {
           slideDuration={600}
           slideInterval={8000}
           lazyLoad={true}
-          items={isLoading ? [] : data}
+          items={data}
         />
       </div>
     </div>
