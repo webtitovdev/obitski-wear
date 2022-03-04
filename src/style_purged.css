@@ -617,6 +617,19 @@ section {
   width: 37%;
   text-align: center;
 }
+.product_item_quantity_container {
+  margin-top: 43px;
+}
+.product_item_size_container {
+  margin-top: 54px;
+}
+.cart_button_item a {
+  margin-top: 55px;
+  width: 142px;
+  height: 46px;
+  background: #937c6f;
+  text-align: center;
+}
 .cart_product_total {
   width: 22%;
   text-align: center;
