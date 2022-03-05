@@ -1,16 +1,24 @@
 import React from "react";
 
+import { useGetDataQuery } from "../../api/api";
+
 import testimonials from "../../images/testimonials.jpg";
+import Spinner from "./../spinner/Spinner";
 
 const Reviews = () => {
+  const { data, isLoading } = useGetDataQuery("reviews");
+  if (isLoading) {
+    return <Spinner />;
+  }
+
   return (
     <div className="testimonials">
       <div className="container">
         <div className="row">
           <div className="col">
             <div className="section_title_container text-center">
-              <div className="section_subtitle">only the best</div>
-              <div className="section_title">testimonials</div>
+              <div className="section_subtitle">Лучшее</div>
+              <div className="section_title">Рекомендации</div>
             </div>
           </div>
         </div>
@@ -18,18 +26,13 @@ const Reviews = () => {
           <div className="col">
             <div className="owl-carousel owl-theme test_slider text-center">
               <div className="owl-item">
-                <div className="test_text">
-                  “Integer ut imperdiet erat. Quisque ultricies lectus tellus,
-                  eu tristique magna pharetra nec. Fusce vel lorem libero.
-                  Integer ex mi, facilisis sed nisi ut, vestibulum ultrices
-                  nulla. Aliquam egestas tempor leo.”
-                </div>
+                <div className="test_text">{data[0].text}</div>
                 <div className="test_content">
                   <div className="test_image">
-                    <img src={testimonials} alt="" />
+                    <img src={data[0].image} alt="" />
                   </div>
-                  <div className="test_name">Christinne Smith</div>
-                  <div className="test_title">client</div>
+                  <div className="test_name">{data[0].name}</div>
+                  <div className="test_title">client {data[0].from} </div>
                 </div>
               </div>
             </div>

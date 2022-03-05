@@ -7,56 +7,24 @@ const Footer = () => {
         <div className="row">
           <div className="col text-center">
             <div className="footer_logo">
-              <a href="#">Wish</a>
+              <a href="#">Obitski</a>
             </div>
             <nav className="footer_nav">
               <ul>
                 <li>
-                  <a href="index.html">home</a>
+                  <a href="index.html">Главная</a>
                 </li>
                 <li>
-                  <a href="categories.html">clothes</a>
+                  <a href="categories.html">КАТАЛОГ</a>
                 </li>
                 <li>
-                  <a href="categories.html">accessories</a>
+                  <a href="categories.html">ДОСТАВКА И ОПЛАТА</a>
                 </li>
                 <li>
-                  <a href="categories.html">lingerie</a>
-                </li>
-                <li>
-                  <a href="contact.html">contact</a>
+                  <a href="categories.html">КОНТАКТЫ</a>
                 </li>
               </ul>
             </nav>
-            <div className="footer_social">
-              <ul>
-                <li>
-                  <a href="#">
-                    <i className="fa fa-pinterest" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa fa-reddit-alien" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa fa-twitter" aria-hidden="true"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
             <div className="copyright">Copyright &copy;</div>
           </div>
         </div>

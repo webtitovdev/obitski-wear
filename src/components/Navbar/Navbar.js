@@ -1,6 +1,8 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 
 import MobileMenu from "../mobileMenu/MobileMenu";
+import { toggle } from "./toggleSlice";
 
 import shopingBag from "../../images/shopping-bag.svg";
 import magnifyingGlass from "../../images/magnifying-glass.svg";
@@ -8,6 +10,12 @@ import star from "../../images/star.svg";
 import avatar from "../../images/avatar.svg";
 
 const Navbar = () => {
+  const dispatch = useDispatch();
+
+  const onHandleClick = () => {
+    dispatch(toggle());
+  };
+
   return (
     <>
       <header className="header">
@@ -24,7 +32,7 @@ const Navbar = () => {
                 <a href="categories.html">Каталог</a>
               </li>
               <li>
-                <a href="categories.html">Доставка и оплата</a>
+                <a href="categories.html">Доставка</a>
               </li>
               <li>
                 <a href="contact.html">Контакты</a>
@@ -77,14 +85,17 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="burger_container d-flex flex-column align-items-center justify-content-around menu_mm">
+          <div
+            onClick={() => onHandleClick()}
+            className="burger_container d-flex flex-column align-items-center justify-content-around menu_mm"
+          >
             <div></div>
             <div></div>
             <div></div>
           </div>
         </div>
       </header>
-      <MobileMenu />
+      <MobileMenu onHandleClick={onHandleClick} />
     </>
   );
 };

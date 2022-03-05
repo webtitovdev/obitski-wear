@@ -1,14 +1,24 @@
 import React from "react";
 
+import { useGetDataQuery } from "../../api/api";
+import Spinner from "./../spinner/Spinner";
+import InstaFeedImageItem from "./../instaFeedImageItem/InstaFeedImageItem";
+
 import gallery from "../../images/gallery.jpg";
-import gallery1 from "../../images/gallery_1.jpg";
-import gallery2 from "../../images/gallery_2.jpg";
-import gallery3 from "../../images/gallery_3.jpg";
-import gallery4 from "../../images/gallery_4.jpg";
-import gallery5 from "../../images/gallery_5.jpg";
-import gallery6 from "../../images/gallery_6.jpg";
 
 const InstaFeed = () => {
+  const { data, isLoading } = useGetDataQuery("instaFeed");
+  if (isLoading) {
+    return <Spinner />;
+  }
+  const renderImage = data[0].image.map((item) => (
+    <InstaFeedImageItem key={data[0].id} image={item} />
+  ));
+  const renderTags = data[0].tags.map((item, i) => (
+    <li key={i}>
+      <a href="">#{item}</a>
+    </li>
+  ));
   return (
     <div className="gallery">
       <div
@@ -19,65 +29,16 @@ const InstaFeed = () => {
         <div className="row">
           <div className="col">
             <div className="gallery_title text-center">
-              <ul>
-                <li>
-                  <a href="#">#wish</a>
-                </li>
-                <li>
-                  <a href="#">#wishinstagram</a>
-                </li>
-                <li>
-                  <a href="#">#wishgirl</a>
-                </li>
-              </ul>
+              <ul>{renderTags}</ul>
             </div>
-            <div className="gallery_text text-center">
-              *Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu
-              tristique magna pharetra.
-            </div>
+            <div className="gallery_text text-center">{data[0].text}</div>
             <div className="button gallery_button">
-              <a href="#">submit</a>
+              <a href="#">Подписаться</a>
             </div>
           </div>
         </div>
       </div>
-      <div className="gallery_slider_container">
-        <div className="owl-item gallery_item">
-          <a className="colorbox" href={gallery1}>
-            <img src={gallery1} alt="" />
-          </a>
-        </div>
-
-        <div className="owl-item gallery_item">
-          <a className="colorbox" href={gallery2}>
-            <img src={gallery2} alt="" />
-          </a>
-        </div>
-
-        <div className="owl-item gallery_item">
-          <a className="colorbox" href={gallery3}>
-            <img src={gallery3} alt="" />
-          </a>
-        </div>
-
-        <div className="owl-item gallery_item">
-          <a className="colorbox" href={gallery4}>
-            <img src={gallery4} alt="" />
-          </a>
-        </div>
-
-        <div className="owl-item gallery_item">
-          <a className="colorbox" href={gallery5}>
-            <img src={gallery5} alt="" />
-          </a>
-        </div>
-
-        <div className="owl-item gallery_item">
-          <a className="colorbox" href={gallery6}>
-            <img src={gallery6} alt="" />
-          </a>
-        </div>
-      </div>
+      <div className="gallery_slider_container">{renderImage}</div>
     </div>
   );
 };
