@@ -55,6 +55,7 @@
       "name": "Костюм pizhama",
       "about": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
       "color": ["Черный", "Молочный", "Оливковый"],
+      "categories": "costume",
       "size": ["XS-S", "M-L"],
       "composition": "95% хлопок, 5% эластан",
       "src": "https://sun9-85.userapi.com/impg/_v-0lS6f9xb7eOJ91VBput97hIRCOV9_L-H40g/-iztez5eSaY.jpg?size=1620x2160&quality=96&sign=60b1d549b5e6684f5b8db88bccc84ffc&type=album",
@@ -65,6 +66,7 @@
       "name": "Двубортный пиджак ",
       "about": "",
       "color": "",
+      "categories": "blazer",
       "size": ["XS-S", "M-L"],
       "composition": "80% полиэстер, 17% вискоза, 3%эластан; подклада 100% полиэстер",
       "src": "https://sun9-85.userapi.com/impg/gADFOzl1uAF3tgXdoOTkZQH77WUEAdDhTxRBdg/kmoli_WatBs.jpg?size=1620x2160&quality=96&sign=69607b9c38be8351c4740b99a79cf216&type=album",
@@ -75,6 +77,7 @@
       "name": "Костюмный жилет",
       "about": "",
       "color": "",
+      "categories": "costume",
       "size": ["XS-S", "M-L"],
       "composition": "80% полиэстер, 17% вискоза, 3%эластан; подклада 100% полиэстер",
       "src": "https://sun9-22.userapi.com/impg/SGdPbpVOYxD_2mT-4BJNgcl2CE3-i9D3A7Kruw/YxGdtavCnDQ.jpg?size=1620x2160&quality=96&sign=c75147cb79d04eead177208ae11fbc97&type=album",
@@ -84,7 +87,8 @@
       "id": "4",
       "name": "Прямые брюки с защипами",
       "about": "",
-      "color": "",
+      "color": "trousers",
+      "categories": "costume",
       "size": ["XS-S", "M-L"],
       "composition": "80% полиэстер, 17% вискоза, 3%эластан",
       "src": "https://sun9-82.userapi.com/impg/FRrwB3jA2HD6FzeJEjcyTsmkPmo0SEMQ0kXr4Q/DTJRr7GLcRw.jpg?size=1620x2160&quality=96&sign=3013874981e5137d9d4be9f138232d56&type=album",
@@ -95,6 +99,7 @@
       "name": "Белая рубашка оверсайз",
       "about": "",
       "color": "",
+      "categories": "shirt",
       "size": "One size",
       "composition": "100% хлопок",
       "src": "https://sun9-8.userapi.com/impg/_8_9rQ2N_oX6miXw3OzB8HpqUBu9ZXGcGcg95w/j7Hq2hNTlJw.jpg?size=1620x2160&quality=96&sign=526e0a85fc7fd6215b43ec64d206c31f&type=album",
@@ -105,6 +110,7 @@
       "name": "Юбка-килт в длине миди",
       "about": "",
       "color": ["Черный", "Коричневый"],
+      "categories": "skirt",
       "size": ["XS-S", "M-L"],
       "composition": "80% полиэстер, 17% вискоза, 3%эластан",
       "src": "https://sun9-80.userapi.com/impg/V-qDB0H2TIH0NQtZSGhFxInXWHZLxxCZqOETvg/SY1x9rIIICU.jpg?size=1620x2160&quality=96&sign=af50c9ddd212f674d068156965fd43ea&type=album",
@@ -133,7 +139,12 @@
     {
       "id": "9",
       "image": [
-        "https://sun9-11.userapi.com/impg/FGyQQW13NZStaWjuwnv5s8t-Ua4l_1N6sb_Pdw/DDO2nGGGXgI.jpg?size=265x265&quality=96&sign=5c4c1029111710df2f2c14f7a1b06a08&type=album","https://sun9-19.userapi.com/impg/NFrMcDwNvfN5upHP2277O8X4m-Pjxmck3zg4VA/3m7v4FDyVwc.jpg?size=265x265&quality=96&sign=ab8a9c39de884f3aad18c79273504db1&type=album", "https://sun7-6.userapi.com/impg/1x3uy18_iA4QL3dgTnS5e2-SAplgPhHKMu0O3A/iyUTBefV5jg.jpg?size=265x265&quality=96&sign=97e1c93de2c2202d57489f24a8c062d4&type=album", "https://sun9-85.userapi.com/impg/aYDlrvyb4kPZ7arz3t3CUn4cwnYSwK5QvS34xw/FZP7eg4VL7o.jpg?size=265x265&quality=96&sign=f0e8f91bd06fca12b4bb088d68a7abbf&type=album", "https://sun9-83.userapi.com/impg/-LZraUgllOyqmfFaLvSpBcqBVfTe5ylbefvRhg/akHY54eVQE8.jpg?size=265x265&quality=96&sign=68a55e9886f7b20bc783fe45ba4626bf&type=album", "https://sun7-7.userapi.com/impg/-XXJ29IStxZyCnQowQkyF_iFCeRCWlDxmYUBjw/Bid80hUfabw.jpg?size=265x265&quality=96&sign=e80480e6718e9c32d2cd70a7f8170b1d&type=album"
+        "https://sun9-11.userapi.com/impg/FGyQQW13NZStaWjuwnv5s8t-Ua4l_1N6sb_Pdw/DDO2nGGGXgI.jpg?size=265x265&quality=96&sign=5c4c1029111710df2f2c14f7a1b06a08&type=album",
+        "https://sun9-19.userapi.com/impg/NFrMcDwNvfN5upHP2277O8X4m-Pjxmck3zg4VA/3m7v4FDyVwc.jpg?size=265x265&quality=96&sign=ab8a9c39de884f3aad18c79273504db1&type=album",
+        "https://sun7-6.userapi.com/impg/1x3uy18_iA4QL3dgTnS5e2-SAplgPhHKMu0O3A/iyUTBefV5jg.jpg?size=265x265&quality=96&sign=97e1c93de2c2202d57489f24a8c062d4&type=album",
+        "https://sun9-85.userapi.com/impg/aYDlrvyb4kPZ7arz3t3CUn4cwnYSwK5QvS34xw/FZP7eg4VL7o.jpg?size=265x265&quality=96&sign=f0e8f91bd06fca12b4bb088d68a7abbf&type=album",
+        "https://sun9-83.userapi.com/impg/-LZraUgllOyqmfFaLvSpBcqBVfTe5ylbefvRhg/akHY54eVQE8.jpg?size=265x265&quality=96&sign=68a55e9886f7b20bc783fe45ba4626bf&type=album",
+        "https://sun7-7.userapi.com/impg/-XXJ29IStxZyCnQowQkyF_iFCeRCWlDxmYUBjw/Bid80hUfabw.jpg?size=265x265&quality=96&sign=e80480e6718e9c32d2cd70a7f8170b1d&type=album"
       ],
       "tags": ["obtski", "obitski_wear"],
       "text": "*Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra.",
@@ -145,7 +156,7 @@
       "id": "10",
       "image": "https://sun9-74.userapi.com/impg/C4b3cdn84vz1JFvNlQag_pSow4n5wq6cv_ARAA/X7GZ2cfQ32w.jpg?size=883x616&quality=95&sign=e49c2c59d4203f3d12366f33b68fde45&type=album",
       "text": "*Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra.",
-      "name":"blablabla",
+      "name": "blablabla",
       "link": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
       "from": "instagram"
     }
@@ -175,5 +186,91 @@
       "title": "Russia, Rostov-on-Don",
       "text": "admin@obitski.ru"
     }
-  ]
+  ],
+  "categories": [
+    {
+      "id": "15",
+      "name": "costume",
+      "lable": "Костюм"
+    },
+    {
+      "id": "16",
+      "name": "blazer",
+      "lable": "Пиджак"
+    },
+    {
+      "id": "17",
+      "name": "skirt",
+      "lable": "Юбка"
+    },
+    {
+      "id": "18",
+      "name": "shirt",
+      "lable": "Рубашка"
+    },
+    {
+      "id": "19",
+      "name": "trousers",
+      "lable": "Брюки"
+    }
+  ],
+  "color": [
+    {
+      "id": "20",
+      "name": "red",
+      "lable": "Красный"
+    },
+    {
+      "id": "21",
+      "name": "blue",
+      "lable": "Синий"
+    },
+    {
+      "id": "22",
+      "name": "black",
+      "lable": "Черный"
+    },
+    {
+      "id": "23",
+      "name": "brown",
+      "lable": "Коричневый"
+    },
+    {
+      "id": "24",
+      "name": "lactic",
+      "lable": "Молочный"
+    }
+  ],
+ "size": [
+   {
+     "id": "25",
+     "name": "XS-S",
+     "lable": "XS-S"
+   },
+   {
+     "id": "26",
+     "name": "M-L",
+     "lable": "M-L"
+   },
+   {
+     "id": "27",
+     "name": "one size",
+     "lable": "One size"
+   },
+   {
+     "id": "28",
+     "name": "S",
+     "lable": "S"
+   },
+   {
+     "id": "29",
+     "name": "M",
+     "lable": "M"
+   },
+   {
+     "id": "30",
+     "name": "L",
+     "lable": "L"
+   }
+ ]
 }

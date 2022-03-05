@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 
 import MobileMenu from "../mobileMenu/MobileMenu";
-import { toggle } from "./toggleSlice";
+import { toggle } from "../../slice/toggleSlice";
 
 import shopingBag from "../../images/shopping-bag.svg";
 import magnifyingGlass from "../../images/magnifying-glass.svg";

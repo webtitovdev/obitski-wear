@@ -1432,6 +1432,9 @@ section {
   width: 100%;
 }
 .sidebar_section_content ul li {
+  line-height: 47px;
+  color: #232323;
+  font-size: 14px;
   height: 47px;
   padding-left: 16px;
   border-bottom: 1px solid #e0e3e4;

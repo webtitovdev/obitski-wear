@@ -6,15 +6,15 @@ import LeftSideBar from "./../components/leftSideBar/LeftSideBar";
 import ProductList from "./../components/productList/ProductList";
 import Pagination from "./../components/pagination/Pagination";
 import RightSideBar from "../components/rightSideBar/RightSideBar";
-import News from "../components/news/News";
+import NewsList from "../components/newsList/NewsList";
 
 const Categories = () => {
   return (
     <>
       <BreadCrumbs />
-      <div class="products">
-        <div class="container">
-          <div class="row">
+      <div className="products">
+        <div className="container">
+          <div className="row">
             <LeftSideBar />
             <ProductSort />
           </div>
@@ -23,7 +23,7 @@ const Categories = () => {
         </div>
         <RightSideBar />
       </div>
-      <News />
+      <NewsList />
     </>
   );
 };

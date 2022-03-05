@@ -12,13 +12,15 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
-import toggler from "../components/navbar/toggleSlice";
+import toggler from "../slice/toggleSlice";
+import categoriesfilter from "../slice/filtersSLice";
 
 import { sliderApi } from "../api/api";
 
 const rootReducer = combineReducers({
   [sliderApi.reducerPath]: sliderApi.reducer,
   toggler,
+  categoriesfilter,
 });
 
 const persistConfig = {
