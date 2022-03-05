@@ -1,7 +1,5 @@
 import React from "react";
 import shoppingBagW from "../../images/shopping-bag-white.svg";
-import star from "../../images/star.svg";
-
 const PreviewShopItem = ({ image, name, price }) => {
   return (
     <div className="col-lg-4 product_col">
