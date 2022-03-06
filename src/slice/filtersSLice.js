@@ -5,7 +5,7 @@ const initialState = {
     categories: "",
     color: "",
     size: "",
-    packets: "",
+    ofset: "",
     orderBy: "",
   },
 };
@@ -22,8 +22,20 @@ const categoriesfilteredSlice = createSlice({
     sizeFiltered: (state, action) => {
       state.filters.size = action.payload;
     },
+    ofsetFiltered: (state, action) => {
+      state.filters.ofset = action.payload;
+    },
+    orderByFiltered: (state, action) => {
+      state.filters.orderBy = action.payload;
+    },
   },
 });
 const { actions, reducer } = categoriesfilteredSlice;
 export default reducer;
-export const { categoriesfiltered, colorFiltered, sizeFiltered } = actions;
+export const {
+  categoriesfiltered,
+  colorFiltered,
+  sizeFiltered,
+  ofsetFiltered,
+  orderByFiltered,
+} = actions;

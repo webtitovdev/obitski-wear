@@ -1172,8 +1172,8 @@ section {
 .item_sorting li ul li {
   display: block;
   text-align: left;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .item_sorting li ul li span {
   display: block;

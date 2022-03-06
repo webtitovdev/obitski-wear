@@ -59,7 +59,7 @@
       "size": ["XS-S", "M-L"],
       "composition": "95% хлопок, 5% эластан",
       "src": "https://sun9-85.userapi.com/impg/_v-0lS6f9xb7eOJ91VBput97hIRCOV9_L-H40g/-iztez5eSaY.jpg?size=1620x2160&quality=96&sign=60b1d549b5e6684f5b8db88bccc84ffc&type=album",
-      "price": "5500"
+      "price": 5500
     },
     {
       "id": "2",
@@ -70,7 +70,7 @@
       "size": ["XS-S", "M-L"],
       "composition": "80% полиэстер, 17% вискоза, 3%эластан; подклада 100% полиэстер",
       "src": "https://sun9-85.userapi.com/impg/gADFOzl1uAF3tgXdoOTkZQH77WUEAdDhTxRBdg/kmoli_WatBs.jpg?size=1620x2160&quality=96&sign=69607b9c38be8351c4740b99a79cf216&type=album",
-      "price": "7400"
+      "price": 7400
     },
     {
       "id": "3",
@@ -81,7 +81,7 @@
       "size": ["XS-S", "M-L"],
       "composition": "80% полиэстер, 17% вискоза, 3%эластан; подклада 100% полиэстер",
       "src": "https://sun9-22.userapi.com/impg/SGdPbpVOYxD_2mT-4BJNgcl2CE3-i9D3A7Kruw/YxGdtavCnDQ.jpg?size=1620x2160&quality=96&sign=c75147cb79d04eead177208ae11fbc97&type=album",
-      "price": "3900"
+      "price": 3900
     },
     {
       "id": "4",
@@ -92,7 +92,7 @@
       "size": ["XS-S", "M-L"],
       "composition": "80% полиэстер, 17% вискоза, 3%эластан",
       "src": "https://sun9-82.userapi.com/impg/FRrwB3jA2HD6FzeJEjcyTsmkPmo0SEMQ0kXr4Q/DTJRr7GLcRw.jpg?size=1620x2160&quality=96&sign=3013874981e5137d9d4be9f138232d56&type=album",
-      "price": "3900"
+      "price": 3900
     },
     {
       "id": "5",
@@ -103,7 +103,7 @@
       "size": "One size",
       "composition": "100% хлопок",
       "src": "https://sun9-8.userapi.com/impg/_8_9rQ2N_oX6miXw3OzB8HpqUBu9ZXGcGcg95w/j7Hq2hNTlJw.jpg?size=1620x2160&quality=96&sign=526e0a85fc7fd6215b43ec64d206c31f&type=album",
-      "price": "3900"
+      "price": 3900
     },
     {
       "id": "6",
@@ -114,7 +114,7 @@
       "size": ["XS-S", "M-L"],
       "composition": "80% полиэстер, 17% вискоза, 3%эластан",
       "src": "https://sun9-80.userapi.com/impg/V-qDB0H2TIH0NQtZSGhFxInXWHZLxxCZqOETvg/SY1x9rIIICU.jpg?size=1620x2160&quality=96&sign=af50c9ddd212f674d068156965fd43ea&type=album",
-      "price": "4900"
+      "price": 4900
     }
   ],
   "news": [

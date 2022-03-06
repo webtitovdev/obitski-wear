@@ -27,6 +27,7 @@ const persistConfig = {
   key: "root",
   storage,
   blacklist: [sliderApi.reducerPath],
+  categoriesfilter,
 };
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
