@@ -8,7 +8,7 @@ import Spinner from "./components/spinner/Spinner";
 
 import { store, persistor } from "./store/index";
 
-import "./style_purged.css";
+import "./style.css";
 
 ReactDOM.render(
   <React.StrictMode>

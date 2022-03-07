@@ -7,7 +7,6 @@ import Spinner from "./../spinner/Spinner";
 const ProductList = () => {
   const filters = useSelector((state) => state.categoriesfilter.filters);
   const { data, isLoading } = useGetDataQuery("productItem");
-
   if (isLoading) {
     return <Spinner />;
   }
