@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import MobileMenu from "../mobileMenu/MobileMenu";
 import { toggle } from "../../slice/toggleSlice";
@@ -10,11 +10,31 @@ import star from "../../images/star.svg";
 import avatar from "../../images/avatar.svg";
 
 const Navbar = () => {
+  const { cartItem, favorits } = useSelector((state) => state.addProduct);
   const dispatch = useDispatch();
-
   const onHandleClick = () => {
     dispatch(toggle());
   };
+  let cartNumRender;
+  if (cartItem.length !== 0) {
+    cartNumRender = (
+      <div className="cart_num_container">
+        <div className="cart_num_inner">
+          <div className="cart_num">{cartItem.length}</div>
+        </div>
+      </div>
+    );
+  }
+  let favoritsNumRender;
+  if (favorits.length !== 0) {
+    favoritsNumRender = (
+      <div className="star_num_container">
+        <div className="star_num_inner">
+          <div className="star_num">{favorits.length}</div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>
@@ -60,21 +80,13 @@ const Navbar = () => {
               <a href="#">
                 <div className="cart">
                   <img src={shopingBag} alt="" />
-                  <div className="cart_num_container">
-                    <div className="cart_num_inner">
-                      <div className="cart_num">1</div>
-                    </div>
-                  </div>
+                  {cartNumRender}
                 </div>
               </a>
               <a href="#">
                 <div className="star">
                   <img src={star} alt="" />
-                  <div className="star_num_container">
-                    <div className="star_num_inner">
-                      <div className="star_num">0</div>
-                    </div>
-                  </div>
+                  {favoritsNumRender}
                 </div>
               </a>
               <a href="#">

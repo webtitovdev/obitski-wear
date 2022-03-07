@@ -1,10 +1,13 @@
 import React from "react";
 
+import { useDispatch } from "react-redux";
 import Spinner from "../../components/spinner/Spinner";
 import { useGetDataQuery } from "../../api/api";
 import SideBarSection from "../sideBarSection/SideBarSection";
+import { clearFilter } from "../../slice/filtersSLice";
 
 const CategoriesSideBar = ({ onCategoriesFilter }) => {
+  const dispatch = useDispatch();
   const { data, isLoading } = useGetDataQuery("categories");
   if (isLoading) {
     return <Spinner />;
@@ -19,12 +22,20 @@ const CategoriesSideBar = ({ onCategoriesFilter }) => {
     />
   ));
   return (
-    <div className="sidebar_section">
-      <div className="sidebar_title">{"Категории"}</div>
-      <div className="sidebar_section_content">
-        <ul>{render}</ul>
+    <>
+      <div className="sidebar_section">
+        <div className="sidebar_title">{"Категории"}</div>
+        <div className="sidebar_section_content">
+          <ul>{render}</ul>
+        </div>
       </div>
-    </div>
+      <button
+        onClick={() => dispatch(clearFilter())}
+        className="button_update cart_button_2 ml-md-auto"
+      >
+        Очистить
+      </button>
+    </>
   );
 };
 
