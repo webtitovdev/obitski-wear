@@ -3,9 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   filters: {
     categories: "",
-    color: "",
-    size: "",
-    ofset: "",
+    ofset: "12",
     orderBy: "",
   },
 };
@@ -16,17 +14,16 @@ const categoriesfilteredSlice = createSlice({
     categoriesfiltered: (state, action) => {
       state.filters.categories = action.payload;
     },
-    colorFiltered: (state, action) => {
-      state.filters.color = action.payload;
-    },
-    sizeFiltered: (state, action) => {
-      state.filters.size = action.payload;
-    },
     ofsetFiltered: (state, action) => {
       state.filters.ofset = action.payload;
     },
     orderByFiltered: (state, action) => {
       state.filters.orderBy = action.payload;
+    },
+    clearFilter: (state) => {
+      state.filters.categories = "";
+      state.filters.ofset = "12";
+      state.filters.orderBy = "";
     },
   },
 });
@@ -38,4 +35,5 @@ export const {
   sizeFiltered,
   ofsetFiltered,
   orderByFiltered,
+  clearFilter,
 } = actions;

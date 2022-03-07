@@ -6,27 +6,13 @@ import Spinner from "./../spinner/Spinner";
 
 const ProductList = () => {
   const filters = useSelector((state) => state.categoriesfilter.filters);
-
   const { data, isLoading } = useGetDataQuery("productItem");
+
   if (isLoading) {
     return <Spinner />;
   }
-  const dataCopied = [...data];
-  // let newData = data;
-  let newData = [];
-  switch (filters.orderBy) {
-    case "priceAsc":
-      newData = dataCopied.sort((a, b) => a.price - b.price);
-      break;
-    case "priceDesc":
-      newData = dataCopied.sort((a, b) => b.price - a.price);
-      break;
-    default:
-      newData = data;
-      break;
-  }
 
-  const render = newData.map((item) => (
+  const render = [].map((item) => (
     <Product
       key={item.id}
       image={item.src}

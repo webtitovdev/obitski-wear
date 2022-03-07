@@ -26,8 +26,7 @@ const rootReducer = combineReducers({
 const persistConfig = {
   key: "root",
   storage,
-  blacklist: [sliderApi.reducerPath],
-  categoriesfilter,
+  whitelist: "1231",
 };
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
