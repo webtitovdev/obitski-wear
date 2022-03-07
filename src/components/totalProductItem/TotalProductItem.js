@@ -5,10 +5,8 @@ import { deletFromCart, deletFromFavorits } from "../../slice/productSlice";
 
 const TotalProductItem = ({ image, name, price, id, title }) => {
   const dispatch = useDispatch();
-  // const fndelete = title === "Корзина" ? deletFromCart : deletFromFavorits;
   const [countItem, setCountItem] = useState(1);
   const totalPrice = price * +countItem;
-  console.log(title);
 
   const fndelete = (id) => {
     if (title === "Корзина") {

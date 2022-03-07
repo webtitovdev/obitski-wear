@@ -19,12 +19,12 @@ const Product = createSlice({
     },
     deletFromCart: (state, action) => {
       state.cartItem = state.cartItem.filter(
-        (item) => item.id === action.payload
+        (item) => item.id !== action.payload
       );
     },
     deletFromFavorits: (state, action) => {
       state.favorits = state.favorits.filter(
-        (item) => item.id === action.payload
+        (item) => item.id !== action.payload
       );
     },
   },

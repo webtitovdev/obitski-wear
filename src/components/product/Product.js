@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useGetDataQuery } from "../../api/api";
 import bagShopW from "../../images/shopping-bag-white.svg";
@@ -25,7 +26,7 @@ const Product = ({ image, name, price, id }) => {
       <div className="product_content clearfix">
         <div className="product_info">
           <div className="product_name">
-            <a href="product.html">{name}</a>
+            <Link to="product">{name}</Link>
           </div>
           <div className="product_price">{price} &#8381;</div>
         </div>

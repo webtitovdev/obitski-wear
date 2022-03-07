@@ -1,24 +1,23 @@
 import React from "react";
-import Navbar from "../navbar/Navbar";
 import Categories from "./../../pages/Categories";
-import Footer from "../footer/Footer";
 import Main from "./../../pages/Main";
 import Cart from "./../../pages/Cart";
 import Contact from "./../../pages/Contact";
 import Favorit from "./../../pages/Favorit";
 import Product from "./../../pages/Product";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
-      <Navbar />
-      {/* <Product /> */}
-      {/* <Cart /> */}
-      <Main />
-      {/* <Categories /> */}
-      {/* <Favorit /> */}
-      <Footer />
-    </>
+    <Routes>
+      <Route index element={<Main />} />
+      <Route path="categories" element={<Categories />}>
+        <Route path="product" element={<Product />} />
+      </Route>
+      <Route path="cart" element={<Cart />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="favorit" element={<Favorit />} />
+    </Routes>
   );
 };
 

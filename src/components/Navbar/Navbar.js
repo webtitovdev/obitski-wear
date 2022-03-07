@@ -1,8 +1,9 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { toggle } from "../../slice/toggleSlice";
+import { Link } from "react-router-dom";
 
 import MobileMenu from "../mobileMenu/MobileMenu";
-import { toggle } from "../../slice/toggleSlice";
 
 import shopingBag from "../../images/shopping-bag.svg";
 import magnifyingGlass from "../../images/magnifying-glass.svg";
@@ -41,21 +42,21 @@ const Navbar = () => {
       <header className="header">
         <div className="header_inner d-flex flex-row align-items-center justify-content-start">
           <div className="logo">
-            <a href="#">Obitski</a>
+            <Link to="/">Obitski</Link>
           </div>
           <nav className="main_nav">
             <ul>
               <li>
-                <a href="#">Главная</a>
+                <Link to="/">Главная</Link>
               </li>
               <li>
-                <a href="categories.html">Каталог</a>
+                <Link to="categories">Каталог</Link>
               </li>
               <li>
                 <a href="categories.html">Доставка</a>
               </li>
               <li>
-                <a href="contact.html">Контакты</a>
+                <Link to="contact">Контакты</Link>
               </li>
             </ul>
           </nav>
@@ -77,23 +78,23 @@ const Navbar = () => {
               </form>
             </div>
             <div className="shopping">
-              <a href="#">
+              <Link to="cart">
                 <div className="cart">
                   <img src={shopingBag} alt="" />
                   {cartNumRender}
                 </div>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="favorit">
                 <div className="star">
                   <img src={star} alt="" />
                   {favoritsNumRender}
                 </div>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="/">
                 <div className="avatar">
                   <img src={avatar} alt="" />
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 
