@@ -10,7 +10,7 @@ import star from "../../images/star.svg";
 import avatar from "../../images/avatar.svg";
 
 const Navbar = () => {
-  const { cartItem, favorits } = useSelector((state) => state.addProduct);
+  const { cartItem, favorits } = useSelector((state) => state.productFunc);
   const dispatch = useDispatch();
   const onHandleClick = () => {
     dispatch(toggle());

@@ -14,7 +14,7 @@ import storage from "redux-persist/lib/storage";
 
 import toggler from "../slice/toggleSlice";
 import categoriesfilter from "../slice/filtersSLice";
-import addProduct from "../slice/addProductSlice";
+import productFunc from "../slice/productSlice";
 
 import { sliderApi } from "../api/api";
 
@@ -22,13 +22,13 @@ const rootReducer = combineReducers({
   [sliderApi.reducerPath]: sliderApi.reducer,
   toggler,
   categoriesfilter,
-  addProduct,
+  productFunc,
 });
 
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["addProduct"],
+  whitelist: ["productFunc"],
 };
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 

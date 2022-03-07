@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useGetDataQuery } from "../../api/api";
 import Spinner from "./../spinner/Spinner";
 import InstaFeedImageItem from "./../instaFeedImageItem/InstaFeedImageItem";
@@ -11,8 +10,8 @@ const InstaFeed = () => {
   if (isLoading) {
     return <Spinner />;
   }
-  const renderImage = data[0].image.map((item) => (
-    <InstaFeedImageItem key={data[0].id} image={item} />
+  const renderImage = data[0].image.map((item, i) => (
+    <InstaFeedImageItem key={i} image={item} />
   ));
   const renderTags = data[0].tags.map((item, i) => (
     <li key={i}>

@@ -1,23 +1,21 @@
 import React from "react";
 import { useSelector } from "react-redux";
-
-import Breadcrumbs from "../components/breadCrumbs/BreadCrumbs";
+import BreadCrumbs from "../components/breadCrumbs/BreadCrumbs";
+import InstaFeed from "../components/instaFeed/InstaFeed";
 import TotalProductList from "../components/totalProductList/TotalProductList";
-import InstaFeed from "./../components/instaFeed/InstaFeed";
-
-const Cart = () => {
-  const { cartItem } = useSelector((state) => state.productFunc);
+const Favorit = () => {
+  const { favorits } = useSelector((state) => state.productFunc);
   return (
     <>
-      <Breadcrumbs />
+      <BreadCrumbs />
       <div className="cart_container">
         <div className="container">
           <div className="row">
             <div className="col">
-              <div className="cart_title">Корзина</div>
+              <div className="cart_title">Избранное</div>
             </div>
           </div>
-          <TotalProductList store={cartItem} title={"Корзина"} />
+          <TotalProductList store={favorits} title={"Избранное"} />
         </div>
       </div>
       <InstaFeed />
@@ -25,4 +23,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default Favorit;

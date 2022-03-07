@@ -31,4 +31,11 @@ const Product = createSlice({
 });
 const { actions, reducer } = Product;
 export default reducer;
-export const { addToFavorit, addToCart, clearedFavorit, clearedCart } = actions;
+export const {
+  addToFavorit,
+  addToCart,
+  clearedFavorit,
+  clearedCart,
+  deletFromCart,
+  deletFromFavorits,
+} = actions;

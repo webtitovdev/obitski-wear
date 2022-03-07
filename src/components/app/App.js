@@ -5,12 +5,18 @@ import Footer from "../footer/Footer";
 import Main from "./../../pages/Main";
 import Cart from "./../../pages/Cart";
 import Contact from "./../../pages/Contact";
+import Favorit from "./../../pages/Favorit";
+import Product from "./../../pages/Product";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <Categories />
+      {/* <Product /> */}
+      {/* <Cart /> */}
+      <Main />
+      {/* <Categories /> */}
+      {/* <Favorit /> */}
       <Footer />
     </>
   );
