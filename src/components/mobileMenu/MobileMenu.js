@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 import magnifyingGlass from "../../images/magnifying-glass.svg";
 
@@ -17,7 +18,7 @@ const MobileMenu = ({ onHandleClick }) => {
         </div>
       </div>
       <div className="logo menu_mm">
-        <a href="#">Obitski</a>
+        <Link to="/">Obitski</Link>
       </div>
       <div className="search">
         <form action="#">
@@ -38,16 +39,16 @@ const MobileMenu = ({ onHandleClick }) => {
       <nav className="menu_nav">
         <ul className="menu_mm">
           <li className="menu_mm">
-            <a href="#">ГЛАВНАЯ</a>
+            <Link to="/">ГЛАВНАЯ</Link>
           </li>
           <li className="menu_mm">
-            <a href="#">КАТАЛОГ</a>
+            <Link to="categories">КАТАЛОГ</Link>
           </li>
           <li className="menu_mm">
-            <a href="#">ДОСТАВКА</a>
+            <Link to="/">ДОСТАВКА</Link>
           </li>
           <li className="menu_mm">
-            <a href="#">КОНТАКТЫ</a>
+            <Link to="contacts">КОНТАКТЫ</Link>
           </li>
         </ul>
       </nav>

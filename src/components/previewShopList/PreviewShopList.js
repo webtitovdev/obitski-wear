@@ -1,7 +1,7 @@
 import React from "react";
 import { useGetDataQuery } from "../../api/api";
 import Spinner from "../spinner/Spinner";
-import Product from "./../product/Product";
+import SingleProduct from "../singleProduct/SingleProduct";
 
 const PreviewShopList = () => {
   const { data, isLoading } = useGetDataQuery("productItem");
@@ -9,7 +9,8 @@ const PreviewShopList = () => {
     return <Spinner />;
   }
   const itemArray = data.map((item) => (
-    <Product
+    <SingleProduct
+      id={item.id}
       key={item.id}
       image={item.src}
       name={item.name}

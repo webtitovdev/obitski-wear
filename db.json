@@ -100,7 +100,7 @@
       "about": "",
       "color": "",
       "categories": "shirt",
-      "size": "One size",
+      "size": ["One size"],
       "composition": "100% хлопок",
       "src": "https://sun9-8.userapi.com/impg/_8_9rQ2N_oX6miXw3OzB8HpqUBu9ZXGcGcg95w/j7Hq2hNTlJw.jpg?size=1620x2160&quality=96&sign=526e0a85fc7fd6215b43ec64d206c31f&type=album",
       "price": 3900

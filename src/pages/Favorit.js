@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import BreadCrumbs from "../components/breadCrumbs/BreadCrumbs";
-import InstaFeed from "../components/instaFeed/InstaFeed";
 import TotalProductList from "../components/totalProductList/TotalProductList";
 const Favorit = () => {
   const { favorits } = useSelector((state) => state.productFunc);
@@ -18,7 +17,6 @@ const Favorit = () => {
           <TotalProductList store={favorits} title={"Избранное"} />
         </div>
       </div>
-      <InstaFeed />
     </>
   );
 };

@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 
 import Breadcrumbs from "../components/breadCrumbs/BreadCrumbs";
 import TotalProductList from "../components/totalProductList/TotalProductList";
-import InstaFeed from "./../components/instaFeed/InstaFeed";
 
 const Cart = () => {
   const { cartItem } = useSelector((state) => state.productFunc);
@@ -20,7 +19,6 @@ const Cart = () => {
           <TotalProductList store={cartItem} title={"Корзина"} />
         </div>
       </div>
-      <InstaFeed />
     </>
   );
 };

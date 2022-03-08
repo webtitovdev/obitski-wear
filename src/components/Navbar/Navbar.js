@@ -53,7 +53,7 @@ const Navbar = () => {
                 <Link to="categories">Каталог</Link>
               </li>
               <li>
-                <a href="categories.html">Доставка</a>
+                <Link to="/">Доставка</Link>
               </li>
               <li>
                 <Link to="contact">Контакты</Link>

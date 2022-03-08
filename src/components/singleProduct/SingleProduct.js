@@ -4,10 +4,14 @@ import { useDispatch } from "react-redux";
 import { useGetDataQuery } from "../../api/api";
 import bagShopW from "../../images/shopping-bag-white.svg";
 import { addToFavorit, addToCart } from "../../slice/productSlice";
+import Spinner from "../spinner/Spinner";
 
-const Product = ({ image, name, price, id }) => {
+const SingleProduct = ({ image, name, price, id }) => {
   const dispatch = useDispatch();
-  const { data } = useGetDataQuery("productItem");
+  const { data, isLoading } = useGetDataQuery("productItem");
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   const onHandleFavorit = (id) => {
     const favoritItem = data.filter((item) => item.id === id);
@@ -26,7 +30,7 @@ const Product = ({ image, name, price, id }) => {
       <div className="product_content clearfix">
         <div className="product_info">
           <div className="product_name">
-            <Link to="product">{name}</Link>
+            <Link to={`categories/products/${id}`}>{name}</Link>
           </div>
           <div className="product_price">{price} &#8381;</div>
         </div>
@@ -49,4 +53,4 @@ const Product = ({ image, name, price, id }) => {
   );
 };
 
-export default Product;
+export default SingleProduct;
