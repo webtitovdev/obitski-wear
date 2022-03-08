@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
 import Categories from "./../../pages/Categories";
@@ -7,8 +8,8 @@ import Cart from "./../../pages/Cart";
 import Contact from "./../../pages/Contact";
 import Favorit from "./../../pages/Favorit";
 import Product from "./../../pages/Product";
+import ControlPanel from "./../../pages/ControlPanel";
 import Error404 from "./../../pages/Error404";
-import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="controlpanel" element={<ControlPanel />} />
         <Route path="categories" element={<Categories />} />
         <Route path="categories/products/:id" element={<Product />} />
         <Route path="cart" element={<Cart />} />

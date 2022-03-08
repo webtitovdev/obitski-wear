@@ -492,6 +492,14 @@ h5,
 .main_nav ul li a:hover {
   color: #937c6f;
 }
+.gear {
+  width: 20px;
+  height: 20px;
+}
+.gear_img {
+  width: 100%;
+  height: 100%;
+}
 .active {
   color: #937c6f !important;
 }

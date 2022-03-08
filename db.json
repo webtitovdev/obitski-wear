@@ -241,36 +241,42 @@
       "lable": "Молочный"
     }
   ],
- "size": [
-   {
-     "id": "25",
-     "name": "XS-S",
-     "lable": "XS-S"
-   },
-   {
-     "id": "26",
-     "name": "M-L",
-     "lable": "M-L"
-   },
-   {
-     "id": "27",
-     "name": "one size",
-     "lable": "One size"
-   },
-   {
-     "id": "28",
-     "name": "S",
-     "lable": "S"
-   },
-   {
-     "id": "29",
-     "name": "M",
-     "lable": "M"
-   },
-   {
-     "id": "30",
-     "name": "L",
-     "lable": "L"
-   }
- ]
+  "size": [
+    {
+      "id": "25",
+      "name": "XS-S",
+      "lable": "XS-S"
+    },
+    {
+      "id": "26",
+      "name": "M-L",
+      "lable": "M-L"
+    },
+    {
+      "id": "27",
+      "name": "one size",
+      "lable": "One size"
+    },
+    {
+      "id": "28",
+      "name": "S",
+      "lable": "S"
+    },
+    {
+      "id": "29",
+      "name": "M",
+      "lable": "M"
+    },
+    {
+      "id": "30",
+      "name": "L",
+      "lable": "L"
+    }
+  ],
+  "loginData": {
+      "id": "31",
+      "login": "obitskiramila",
+      "password": "2415123"
+    }
+  
 }

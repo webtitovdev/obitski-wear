@@ -1,18 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggle } from "../../slice/toggleSlice";
 import { NavLink, Link } from "react-router-dom";
 
 import MobileMenu from "../mobileMenu/MobileMenu";
-
+import ModalCustom from "../modalCustom/ModalCusom";
 import shopingBag from "../../images/shopping-bag.svg";
 import magnifyingGlass from "../../images/magnifying-glass.svg";
 import star from "../../images/star.svg";
 import avatar from "../../images/avatar.svg";
+import gear from "../../images/gear.png";
 
 const Navbar = () => {
   const { cartItem, favorits } = useSelector((state) => state.productFunc);
+  const [open, setOpen] = useState(false);
+  const { auth } = useSelector((state) => state.login);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   const dispatch = useDispatch();
+  const panelLink = (
+    <Link to="controlpanel">
+      <div className="gear">
+        <img src={gear} className="gear_img" alt="" />
+      </div>
+    </Link>
+  );
+  const renderPanelLink = auth ? panelLink : null;
   const onHandleClick = () => {
     dispatch(toggle());
   };
@@ -90,11 +103,12 @@ const Navbar = () => {
                   {favoritsNumRender}
                 </div>
               </Link>
-              <Link to="/">
+              <Link onClick={handleOpen} to="/">
                 <div className="avatar">
                   <img src={avatar} alt="" />
                 </div>
               </Link>
+              {renderPanelLink}
             </div>
           </div>
 
@@ -108,6 +122,7 @@ const Navbar = () => {
           </div>
         </div>
       </header>
+      <ModalCustom open={open} handleClose={handleClose} />
       <MobileMenu onHandleClick={onHandleClick} />
     </>
   );
