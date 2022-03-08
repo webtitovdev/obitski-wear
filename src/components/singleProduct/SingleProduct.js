@@ -6,12 +6,13 @@ import bagShopW from "../../images/shopping-bag-white.svg";
 import { addToFavorit, addToCart } from "../../slice/productSlice";
 import Spinner from "../spinner/Spinner";
 
-const SingleProduct = ({ image, name, price, id }) => {
+const SingleProduct = ({ image, name, price, id, notCategories }) => {
   const dispatch = useDispatch();
   const { data, isLoading } = useGetDataQuery("productItem");
   if (isLoading) {
     return <Spinner />;
   }
+  const link = notCategories ? `categories/products/${id}` : `products/${id}`;
 
   const onHandleFavorit = (id) => {
     const favoritItem = data.filter((item) => item.id === id);
@@ -30,7 +31,7 @@ const SingleProduct = ({ image, name, price, id }) => {
       <div className="product_content clearfix">
         <div className="product_info">
           <div className="product_name">
-            <Link to={`products/${id}`}>{name}</Link>
+            <Link to={link}>{name}</Link>
           </div>
           <div className="product_price">{price} &#8381;</div>
         </div>

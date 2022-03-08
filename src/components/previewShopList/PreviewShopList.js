@@ -15,6 +15,7 @@ const PreviewShopList = () => {
       image={item.src}
       name={item.name}
       price={item.price}
+      notCategories={true}
     />
   ));
 

@@ -1,7 +1,32 @@
 import React from "react";
-
+import { useLocation } from "react-router-dom";
 import cart from "../../images/cart.jpg";
 const BreadCrumbs = () => {
+  const { pathname } = useLocation();
+  let title;
+  let subTitle;
+  switch (pathname) {
+    case "/categories":
+      title = "Каталог";
+      subTitle = "Главная / Каталог";
+      break;
+    case "/contact":
+      title = "Контакты";
+      subTitle = "Главная / Контакты";
+      break;
+    case "/cart":
+      title = "Корзина";
+      subTitle = "Главная / Корзина";
+      break;
+    case "/favorit":
+      title = "Избранное";
+      subTitle = "Главная / Избранное";
+      break;
+    default:
+      title = "";
+      subTitle = "";
+  }
+
   return (
     <div className="home">
       <div
@@ -18,13 +43,12 @@ const BreadCrumbs = () => {
           <div className="col">
             <div className="home_container">
               <div className="home_content">
-                <div className="home_title">Shopping Cart</div>
+                <div className="home_title">{title}</div>
                 <div className="breadcrumbs">
                   <ul>
                     <li>
-                      <a href="index.html">Home</a>
+                      <a href="index.html">{subTitle}</a>
                     </li>
-                    <li>Shopping Cart</li>
                   </ul>
                 </div>
               </div>

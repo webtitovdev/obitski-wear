@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggle } from "../../slice/toggleSlice";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import MobileMenu from "../mobileMenu/MobileMenu";
 
@@ -42,21 +42,21 @@ const Navbar = () => {
       <header className="header">
         <div className="header_inner d-flex flex-row align-items-center justify-content-start">
           <div className="logo">
-            <Link to="/">Obitski</Link>
+            <NavLink to="/">Obitski</NavLink>
           </div>
           <nav className="main_nav">
             <ul>
               <li>
-                <Link to="/">Главная</Link>
+                <NavLink to="/">Главная</NavLink>
               </li>
               <li>
-                <Link to="categories">Каталог</Link>
+                <NavLink to="categories">Каталог</NavLink>
               </li>
               <li>
-                <Link to="/">Доставка</Link>
+                <NavLink to="/">Доставка</NavLink>
               </li>
               <li>
-                <Link to="contact">Контакты</Link>
+                <NavLink to="contact">Контакты</NavLink>
               </li>
             </ul>
           </nav>

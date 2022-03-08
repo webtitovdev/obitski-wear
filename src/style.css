@@ -492,6 +492,9 @@ h5,
 .main_nav ul li a:hover {
   color: #937c6f;
 }
+.active {
+  color: #937c6f !important;
+}
 .section_subtitle,
 .section_title,
 .button a,
