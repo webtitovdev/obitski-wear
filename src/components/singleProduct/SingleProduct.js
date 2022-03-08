@@ -30,7 +30,7 @@ const SingleProduct = ({ image, name, price, id }) => {
       <div className="product_content clearfix">
         <div className="product_info">
           <div className="product_name">
-            <Link to={`categories/products/${id}`}>{name}</Link>
+            <Link to={`products/${id}`}>{name}</Link>
           </div>
           <div className="product_price">{price} &#8381;</div>
         </div>
