@@ -20,6 +20,17 @@ export const crudApi = createApi({
       }),
       invalidatesTags: ["data"],
     }),
+    addNewItem: builder.mutation({
+      query(data) {
+        const { getDataParams, ...body } = data;
+        return {
+          url: `${getDataParams}`,
+          method: "POST",
+          body,
+        };
+      },
+      invalidatesTags: ["data"],
+    }),
     updateById: builder.mutation({
       query(data) {
         const { id, ...body } = data;
@@ -34,5 +45,9 @@ export const crudApi = createApi({
   }),
 });
 
-export const { useGetDataQuery, useDeleteByIdMutation, useUpdateByIdMutation } =
-  crudApi;
+export const {
+  useGetDataQuery,
+  useDeleteByIdMutation,
+  useUpdateByIdMutation,
+  useAddNewItemMutation,
+} = crudApi;

@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useUpdateByIdMutation } from "../../api/api";
+import { v4 as uuidv4 } from "uuid";
+import { useAddNewItemMutation } from "../../api/api";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 
-const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
-  const [updateById] = useUpdateByIdMutation();
+const AddNewItemForm = ({ props, open, handleClose, getDataParams }) => {
   const [inputValue, setInputValue] = useState({});
+  const [addNewItem] = useAddNewItemMutation();
   const propsKeys = Object.keys(props);
   const style = {
     position: "absolute",
@@ -21,6 +22,7 @@ const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
   useEffect(() => {
     intValue();
   }, []);
+
   const intValue = () => {
     let data = {};
     for (let i = 0; i < propsKeys.length; i++) {
@@ -34,12 +36,16 @@ const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
       ...inputValue,
       [e.target.name]: e.target.value,
     });
-    console.log(e.target.name);
   };
-  const handleSubmit = async (id, event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    let data = { ...inputValue, id: `${getDataParams}/${id}` };
-    await updateById(data).unwrap();
+    let data = {
+      ...inputValue,
+      id: `${uuidv4()}`,
+      getDataParams: getDataParams,
+    };
+    console.log(data);
+    addNewItem(data);
   };
 
   const render = propsKeys.map(function (item, i) {
@@ -68,6 +74,7 @@ const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
       ></input>
     );
   });
+
   return (
     <>
       <div className="row">
@@ -81,10 +88,7 @@ const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
             <form>
               <>
                 {render}
-                <button
-                  onClick={(event) => handleSubmit(id, event)}
-                  type="submit"
-                >
+                <button onClick={(event) => handleSubmit(event)} type="submit">
                   Отправить
                 </button>
               </>
@@ -96,4 +100,4 @@ const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
   );
 };
 
-export default ChangeItemForm;
+export default AddNewItemForm;

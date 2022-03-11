@@ -1,12 +1,16 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { useGetDataQuery, useDeleteByIdMutation } from "../api/api";
 import ChangedItem from "../components/changedItem/ChangedItem";
+import AddNewItemForm from "../components/addNewItemForm/AddNewItemForm";
 import Spinner from "../components/spinner/Spinner";
-import { useLocation } from "react-router-dom";
 import Button from "@mui/material/Button";
 
 const ChangeItem = () => {
   const { pathname } = useLocation();
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   let getDataParams;
   switch (pathname) {
     case "/controlpanel/headsliderimagechange":
@@ -77,10 +81,20 @@ const ChangeItem = () => {
           <div className="col">{render}</div>
         </div>
         <div className="row">
-          <Button sx={{ margin: "20px auto" }} variant="contained">
+          <Button
+            onClick={handleOpen}
+            sx={{ margin: "20px auto" }}
+            variant="contained"
+          >
             Добавить еще
           </Button>
         </div>
+        <AddNewItemForm
+          getDataParams={getDataParams}
+          open={open}
+          handleClose={handleClose}
+          props={data[0]}
+        />
       </div>
     </>
   );

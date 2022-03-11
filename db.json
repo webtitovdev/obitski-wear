@@ -40,6 +40,17 @@
       "src": "https://sun9-80.userapi.com/impg/V-qDB0H2TIH0NQtZSGhFxInXWHZLxxCZqOETvg/SY1x9rIIICU.jpg?size=1620x2160&quality=96&sign=af50c9ddd212f674d068156965fd43ea&type=album",
       "price": "12444",
       "id": "6"
+    },
+    {
+      "name": "123",
+      "about": "333",
+      "color": "333",
+      "categories": "33",
+      "size": "3",
+      "composition": "33",
+      "src": "C:\\fakepath\\IMG_6690.jpg",
+      "price": "12",
+      "id": "b681d9aa-4b55-409b-b3d1-61173f54e25f"
     }
   ],
   "news": [
@@ -62,19 +73,14 @@
   ],
   "faq": [
     {
-      "name": "1",
-      "text": "2",
-      "id": 12
+      "name": "qw",
+      "text": "qw",
+      "id": "b4c958ca-f911-4205-9a1c-6149ad25e6f9"
     },
     {
-      "name": "tttt",
-      "text": "tttt",
-      "id": 123
-    },
-    {
-      "name": "tt",
-      "text": "tt",
-      "id": 124
+      "name": "qwrrr",
+      "text": "wqrrrr",
+      "id": "5338a353-ee6a-4edb-af57-a23f230bdc45"
     }
   ],
   "categories": [
