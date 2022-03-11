@@ -14,11 +14,11 @@ const NewsList = () => {
     <NewsItem
       index={i}
       key={item.id}
-      image={item.image}
-      title={item.title}
+      image={item.src}
+      title={item.name}
       text={item.text}
       link={item.link}
-      discount={item.discount}
+      discount={item.procent}
     />
   ));
   return <div className="extra clearfix">{render}</div>;

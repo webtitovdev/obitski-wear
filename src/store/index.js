@@ -17,10 +17,10 @@ import categoriesfilter from "../slice/filtersSLice";
 import productFunc from "../slice/productSlice";
 import login from "../slice/loginSlice";
 
-import { sliderApi } from "../api/api";
+import { crudApi } from "../api/api";
 
 const rootReducer = combineReducers({
-  [sliderApi.reducerPath]: sliderApi.reducer,
+  [crudApi.reducerPath]: crudApi.reducer,
   toggler,
   categoriesfilter,
   productFunc,
@@ -41,7 +41,7 @@ export const store = configureStore({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
-    }).concat(sliderApi.middleware),
+    }).concat(crudApi.middleware),
   devTools: true,
 });
 export const persistor = persistStore(store);

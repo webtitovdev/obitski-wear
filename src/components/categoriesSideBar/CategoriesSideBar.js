@@ -17,7 +17,7 @@ const CategoriesSideBar = ({ onCategoriesFilter }) => {
     <SideBarSection
       onHandleFilters={(name) => onCategoriesFilter(item.name)}
       key={item.id}
-      lable={item.lable}
+      lable={item.text}
       name={item.name}
     />
   ));

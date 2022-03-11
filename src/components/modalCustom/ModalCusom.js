@@ -4,11 +4,9 @@ import Spinner from "./../spinner/Spinner";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Container from "@mui/material/Container";
 import { login } from "../../slice/loginSlice";
 import { useDispatch } from "react-redux";
@@ -67,10 +65,7 @@ const ModalCusom = ({ open, handleClose }) => {
                 alignItems: "center",
               }}
             >
-              <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-                <LockOutlinedIcon />
-              </Avatar>
-              <Typography component="h1" variant="h5">
+              <Typography component="h3" variant="h5">
                 Войти
               </Typography>
               <Box

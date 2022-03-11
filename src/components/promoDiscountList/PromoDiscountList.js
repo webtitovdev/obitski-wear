@@ -10,12 +10,12 @@ const PromoDiscountList = () => {
   if (isLoading) {
     return <Spinner />;
   }
-  const render = data[0].item.map((item, i) => (
+  const render = data.map((item, i) => (
     <PromoDiscountItem
       key={i}
-      src={item.src}
-      subtitle={item.subtitle}
-      title={item.title}
+      image={item.src}
+      subtitle={item.procent}
+      title={item.name}
     />
   ));
 
@@ -25,8 +25,8 @@ const PromoDiscountList = () => {
         <div className="row">
           <div className="col">
             <div className="section_title_container text-center">
-              <div className="section_subtitle">{data[0].subtitle}</div>
-              <div className="section_title">{data[0].title}</div>
+              <div className="section_subtitle">Акции</div>
+              <div className="section_title">Акционные цены</div>
             </div>
           </div>
         </div>

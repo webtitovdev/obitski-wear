@@ -1,282 +1,114 @@
 {
   "headSliderImages": [
     {
-      "id": 1,
-      "alt": "Банер",
-      "original": "https://sun9-32.userapi.com/impg/Yq7CsaHdMHnF4BljzI9Bx8s6TWiYG8eOFm9zAw/h5n5yWkGKN4.jpg?size=1920x904&quality=95&sign=94ee88e8eee8ea0762eb06dd74c24320&type=album"
-    },
-    {
-      "id": 2,
-      "alt": "Банер2",
-      "original": "https://sun9-32.userapi.com/impg/Yq7CsaHdMHnF4BljzI9Bx8s6TWiYG8eOFm9zAw/h5n5yWkGKN4.jpg?size=1920x904&quality=95&sign=94ee88e8eee8ea0762eb06dd74c24320&type=album"
-    },
-    {
-      "id": 3,
-      "alt": "Банер3",
-      "original": "https://sun9-32.userapi.com/impg/Yq7CsaHdMHnF4BljzI9Bx8s6TWiYG8eOFm9zAw/h5n5yWkGKN4.jpg?size=1920x904&quality=95&sign=94ee88e8eee8ea0762eb06dd74c24320&type=album"
+      "name": "Банер",
+      "original": "https://sun9-32.userapi.com/impg/Yq7CsaHdMHnF4BljzI9Bx8s6TWiYG8eOFm9zAw/h5n5yWkGKN4.jpg?size=1920x904&quality=95&sign=94ee88e8eee8ea0762eb06dd74c24320&type=album",
+      "src": "https://sun9-32.userapi.com/impg/Yq7CsaHdMHnF4BljzI9Bx8s6TWiYG8eOFm9zAw/h5n5yWkGKN4.jpg?size=1920x904&quality=95&sign=94ee88e8eee8ea0762eb06dd74c24320&type=album",
+      "id": 3
     },
     {
       "id": 4,
-      "alt": "Банер4",
-      "original": "https://sun9-25.userapi.com/impg/9YjxCU2rmKVmsrLY3ymyG552oFjIq-WlvxmDfg/eyXO1xhtorQ.jpg?size=1794x616&quality=95&sign=2fb91cc5436299c88e729a8fb128c726&type=album"
+      "name": "Банер4",
+      "original": "https://sun9-25.userapi.com/impg/9YjxCU2rmKVmsrLY3ymyG552oFjIq-WlvxmDfg/eyXO1xhtorQ.jpg?size=1794x616&quality=95&sign=2fb91cc5436299c88e729a8fb128c726&type=album",
+      "src": "https://sun9-25.userapi.com/impg/9YjxCU2rmKVmsrLY3ymyG552oFjIq-WlvxmDfg/eyXO1xhtorQ.jpg?size=1794x616&quality=95&sign=2fb91cc5436299c88e729a8fb128c726&type=album"
     }
   ],
   "promoDiscount": [
     {
-      "id": 5,
-      "subtitle": "Акции",
-      "title": "Акционные цены",
-      "turn": "true",
-      "item": [
-        {
-          "title": "-30% ",
-          "subtitle": "на все футболки",
-          "link": "link",
-          "src": "https://sun9-49.userapi.com/impg/xVi1kzoxGiSfv3yW7LPBk-fnmJMmp_Fo6VtN5A/LDTSzxnSYoY.jpg?size=690x572&quality=96&sign=6fd79e7927ac51fd511e7334ef38a013&type=album"
-        },
-        {
-          "title": "-30% ",
-          "subtitle": "на все костюмы",
-          "link": "link",
-          "src": "https://sun9-79.userapi.com/impg/0pKAORIisaMqoTNms5jP7LHHay79uEaHKTy-GA/Sg9W9O5iIu0.jpg?size=690x572&quality=96&sign=e7192265364eb10b5801d3e7d93094d7&type=album"
-        },
-        {
-          "title": "-30% ",
-          "subtitle": "на юбки",
-          "link": "link",
-          "src": "https://sun7-9.userapi.com/impg/5xW0Io0sZJ9-fjUbIzwIWNrLBAOZqrxOsj8tWg/F8LKrcL-VuE.jpg?size=690x572&quality=96&sign=23fcb50795faafbaeb9038e7f502a55e&type=album"
-        }
-      ]
+      "procent": "-30% ",
+      "id": "222",
+      "name": "на все костюмы",
+      "link": "link",
+      "src": "https://sun9-79.userapi.com/impg/0pKAORIisaMqoTNms5jP7LHHay79uEaHKTy-GA/Sg9W9O5iIu0.jpg?size=690x572&quality=96&sign=e7192265364eb10b5801d3e7d93094d7&type=album"
+    },
+    {
+      "procent": "-30% ",
+      "id": "232",
+      "name": "на юбки",
+      "link": "link",
+      "src": "https://sun7-9.userapi.com/impg/5xW0Io0sZJ9-fjUbIzwIWNrLBAOZqrxOsj8tWg/F8LKrcL-VuE.jpg?size=690x572&quality=96&sign=23fcb50795faafbaeb9038e7f502a55e&type=album"
     }
   ],
   "productItem": [
     {
-      "id": "1",
-      "name": "Костюм pizhama",
-      "about": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
-      "color": ["Черный", "Молочный", "Оливковый"],
-      "categories": "costume",
-      "size": ["XS-S", "M-L"],
-      "composition": "95% хлопок, 5% эластан",
-      "src": "https://sun9-85.userapi.com/impg/_v-0lS6f9xb7eOJ91VBput97hIRCOV9_L-H40g/-iztez5eSaY.jpg?size=1620x2160&quality=96&sign=60b1d549b5e6684f5b8db88bccc84ffc&type=album",
-      "price": 5500
-    },
-    {
-      "id": "2",
-      "name": "Двубортный пиджак ",
-      "about": "",
-      "color": "",
-      "categories": "blazer",
-      "size": ["XS-S", "M-L"],
-      "composition": "80% полиэстер, 17% вискоза, 3%эластан; подклада 100% полиэстер",
-      "src": "https://sun9-85.userapi.com/impg/gADFOzl1uAF3tgXdoOTkZQH77WUEAdDhTxRBdg/kmoli_WatBs.jpg?size=1620x2160&quality=96&sign=69607b9c38be8351c4740b99a79cf216&type=album",
-      "price": 7400
-    },
-    {
-      "id": "3",
-      "name": "Костюмный жилет",
-      "about": "",
-      "color": "",
-      "categories": "costume",
-      "size": ["XS-S", "M-L"],
-      "composition": "80% полиэстер, 17% вискоза, 3%эластан; подклада 100% полиэстер",
-      "src": "https://sun9-22.userapi.com/impg/SGdPbpVOYxD_2mT-4BJNgcl2CE3-i9D3A7Kruw/YxGdtavCnDQ.jpg?size=1620x2160&quality=96&sign=c75147cb79d04eead177208ae11fbc97&type=album",
-      "price": 3900
-    },
-    {
-      "id": "4",
-      "name": "Прямые брюки с защипами",
-      "about": "",
-      "color": "trousers",
-      "categories": "costume",
-      "size": ["XS-S", "M-L"],
-      "composition": "80% полиэстер, 17% вискоза, 3%эластан",
-      "src": "https://sun9-82.userapi.com/impg/FRrwB3jA2HD6FzeJEjcyTsmkPmo0SEMQ0kXr4Q/DTJRr7GLcRw.jpg?size=1620x2160&quality=96&sign=3013874981e5137d9d4be9f138232d56&type=album",
-      "price": 3900
-    },
-    {
-      "id": "5",
-      "name": "Белая рубашка оверсайз",
-      "about": "",
-      "color": "",
-      "categories": "shirt",
-      "size": ["One size"],
-      "composition": "100% хлопок",
-      "src": "https://sun9-8.userapi.com/impg/_8_9rQ2N_oX6miXw3OzB8HpqUBu9ZXGcGcg95w/j7Hq2hNTlJw.jpg?size=1620x2160&quality=96&sign=526e0a85fc7fd6215b43ec64d206c31f&type=album",
-      "price": 3900
-    },
-    {
-      "id": "6",
-      "name": "Юбка-килт в длине миди",
-      "about": "",
-      "color": ["Черный", "Коричневый"],
-      "categories": "skirt",
-      "size": ["XS-S", "M-L"],
-      "composition": "80% полиэстер, 17% вискоза, 3%эластан",
+      "name": "Юбка",
+      "about": "Юбка килт",
+      "color": "Черный",
+      "categories": "Юбка",
+      "size": "Х-S",
+      "composition": "qe",
       "src": "https://sun9-80.userapi.com/impg/V-qDB0H2TIH0NQtZSGhFxInXWHZLxxCZqOETvg/SY1x9rIIICU.jpg?size=1620x2160&quality=96&sign=af50c9ddd212f674d068156965fd43ea&type=album",
-      "price": 4900
+      "price": "12444",
+      "id": "6"
     }
   ],
   "news": [
     {
       "id": "7",
-      "image": "https://sun9-74.userapi.com/impg/C4b3cdn84vz1JFvNlQag_pSow4n5wq6cv_ARAA/X7GZ2cfQ32w.jpg?size=883x616&quality=95&sign=e49c2c59d4203f3d12366f33b68fde45&type=album",
-      "title": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "src": "https://sun9-74.userapi.com/impg/C4b3cdn84vz1JFvNlQag_pSow4n5wq6cv_ARAA/X7GZ2cfQ32w.jpg?size=883x616&quality=95&sign=e49c2c59d4203f3d12366f33b68fde45&type=album",
+      "name": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
       "text": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
       "link": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
-      "discount": "20%"
+      "procent": "20%"
     },
     {
       "id": "8",
-      "image": "https://sun9-11.userapi.com/impg/135ts0UlDFj4yuWIfCsrpTT98Bc1wQa6uBq-7g/DP_pMg8JgTI.jpg?size=883x616&quality=95&sign=1ead5bf63b941c38ab28a004249b24b8&type=album",
-      "title": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
+      "src": "https://sun9-11.userapi.com/impg/135ts0UlDFj4yuWIfCsrpTT98Bc1wQa6uBq-7g/DP_pMg8JgTI.jpg?size=883x616&quality=95&sign=1ead5bf63b941c38ab28a004249b24b8&type=album",
+      "name": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
       "text": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
       "link": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
-      "discount": "30%"
-    }
-  ],
-  "instaFeed": [
-    {
-      "id": "9",
-      "image": [
-        "https://sun9-11.userapi.com/impg/FGyQQW13NZStaWjuwnv5s8t-Ua4l_1N6sb_Pdw/DDO2nGGGXgI.jpg?size=265x265&quality=96&sign=5c4c1029111710df2f2c14f7a1b06a08&type=album",
-        "https://sun9-19.userapi.com/impg/NFrMcDwNvfN5upHP2277O8X4m-Pjxmck3zg4VA/3m7v4FDyVwc.jpg?size=265x265&quality=96&sign=ab8a9c39de884f3aad18c79273504db1&type=album",
-        "https://sun7-6.userapi.com/impg/1x3uy18_iA4QL3dgTnS5e2-SAplgPhHKMu0O3A/iyUTBefV5jg.jpg?size=265x265&quality=96&sign=97e1c93de2c2202d57489f24a8c062d4&type=album",
-        "https://sun9-85.userapi.com/impg/aYDlrvyb4kPZ7arz3t3CUn4cwnYSwK5QvS34xw/FZP7eg4VL7o.jpg?size=265x265&quality=96&sign=f0e8f91bd06fca12b4bb088d68a7abbf&type=album",
-        "https://sun9-83.userapi.com/impg/-LZraUgllOyqmfFaLvSpBcqBVfTe5ylbefvRhg/akHY54eVQE8.jpg?size=265x265&quality=96&sign=68a55e9886f7b20bc783fe45ba4626bf&type=album",
-        "https://sun7-7.userapi.com/impg/-XXJ29IStxZyCnQowQkyF_iFCeRCWlDxmYUBjw/Bid80hUfabw.jpg?size=265x265&quality=96&sign=e80480e6718e9c32d2cd70a7f8170b1d&type=album"
-      ],
-      "tags": ["obtski", "obitski_wear"],
-      "text": "*Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra.",
-      "link": "Костюм pizhama из укороченного топа и свободных брюк на резинке"
-    }
-  ],
-  "reviews": [
-    {
-      "id": "10",
-      "image": "https://sun9-74.userapi.com/impg/C4b3cdn84vz1JFvNlQag_pSow4n5wq6cv_ARAA/X7GZ2cfQ32w.jpg?size=883x616&quality=95&sign=e49c2c59d4203f3d12366f33b68fde45&type=album",
-      "text": "*Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra.",
-      "name": "blablabla",
-      "link": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
-      "from": "instagram"
-    }
-  ],
-  "contactInfo": [
-    {
-      "id": "11",
-      "location": "Russia, Rostov-on-Don",
-      "mail": "admin@obitski.ru",
-      "phone": "790012312312",
-      "socialLink": ["inst", "tiktok"]
+      "procent": "30%"
     }
   ],
   "faq": [
     {
-      "id": "12",
-      "title": "Russia, Rostov-on-Don",
-      "text": "admin@obitski.ru"
+      "name": "1",
+      "text": "2",
+      "id": 12
     },
     {
-      "id": "13",
-      "title": "Russia, Rostov-on-Don",
-      "text": "admin@obitski.ru"
+      "name": "tttt",
+      "text": "tttt",
+      "id": 123
     },
     {
-      "id": "14",
-      "title": "Russia, Rostov-on-Don",
-      "text": "admin@obitski.ru"
+      "name": "tt",
+      "text": "tt",
+      "id": 124
     }
   ],
   "categories": [
     {
       "id": "15",
       "name": "costume",
-      "lable": "Костюм"
+      "text": "Костюм"
     },
     {
       "id": "16",
       "name": "blazer",
-      "lable": "Пиджак"
+      "text": "Пиджак"
     },
     {
       "id": "17",
       "name": "skirt",
-      "lable": "Юбка"
+      "text": "Юбка"
     },
     {
       "id": "18",
       "name": "shirt",
-      "lable": "Рубашка"
+      "text": "Рубашка"
     },
     {
       "id": "19",
       "name": "trousers",
-      "lable": "Брюки"
+      "text": "Брюки"
     }
   ],
-  "color": [
+  "loginData": [
     {
-      "id": "20",
-      "name": "red",
-      "lable": "Красный"
-    },
-    {
-      "id": "21",
-      "name": "blue",
-      "lable": "Синий"
-    },
-    {
-      "id": "22",
-      "name": "black",
-      "lable": "Черный"
-    },
-    {
-      "id": "23",
-      "name": "brown",
-      "lable": "Коричневый"
-    },
-    {
-      "id": "24",
-      "name": "lactic",
-      "lable": "Молочный"
-    }
-  ],
-  "size": [
-    {
-      "id": "25",
-      "name": "XS-S",
-      "lable": "XS-S"
-    },
-    {
-      "id": "26",
-      "name": "M-L",
-      "lable": "M-L"
-    },
-    {
-      "id": "27",
-      "name": "one size",
-      "lable": "One size"
-    },
-    {
-      "id": "28",
-      "name": "S",
-      "lable": "S"
-    },
-    {
-      "id": "29",
-      "name": "M",
-      "lable": "M"
-    },
-    {
-      "id": "30",
-      "name": "L",
-      "lable": "L"
-    }
-  ],
-  "loginData": {
       "id": "31",
-      "login": "obitskiramila",
-      "password": "2415123"
+      "name": "obitskiramila",
+      "text": "2415123"
     }
-  
+  ]
 }
