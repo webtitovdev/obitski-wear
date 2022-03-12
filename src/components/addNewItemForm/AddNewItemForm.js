@@ -36,6 +36,20 @@ const AddNewItemForm = ({ props, open, handleClose, getDataParams }) => {
       ...inputValue,
       [e.target.name]: e.target.value,
     });
+    if (e.target.name === "src") {
+      const reader = new FileReader();
+      const file = e.target.files[0];
+      reader.readAsDataURL(file);
+      reader.onload = function () {
+        setInputValue({
+          ...inputValue,
+          src: reader.result,
+        });
+      };
+      reader.onerror = function () {
+        console.log(reader.error);
+      };
+    }
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -44,12 +58,11 @@ const AddNewItemForm = ({ props, open, handleClose, getDataParams }) => {
       id: `${uuidv4()}`,
       getDataParams: getDataParams,
     };
-    console.log(data);
     addNewItem(data);
   };
 
   const render = propsKeys.map(function (item, i) {
-    if (item === "src") {
+    if (item === "src" || item === "original") {
       return (
         <input
           key={i}
@@ -61,6 +74,8 @@ const AddNewItemForm = ({ props, open, handleClose, getDataParams }) => {
           onChange={(e) => handleChangeInput(e, i)}
         ></input>
       );
+    } else if (item === "id") {
+      return null;
     }
     return (
       <input

@@ -6,30 +6,13 @@ import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
 import Spinner from "../spinner/Spinner";
 const ProductItem = () => {
   const { data, isLoading } = useGetDataQuery("productItem");
-  if (isLoading) {
-    <Spinner />;
-  }
   const { id } = useParams();
-  let getDataByid = [];
-  if (isLoading === false) {
-    getDataByid = data.filter((item) => item.id === id);
+  if (isLoading) {
+    return <Spinner />;
   }
-  let renderSize;
-  if (getDataByid.length !== 0) {
-    getDataByid = getDataByid[0];
-    renderSize = getDataByid.size.map((item, i) => (
-      <li key={i}>
-        <input
-          type="radio"
-          id={`radio_${i + 1}`}
-          name="product_radio"
-          className={`regular_radio radio_${i + 1}`}
-        />
-        <label htmlFor={`radio_${i + 1}`}>{item}</label>
-      </li>
-    ));
-  }
-
+  let getDataByid;
+  getDataByid = data.filter((item) => item.id === id);
+  const { src, name, price, about, size } = getDataByid[0];
   return (
     <>
       <BreadCrumbs />
@@ -39,16 +22,16 @@ const ProductItem = () => {
             <div className="col-lg-7">
               <div className="product_image">
                 <div className="product_image_large">
-                  <img src={getDataByid.src} alt="" />
+                  <img src={src} alt="" />
                 </div>
               </div>
             </div>
             <div className="col-lg-5">
               <div className="product_content">
-                <div className="product_name">{getDataByid.name}</div>
-                <div className="product_price">{getDataByid.price}</div>
+                <div className="product_name">{name}</div>
+                <div className="product_price">{price} &#8381;</div>
                 <div className="product_text">
-                  <p>{getDataByid.about}</p>
+                  <p>{about}</p>
                 </div>
                 <div className="product_item_quantity_container">
                   <span>Количество</span>
@@ -74,7 +57,14 @@ const ProductItem = () => {
                   <span>Размер</span>
                   <div className="product_size">
                     <ul className="d-flex flex-row align-items-start justify-content-start">
-                      {renderSize}
+                      <li>
+                        <input
+                          type="radio"
+                          name="product_radio"
+                          className="regular_radio radio_1"
+                        />
+                        <label>{size}</label>
+                      </li>
                     </ul>
                   </div>
                   <div className="button cart_button_item">

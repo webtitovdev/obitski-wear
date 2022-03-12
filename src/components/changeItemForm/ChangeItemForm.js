@@ -6,6 +6,7 @@ import Modal from "@mui/material/Modal";
 const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
   const [updateById] = useUpdateByIdMutation();
   const [inputValue, setInputValue] = useState({});
+
   const propsKeys = Object.keys(props);
   const style = {
     position: "absolute",
@@ -28,13 +29,22 @@ const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
     }
     setInputValue(data);
   };
-
   const handleChangeInput = (e) => {
     setInputValue({
       ...inputValue,
       [e.target.name]: e.target.value,
     });
-    console.log(e.target.name);
+    if (e.target.name === "src") {
+      const reader = new FileReader();
+      const file = e.target.files[0];
+      reader.readAsDataURL(file);
+      reader.onload = function () {
+        setInputValue({ ...inputValue, src: reader.result });
+      };
+      reader.onerror = function () {
+        console.log(reader.error);
+      };
+    }
   };
   const handleSubmit = async (id, event) => {
     event.preventDefault();
@@ -43,7 +53,7 @@ const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
   };
 
   const render = propsKeys.map(function (item, i) {
-    if (item === "src") {
+    if (item === "src" || item === "original") {
       return (
         <input
           key={i}
@@ -55,6 +65,8 @@ const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
           onChange={(e) => handleChangeInput(e, i)}
         ></input>
       );
+    } else if (item === "id") {
+      return null;
     }
     return (
       <input
