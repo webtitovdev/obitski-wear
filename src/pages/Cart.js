@@ -5,7 +5,6 @@ import Breadcrumbs from "../components/breadCrumbs/BreadCrumbs";
 import TotalProductList from "../components/totalProductList/TotalProductList";
 
 const Cart = () => {
-  const { cartItem } = useSelector((state) => state.productFunc);
   return (
     <>
       <Breadcrumbs />
@@ -16,7 +15,7 @@ const Cart = () => {
               <div className="cart_title">Корзина</div>
             </div>
           </div>
-          <TotalProductList store={cartItem} title={"Корзина"} />
+          <TotalProductList title={"Корзина"} />
         </div>
       </div>
     </>

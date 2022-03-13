@@ -492,6 +492,69 @@ h5,
 .main_nav ul li a:hover {
   color: #937c6f;
 }
+
+@keyframes ldio-dn6nod1jzb {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(22.5deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+.ldio-dn6nod1jzb > div {
+  transform-origin: 100px 100px;
+  animation: ldio-dn6nod1jzb 0.2s infinite linear;
+}
+.ldio-dn6nod1jzb > div div {
+  position: absolute;
+  width: 22px;
+  height: 152px;
+  background: #937c6f;
+  left: 100px;
+  top: 100px;
+  transform: translate(-50%, -50%);
+}
+.ldio-dn6nod1jzb > div div:nth-child(1) {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.ldio-dn6nod1jzb > div div:nth-child(6) {
+  width: 80px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+.ldio-dn6nod1jzb > div div:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.ldio-dn6nod1jzb > div div:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.ldio-dn6nod1jzb > div div:nth-child(5) {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.loadingio-spinner-gear-1pesdnk93bo {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: #ffffff;
+}
+.ldio-dn6nod1jzb {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-dn6nod1jzb div {
+  box-sizing: content-box;
+}
 .gear {
   width: 20px;
   height: 20px;
@@ -1085,7 +1148,7 @@ h5,
   width: 31%;
 }
 .cart_product_price {
-  width: 31%;
+  width: 17%;
 }
 .cart_bar_title_quantity {
   width: 37%;
@@ -1515,6 +1578,15 @@ h5,
   font-size: 23px;
   transition: all 300ms ease-out;
 }
+.serach_value {
+  position: absolute;
+  background: white;
+  min-width: 400px;
+}
+.serach_value ul li {
+  text-align: center;
+  padding: 10px;
+}
 .product_fav,
 .sidebar_title,
 .mCSB_scrollTools,
@@ -1550,6 +1622,12 @@ h5,
 .sidebar_title {
   height: 52px;
   font: 16px/52px "Lucida", serif;
+}
+.loaderrr {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .sidebar_title,
 .review_form_input,

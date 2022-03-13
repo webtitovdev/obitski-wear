@@ -3,6 +3,9 @@ import { useUpdateByIdMutation } from "../../api/api";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+
 const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
   const [updateById] = useUpdateByIdMutation();
   const [inputValue, setInputValue] = useState({});
@@ -20,31 +23,17 @@ const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
     p: 4,
   };
   useEffect(() => {
-    intValue();
-  }, []);
-  const intValue = () => {
     let data = {};
     for (let i = 0; i < propsKeys.length; i++) {
       data[propsKeys[i]] = "";
     }
     setInputValue(data);
-  };
+  }, []);
   const handleChangeInput = (e) => {
     setInputValue({
       ...inputValue,
       [e.target.name]: e.target.value,
     });
-    if (e.target.name === "src") {
-      const reader = new FileReader();
-      const file = e.target.files[0];
-      reader.readAsDataURL(file);
-      reader.onload = function () {
-        setInputValue({ ...inputValue, src: reader.result });
-      };
-      reader.onerror = function () {
-        console.log(reader.error);
-      };
-    }
   };
   const handleSubmit = async (id, event) => {
     event.preventDefault();
@@ -53,23 +42,15 @@ const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
   };
 
   const render = propsKeys.map(function (item, i) {
-    if (item === "src" || item === "original") {
-      return (
-        <input
-          key={i}
-          className="inputadminform"
-          placeholder={item}
-          type="file"
-          name={item}
-          value={inputValue.item}
-          onChange={(e) => handleChangeInput(e, i)}
-        ></input>
-      );
-    } else if (item === "id") {
+    if (item === "id") {
       return null;
     }
     return (
-      <input
+      <TextField
+        sx={{ width: "90%", m: 2 }}
+        id="outlined-basic"
+        label={item}
+        variant="outlined"
         key={i}
         className="inputadminform"
         placeholder={item}
@@ -77,7 +58,7 @@ const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
         name={item}
         value={inputValue.item}
         onChange={(e) => handleChangeInput(e, i)}
-      ></input>
+      />
     );
   });
   return (
@@ -93,12 +74,14 @@ const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
             <form>
               <>
                 {render}
-                <button
-                  onClick={(event) => handleSubmit(id, event)}
+                <Button
+                  fullWidth
+                  variant="contained"
+                  onClick={(event) => handleSubmit(event)}
                   type="submit"
                 >
                   Отправить
-                </button>
+                </Button>
               </>
             </form>
           </Box>

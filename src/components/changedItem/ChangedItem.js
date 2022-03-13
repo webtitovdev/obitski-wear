@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "@mui/material/Button";
 import ChangeItemForm from "../changeItemForm/ChangeItemForm";
-
 import trash from "../../images/trash.png";
-
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 const ChangedItem = ({
   getDataParams,
   image,
@@ -16,9 +16,13 @@ const ChangedItem = ({
   deleteById,
   props,
 }) => {
-  const [open, setOpen] = React.useState(false);
+  const isAuth = useSelector((state) => state.login.auth);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  if (!isAuth) {
+    return "Авторизируйтесь";
+  }
   return (
     <div className="cart_products">
       <ul>
@@ -28,9 +32,9 @@ const ChangedItem = ({
           </div>
 
           <div className="cart_product_name">
-            <a href="product.html">
+            <Link to={`../categories/products/${id}`}>
               {name} {procent} {price} {text}
-            </a>
+            </Link>
           </div>
           <div className="cart_product_info ml-auto">
             <div className="cart_product_info_inner d-flex flex-row align-items-center justify-content-md-end justify-content-start">

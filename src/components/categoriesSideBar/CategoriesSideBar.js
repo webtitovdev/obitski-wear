@@ -1,17 +1,15 @@
 import React from "react";
 
 import { useDispatch } from "react-redux";
-import Spinner from "../../components/spinner/Spinner";
 import { useGetDataQuery } from "../../api/api";
 import SideBarSection from "../sideBarSection/SideBarSection";
 import { clearFilter } from "../../slice/filtersSLice";
+import { isLoadingSpinner } from "./../../services/isLoadingSpinner";
 
 const CategoriesSideBar = ({ onCategoriesFilter }) => {
   const dispatch = useDispatch();
-  const { data, isLoading } = useGetDataQuery("categories");
-  if (isLoading) {
-    return <Spinner />;
-  }
+  const { data = [], isLoading } = useGetDataQuery("categories");
+  isLoadingSpinner(isLoading);
 
   const render = data.map((item) => (
     <SideBarSection

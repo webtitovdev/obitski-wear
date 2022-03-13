@@ -3,6 +3,8 @@ import { v4 as uuidv4 } from "uuid";
 import { useAddNewItemMutation } from "../../api/api";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
 const AddNewItemForm = ({ props, open, handleClose, getDataParams }) => {
   const [inputValue, setInputValue] = useState({});
@@ -13,7 +15,7 @@ const AddNewItemForm = ({ props, open, handleClose, getDataParams }) => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 400,
+    maxWidth: 400,
     bgcolor: "background.paper",
     border: "2px solid #000",
     boxShadow: 24,
@@ -36,20 +38,6 @@ const AddNewItemForm = ({ props, open, handleClose, getDataParams }) => {
       ...inputValue,
       [e.target.name]: e.target.value,
     });
-    if (e.target.name === "src") {
-      const reader = new FileReader();
-      const file = e.target.files[0];
-      reader.readAsDataURL(file);
-      reader.onload = function () {
-        setInputValue({
-          ...inputValue,
-          src: reader.result,
-        });
-      };
-      reader.onerror = function () {
-        console.log(reader.error);
-      };
-    }
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -62,23 +50,15 @@ const AddNewItemForm = ({ props, open, handleClose, getDataParams }) => {
   };
 
   const render = propsKeys.map(function (item, i) {
-    if (item === "src" || item === "original") {
-      return (
-        <input
-          key={i}
-          className="inputadminform"
-          placeholder={item}
-          type="file"
-          name={item}
-          value={inputValue.item}
-          onChange={(e) => handleChangeInput(e, i)}
-        ></input>
-      );
-    } else if (item === "id") {
+    if (item === "id") {
       return null;
     }
     return (
-      <input
+      <TextField
+        id="outlined-basic"
+        sx={{ width: "90%", m: 2 }}
+        label={item}
+        variant="outlined"
         key={i}
         className="inputadminform"
         placeholder={item}
@@ -86,7 +66,7 @@ const AddNewItemForm = ({ props, open, handleClose, getDataParams }) => {
         name={item}
         value={inputValue.item}
         onChange={(e) => handleChangeInput(e, i)}
-      ></input>
+      />
     );
   });
 
@@ -103,9 +83,14 @@ const AddNewItemForm = ({ props, open, handleClose, getDataParams }) => {
             <form>
               <>
                 {render}
-                <button onClick={(event) => handleSubmit(event)} type="submit">
+                <Button
+                  fullWidth
+                  variant="contained"
+                  onClick={(event) => handleSubmit(event)}
+                  type="submit"
+                >
                   Отправить
-                </button>
+                </Button>
               </>
             </form>
           </Box>

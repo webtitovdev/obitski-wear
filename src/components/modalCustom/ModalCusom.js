@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import { useGetDataQuery } from "../../api/api";
-import Spinner from "./../spinner/Spinner";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
@@ -10,28 +9,28 @@ import TextField from "@mui/material/TextField";
 import Container from "@mui/material/Container";
 import { login } from "../../slice/loginSlice";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { isLoadingSpinner } from "./../../services/isLoadingSpinner";
 
 const ModalCusom = ({ open, handleClose }) => {
-  const { data, isLoading } = useGetDataQuery("loginData");
+  const { data = [], isLoading } = useGetDataQuery("loginData");
+  const [loginValue, setLoginValue] = useState({ login: "", password: "" });
   const dispatch = useDispatch();
-  if (isLoading) {
-    return <Spinner />;
-  }
+  const navigate = useNavigate();
+  isLoadingSpinner(isLoading);
   const handleSubmit = (event) => {
     event.preventDefault();
-    const dataForm = new FormData(event.currentTarget);
-    const dataLogin = dataForm.get("email");
-    const dataPassword = dataForm.get("password");
-    if (data.login !== dataLogin) {
-      console.log("Не верный логин или пароль");
-    }
-    if (data.password !== dataPassword) {
-      console.log("Не верный логин или пароль");
-    }
-    if (data.login === dataLogin && data.password === dataPassword) {
+    if (
+      loginValue.login === data[0].name &&
+      loginValue.password === data[0].text
+    ) {
+      console.log("Успешный вход");
       dispatch(login());
-      console.log("Верно ");
+      setLoginValue({ ...loginValue, login: "", password: "" });
       handleClose();
+      navigate("controlpanel");
+    } else {
+      console.log("Ошибка логина или пароля");
     }
   };
   const style = {
@@ -75,24 +74,23 @@ const ModalCusom = ({ open, handleClose }) => {
                 sx={{ mt: 1 }}
               >
                 <TextField
-                  margin="normal"
-                  required
-                  fullWidth
-                  id="email"
+                  sx={{ m: 2 }}
                   label="Login"
                   name="email"
-                  autoComplete="email"
                   autoFocus
+                  value={loginValue.login}
+                  onChange={(e) =>
+                    setLoginValue({ ...loginValue, login: e.target.value })
+                  }
                 />
                 <TextField
-                  margin="normal"
-                  required
-                  fullWidth
-                  name="password"
+                  sx={{ m: 2 }}
                   label="Password"
                   type="password"
-                  id="password"
-                  autoComplete="current-password"
+                  value={loginValue.password}
+                  onChange={(e) =>
+                    setLoginValue({ ...loginValue, password: e.target.value })
+                  }
                 />
                 <Button
                   type="submit"

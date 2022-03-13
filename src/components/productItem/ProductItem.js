@@ -1,15 +1,13 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useGetDataQuery } from "../../api/api";
-
+import { priceCorrector } from "../../services/priceCorrector.js";
+import { isLoadingSpinner } from "./../../services/isLoadingSpinner";
 import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
-import Spinner from "../spinner/Spinner";
 const ProductItem = () => {
-  const { data, isLoading } = useGetDataQuery("productItem");
+  const { data = [], isLoading } = useGetDataQuery("productItem");
   const { id } = useParams();
-  if (isLoading) {
-    return <Spinner />;
-  }
+  isLoadingSpinner(isLoading);
   let getDataByid;
   getDataByid = data.filter((item) => item.id === id);
   const { src, name, price, about, size } = getDataByid[0];
@@ -29,7 +27,9 @@ const ProductItem = () => {
             <div className="col-lg-5">
               <div className="product_content">
                 <div className="product_name">{name}</div>
-                <div className="product_price">{price} &#8381;</div>
+                <div className="product_price">
+                  {priceCorrector(price)} &#8381;
+                </div>
                 <div className="product_text">
                   <p>{about}</p>
                 </div>

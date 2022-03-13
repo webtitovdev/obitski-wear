@@ -1,26 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { useGetDataQuery } from "../../api/api";
-import bagShopW from "../../images/shopping-bag-white.svg";
+import { useDispatch, useSelector } from "react-redux";
 import { addToFavorit, addToCart } from "../../slice/productSlice";
-import Spinner from "../spinner/Spinner";
+import bagShopW from "../../images/shopping-bag-white.svg";
+import { priceCorrector } from "../../services/priceCorrector";
 
 const SingleProduct = ({ image, name, price, id, notCategories }) => {
-  const dispatch = useDispatch();
-  const { data, isLoading } = useGetDataQuery("productItem");
-  if (isLoading) {
-    return <Spinner />;
-  }
-  const link = notCategories ? `categories/products/${id}` : `products/${id}`;
+  const { favorits, cartItem } = useSelector((state) => state.productFunc);
 
+  const dispatch = useDispatch();
+
+  const link = notCategories ? `categories/products/${id}` : `products/${id}`;
   const onHandleFavorit = (id) => {
-    const favoritItem = data.filter((item) => item.id === id);
-    dispatch(addToFavorit(favoritItem[0]));
+    let ifArr = favorits.filter((item) => item === id);
+    if (ifArr.length <= 0) {
+      dispatch(addToFavorit(id));
+    } else {
+      throw new Error("Уже есть в избранном");
+    }
   };
   const onHandleCartItems = (id) => {
-    const cartItems = data.filter((item) => item.id === id);
-    dispatch(addToCart(cartItems[0]));
+    let ifArr = cartItem.filter((item) => item === id);
+    if (ifArr.length <= 0) {
+      dispatch(addToCart(id));
+    } else {
+      throw new Error("Уже есть в корзине");
+    }
   };
 
   return (
@@ -33,7 +38,7 @@ const SingleProduct = ({ image, name, price, id, notCategories }) => {
           <div className="product_name">
             <Link to={link}>{name}</Link>
           </div>
-          <div className="product_price">{price} &#8381;</div>
+          <div className="product_price">{priceCorrector(price)} &#8381;</div>
         </div>
         <div className="product_options">
           <div

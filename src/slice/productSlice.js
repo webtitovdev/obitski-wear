@@ -18,14 +18,10 @@ const Product = createSlice({
       state.cartItem = [];
     },
     deletFromCart: (state, action) => {
-      state.cartItem = state.cartItem.filter(
-        (item) => item.id !== action.payload
-      );
+      state.cartItem = state.cartItem.filter((item) => item !== action.payload);
     },
     deletFromFavorits: (state, action) => {
-      state.favorits = state.favorits.filter(
-        (item) => item.id !== action.payload
-      );
+      state.favorits = state.favorits.filter((item) => item !== action.payload);
     },
   },
 });

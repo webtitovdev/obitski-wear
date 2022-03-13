@@ -1,15 +1,11 @@
 import React from "react";
-
 import { useGetDataQuery } from "../../api/api";
-
 import NewsItem from "../newsItem/NewsItem";
-import Spinner from "../spinner/Spinner";
+import { isLoadingSpinner } from "./../../services/isLoadingSpinner";
 
 const NewsList = () => {
-  const { data, isLoading } = useGetDataQuery("news");
-  if (isLoading) {
-    return <Spinner />;
-  }
+  const { data = [], isLoading } = useGetDataQuery("news");
+  isLoadingSpinner(isLoading);
   const render = data.map((item, i) => (
     <NewsItem
       index={i}

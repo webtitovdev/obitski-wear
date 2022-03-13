@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggle } from "../../slice/toggleSlice";
 import { NavLink, Link } from "react-router-dom";
-
 import MobileMenu from "../mobileMenu/MobileMenu";
 import ModalCustom from "../modalCustom/ModalCusom";
 import shopingBag from "../../images/shopping-bag.svg";
@@ -10,10 +9,15 @@ import magnifyingGlass from "../../images/magnifying-glass.svg";
 import star from "../../images/star.svg";
 import avatar from "../../images/avatar.svg";
 import gear from "../../images/gear.png";
+import { useGetDataQuery } from "../../api/api";
+import { isLoadingSpinner } from "../../services/isLoadingSpinner";
 
 const Navbar = () => {
+  const { data = [], isLoading } = useGetDataQuery("productItem");
+  isLoadingSpinner(isLoading);
   const { cartItem, favorits } = useSelector((state) => state.productFunc);
   const [open, setOpen] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
   const { auth } = useSelector((state) => state.login);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -26,6 +30,21 @@ const Navbar = () => {
     </Link>
   );
   const renderPanelLink = auth ? panelLink : null;
+  const filteredItems = data.filter(
+    (item) => item.name.indexOf(searchValue) > -1
+  );
+
+  let searchRender = filteredItems.map((item) => {
+    if (searchValue) {
+      return (
+        <ul key={item.id}>
+          <li>
+            <Link to={`/categories/products/${item.id}`}>{item.name}</Link>
+          </li>
+        </ul>
+      );
+    }
+  });
   const onHandleClick = () => {
     dispatch(toggle());
   };
@@ -75,20 +94,21 @@ const Navbar = () => {
           </nav>
           <div className="header_content ml-auto">
             <div className="search header_search">
-              <form action="#">
-                <input
-                  type="search"
-                  className="search_input"
-                  required="required"
-                />
-                <button
-                  type="submit"
-                  id="search_button"
-                  className="search_button"
-                >
-                  <img src={magnifyingGlass} alt="" />
-                </button>
-              </form>
+              <input
+                type="search"
+                className="search_input"
+                required="required"
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
+              />
+              <button
+                type="submit"
+                id="search_button"
+                className="search_button"
+              >
+                <img src={magnifyingGlass} alt="" />
+              </button>
+              <div className="serach_value">{searchRender}</div>
             </div>
             <div className="shopping">
               <Link to="cart">

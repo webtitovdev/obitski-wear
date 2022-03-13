@@ -4,7 +4,6 @@ import BreadCrumbs from "./../components/breadCrumbs/BreadCrumbs";
 import ProductSort from "./../components/productSort/ProductSort";
 import LeftSideBar from "./../components/leftSideBar/LeftSideBar";
 import ProductList from "./../components/productList/ProductList";
-import RightSideBar from "../components/rightSideBar/RightSideBar";
 
 const Categories = () => {
   return (
@@ -18,7 +17,6 @@ const Categories = () => {
           </div>
           <ProductList />
         </div>
-        <RightSideBar />
       </div>
     </>
   );
