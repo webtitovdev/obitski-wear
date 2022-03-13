@@ -1,7 +1,7 @@
 import React from "react";
 
-const SideBarSection = ({ lable, onHandleFilters }) => {
-  return <li onClick={onHandleFilters}>{lable}</li>;
+const SideBarSection = ({ name, onHandleFilters }) => {
+  return <li onClick={onHandleFilters}>{name}</li>;
 };
 
 export default SideBarSection;

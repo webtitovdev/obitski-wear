@@ -8,6 +8,7 @@ const ProductList = () => {
   const { categories, ofset, orderBy } = useSelector(
     (state) => state.categoriesfilter.filters
   );
+  console.log(categories);
   const { data = [], isLoading } = useGetDataQuery("productItem");
   isLoadingSpinner(isLoading);
   let dataCopied = [...data];
