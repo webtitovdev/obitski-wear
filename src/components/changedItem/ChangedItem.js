@@ -1,9 +1,12 @@
-import React, { useState } from "react";
-import Button from "@mui/material/Button";
-import ChangeItemForm from "../changeItemForm/ChangeItemForm";
-import trash from "../../images/trash.png";
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+
+import Button from "@mui/material/Button";
+import ChangeItemForm from "../changeItemForm/ChangeItemForm";
+
+import trash from "../../images/trash.png";
+
 import { priceCorrector } from "./../../services/priceCorrector";
 const ChangedItem = ({
   getDataParams,
@@ -21,9 +24,11 @@ const ChangedItem = ({
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
   if (!isAuth) {
     return "Авторизируйтесь";
   }
+
   return (
     <div className="cart_products">
       <ul>

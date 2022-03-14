@@ -1,10 +1,13 @@
-import React from "react";
 import { useLocation } from "react-router-dom";
+
 import cart from "../../images/cart.jpg";
+
 const BreadCrumbs = () => {
   const { pathname } = useLocation();
+
   let title;
   let subTitle;
+
   switch (pathname) {
     case "/categories":
       title = "Каталог";

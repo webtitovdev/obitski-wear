@@ -1,16 +1,18 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggle } from "../../slice/toggleSlice";
 import { NavLink, Link } from "react-router-dom";
+
 import MobileMenu from "../mobileMenu/MobileMenu";
 import ModalCustom from "../modalCustom/ModalCusom";
+import { useGetDataQuery } from "../../api/api";
+import Spinner from "../spinner/Spinner";
+
 import shopingBag from "../../images/shopping-bag.svg";
 import magnifyingGlass from "../../images/magnifying-glass.svg";
 import star from "../../images/star.svg";
 import avatar from "../../images/avatar.svg";
 import gear from "../../images/gear.png";
-import { useGetDataQuery } from "../../api/api";
-import Spinner from "../spinner/Spinner";
 
 const Navbar = () => {
   const { data = [], isLoading } = useGetDataQuery("productItem");
@@ -18,12 +20,15 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const { auth } = useSelector((state) => state.login);
+
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const dispatch = useDispatch();
+
   if (isLoading) {
     return <Spinner />;
   }
+
   const panelLink = (
     <Link to="controlpanel">
       <div className="gear">
@@ -31,25 +36,27 @@ const Navbar = () => {
       </div>
     </Link>
   );
+
   const renderPanelLink = auth ? panelLink : null;
   const filteredItems = data.filter(
     (item) => item.name.indexOf(searchValue) > -1
   );
 
-  let searchRender = filteredItems.map((item) => {
-    if (searchValue) {
-      return (
-        <ul key={item.id}>
-          <li>
-            <Link to={`/categories/products/${item.id}`}>{item.name}</Link>
-          </li>
-        </ul>
-      );
-    }
-  });
+  let searchRender;
+  if (searchValue) {
+    searchRender = filteredItems.map((item) => (
+      <ul key={item.id}>
+        <li>
+          <Link to={`/categories/products/${item.id}`}>{item.name}</Link>
+        </li>
+      </ul>
+    ));
+  }
+
   const onHandleClick = () => {
     dispatch(toggle());
   };
+
   let cartNumRender;
   if (cartItem.length !== 0) {
     cartNumRender = (
@@ -60,6 +67,7 @@ const Navbar = () => {
       </div>
     );
   }
+
   let favoritsNumRender;
   if (favorits.length !== 0) {
     favoritsNumRender = (

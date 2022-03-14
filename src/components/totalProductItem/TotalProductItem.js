@@ -1,13 +1,15 @@
-import React from "react";
-import trash from "../../images/trash.png";
 import { useDispatch } from "react-redux";
 import { deletFromCart, deletFromFavorits } from "../../slice/productSlice";
 import { priceCorrector } from "./../../services/priceCorrector";
 import { Link } from "react-router-dom";
+
 import Spinner from "../spinner/Spinner";
+
+import trash from "../../images/trash.png";
 
 const TotalProductItem = ({ image, name, price, id, title, isLoading }) => {
   const dispatch = useDispatch();
+
   if (isLoading) {
     <Spinner />;
   }

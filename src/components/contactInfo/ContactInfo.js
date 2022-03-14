@@ -1,5 +1,3 @@
-import React from "react";
-
 import contactInfo1 from "../../images/contact_info_1.png";
 import contactInfo2 from "../../images/contact_info_2.png";
 import contactInfo3 from "../../images/contact_info_3.png";

@@ -1,5 +1,3 @@
-import React from "react";
-
 const SideBarSection = ({ name, onHandleFilters }) => {
   return <li onClick={onHandleFilters}>{name}</li>;
 };

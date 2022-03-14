@@ -1,5 +1,3 @@
-import React from "react";
-
 import HeadSlider from "../components/headSlider/HeadSlider";
 import PromoDiscountList from "../components/promoDiscountList/PromoDiscountList";
 import PreviewShopList from "../components/previewShopList/PreviewShopList";

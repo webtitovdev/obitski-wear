@@ -1,14 +1,14 @@
-import React from "react";
-
 import { useDispatch } from "react-redux";
 import { useGetDataQuery } from "../../api/api";
-import SideBarSection from "../sideBarSection/SideBarSection";
 import { clearFilter } from "../../slice/filtersSLice";
+
+import SideBarSection from "../sideBarSection/SideBarSection";
 import Spinner from "../spinner/Spinner";
 
 const CategoriesSideBar = ({ onCategoriesFilter }) => {
   const dispatch = useDispatch();
   const { data = [], isLoading } = useGetDataQuery("categories");
+
   if (isLoading) {
     return <Spinner />;
   }
@@ -21,6 +21,7 @@ const CategoriesSideBar = ({ onCategoriesFilter }) => {
       name={item.name}
     />
   ));
+
   return (
     <>
       <div className="sidebar_section">

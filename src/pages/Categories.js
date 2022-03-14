@@ -1,5 +1,3 @@
-import React from "react";
-
 import BreadCrumbs from "../components/breadCrumbs/breadCrumbs";
 import ProductSort from "../components/productSort/ProductSort";
 import LeftSideBar from "../components/leftSideBar/LeftSideBar";

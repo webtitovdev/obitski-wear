@@ -1,9 +1,11 @@
-import React from "react";
 import { useSelector } from "react-redux";
+
 import BreadCrumbs from "../components/breadCrumbs/breadCrumbs";
 import TotalProductList from "../components/totalProductList/TotalProductList";
+
 const Favorit = () => {
   const { favorits } = useSelector((state) => state.productFunc);
+
   return (
     <>
       <BreadCrumbs />

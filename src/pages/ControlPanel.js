@@ -1,10 +1,11 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import Button from "@mui/material/Button";
 import { useSelector } from "react-redux";
+
+import Button from "@mui/material/Button";
 
 const ControlPanel = () => {
   const { auth } = useSelector((state) => state.login);
+
   const component = (
     <>
       <Button variant="contained">
@@ -29,6 +30,7 @@ const ControlPanel = () => {
   );
 
   const render = auth ? component : "Авторизируйтесь";
+
   return (
     <div className="container h-50vh">
       <div className="mt-200">

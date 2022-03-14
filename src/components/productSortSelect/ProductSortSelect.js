@@ -1,5 +1,3 @@
-import React from "react";
-
 const ProductSortSelect = ({ title, button, sortf }) => {
   const buttonRender = button.map((item, i) => {
     return (

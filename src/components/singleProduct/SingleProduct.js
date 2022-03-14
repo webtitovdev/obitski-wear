@@ -1,15 +1,16 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToFavorit, addToCart } from "../../slice/productSlice";
 import { priceCorrector } from "../../services/priceCorrector";
+
 import bagShopW from "../../images/shopping-bag-white.svg";
+
 const SingleProduct = ({ image, name, price, id, notCategories }) => {
   const { favorits, cartItem } = useSelector((state) => state.productFunc);
-
   const dispatch = useDispatch();
 
   const link = notCategories ? `categories/products/${id}` : `products/${id}`;
+
   const onHandleFavorit = (id) => {
     let ifArr = favorits.filter((item) => item === id);
     if (ifArr.length <= 0) {
@@ -18,6 +19,7 @@ const SingleProduct = ({ image, name, price, id, notCategories }) => {
       throw new Error("Уже есть в избранном");
     }
   };
+
   const onHandleCartItems = (id) => {
     let ifArr = cartItem.filter((item) => item === id);
     if (ifArr.length <= 0) {

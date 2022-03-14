@@ -1,16 +1,19 @@
-import React from "react";
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useGetDataQuery, useDeleteByIdMutation } from "../api/api";
+
 import ChangedItem from "../components/changedItem/ChangedItem";
 import AddNewItemForm from "../components/addNewItemForm/AddNewItemForm";
 import Spinner from "../components/spinner/Spinner";
+
 import Button from "@mui/material/Button";
 
 const ChangeItem = () => {
   const { pathname } = useLocation();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
   let getDataParams;
   switch (pathname) {
     case "/controlpanel/headsliderimagechange":
@@ -34,11 +37,14 @@ const ChangeItem = () => {
     default:
       console.log("Default");
   }
+
   const [deleteById] = useDeleteByIdMutation();
   const { data, isLoading } = useGetDataQuery(getDataParams);
+
   if (isLoading) {
     return <Spinner />;
   }
+
   const render = data.map(
     (item) =>
       item && (
@@ -57,6 +63,7 @@ const ChangeItem = () => {
         />
       )
   );
+
   return (
     <>
       <div className="container">

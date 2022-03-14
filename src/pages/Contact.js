@@ -1,5 +1,3 @@
-import React from "react";
-
 import BreadCrumbs from "../components/breadCrumbs/breadCrumbs";
 import ContactInfo from "../components/contactInfo/ContactInfo";
 

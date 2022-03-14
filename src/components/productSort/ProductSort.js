@@ -1,4 +1,3 @@
-import React from "react";
 import ProductSortSelect from "../productSortSelect/ProductSortSelect";
 
 import { useSelector } from "react-redux";
@@ -12,6 +11,7 @@ const ProductSort = () => {
   const orderBy = useSelector(
     (state) => state.categoriesfilter.filters.orderBy
   );
+
   const orderByArr = [
     {
       title: "По популярности",
@@ -31,6 +31,7 @@ const ProductSort = () => {
       ],
     },
   ];
+
   const ofsetArr = [
     {
       title: "Показывает ",
@@ -50,6 +51,7 @@ const ProductSort = () => {
       ],
     },
   ];
+
   let orderByName;
   if (orderBy === "ByPopular") {
     orderByName = "По популярности";
@@ -76,6 +78,7 @@ const ProductSort = () => {
       sortf={(orderBy) => orderByFiltering(orderBy)}
     />
   ));
+
   const renderOfset = ofsetArr.map((item, i) => (
     <ProductSortSelect
       title={ofset === "" ? `${item.title} 12` : `Показывает   ${ofset}`}
@@ -84,6 +87,7 @@ const ProductSort = () => {
       sortf={(ofset) => ofsetFiltering(ofset)}
     />
   ));
+
   return (
     <div className="col-12">
       <div className="product_sorting clearfix">

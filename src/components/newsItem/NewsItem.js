@@ -1,5 +1,3 @@
-import React from "react";
-
 const NewsItem = ({ image, title, text, link, index, discount }) => {
   return (
     <div className={`extra_promo extra_promo_${index + 1}`}>

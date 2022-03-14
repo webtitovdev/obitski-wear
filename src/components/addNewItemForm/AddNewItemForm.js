@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { useAddNewItemMutation } from "../../api/api";
+
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import TextField from "@mui/material/TextField";
@@ -9,7 +10,17 @@ import Button from "@mui/material/Button";
 const AddNewItemForm = ({ props, open, handleClose, getDataParams }) => {
   const [inputValue, setInputValue] = useState({});
   const [addNewItem] = useAddNewItemMutation();
+
+  useEffect(() => {
+    let data = {};
+    for (let i = 0; i < propsKeys.length; i++) {
+      data[propsKeys[i]] = "";
+    }
+    setInputValue(data);
+  }, []);
+
   const propsKeys = Object.keys(props);
+
   const style = {
     position: "absolute",
     top: "50%",
@@ -21,17 +32,6 @@ const AddNewItemForm = ({ props, open, handleClose, getDataParams }) => {
     boxShadow: 24,
     p: 4,
   };
-  useEffect(() => {
-    intValue();
-  }, []);
-
-  const intValue = () => {
-    let data = {};
-    for (let i = 0; i < propsKeys.length; i++) {
-      data[propsKeys[i]] = "";
-    }
-    setInputValue(data);
-  };
 
   const handleChangeInput = (e) => {
     setInputValue({
@@ -39,6 +39,7 @@ const AddNewItemForm = ({ props, open, handleClose, getDataParams }) => {
       [e.target.name]: e.target.value,
     });
   };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     let data = {

@@ -1,7 +1,7 @@
-import React from "react";
 import { useDispatch } from "react-redux";
-import CategoriesSideBar from "./../categoriesSideBar/CategoriesSideBar";
 import { categoriesfiltered } from "../../slice/filtersSLice";
+
+import CategoriesSideBar from "./../categoriesSideBar/CategoriesSideBar";
 
 const LeftSideBar = () => {
   const dispatch = useDispatch();

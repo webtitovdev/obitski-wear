@@ -1,5 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useGetDataQuery } from "../../api/api";
+import { login } from "../../slice/loginSlice";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
@@ -7,19 +11,19 @@ import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import Container from "@mui/material/Container";
-import { login } from "../../slice/loginSlice";
-import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
 import Spinner from "../spinner/Spinner";
 
 const ModalCusom = ({ open, handleClose }) => {
   const { data = [], isLoading } = useGetDataQuery("loginData");
   const [loginValue, setLoginValue] = useState({ login: "", password: "" });
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
   if (isLoading) {
     return <Spinner />;
   }
+
   const handleSubmit = (event) => {
     event.preventDefault();
     if (
@@ -35,6 +39,7 @@ const ModalCusom = ({ open, handleClose }) => {
       console.log("Ошибка логина или пароля");
     }
   };
+
   const style = {
     position: "absolute",
     top: "50%",

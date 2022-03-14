@@ -1,20 +1,24 @@
-import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { useGetDataQuery } from "../../api/api";
-import { priceCorrector } from "../../services/priceCorrector.js";
-import Spinner from "../spinner/Spinner";
-import BreadCrumbs from "../breadCrumbs/breadCrumbs";
+import { priceCorrector } from "../../services/priceCorrector";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../slice/productSlice";
+
+import Spinner from "../spinner/Spinner";
+import BreadCrumbs from "../breadCrumbs/breadCrumbs";
+
 const ProductItem = () => {
   const dispatch = useDispatch();
   const { data = [], isLoading } = useGetDataQuery("productItem");
   const { id } = useParams();
+
   if (isLoading) {
     return <Spinner />;
   }
+
   const getItemByid = data.filter((item) => item.id === id);
   const { src, name, price, about, size } = getItemByid[0];
+
   return (
     <>
       <BreadCrumbs />

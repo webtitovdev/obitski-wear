@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -7,23 +7,26 @@ import magnifyingGlass from "../../images/magnifying-glass.svg";
 const MobileMenu = ({ onHandleClick, data }) => {
   const [searchValue, setSearchValue] = useState("");
   const stateValueToggle = useSelector((state) => state.toggler);
+
   const styleActiveAndNot = stateValueToggle
     ? "menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400 active"
     : "menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400";
+
   const filteredItems = data.filter(
     (item) => item.name.indexOf(searchValue) > -1
   );
-  let searchRender = filteredItems.map((item) => ({
-    if(searchValue) {
-      return (
-        <ul key={item.id}>
-          <li>
-            <Link to={`/categories/products/${item.id}`}>{item.name}</Link>
-          </li>
-        </ul>
-      );
-    },
-  }));
+
+  let searchRender;
+  if (searchValue) {
+    searchRender = filteredItems.map((item) => (
+      <ul key={item.id}>
+        <li>
+          <Link to={`/categories/products/${item.id}`}>{item.name}</Link>
+        </li>
+      </ul>
+    ));
+  }
+
   return (
     <div className={styleActiveAndNot}>
       <div onClick={() => onHandleClick()} className="menu_close_container">

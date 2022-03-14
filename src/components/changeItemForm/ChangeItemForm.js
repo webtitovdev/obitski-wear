@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useUpdateByIdMutation } from "../../api/api";
+
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
@@ -10,7 +10,16 @@ const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
   const [updateById] = useUpdateByIdMutation();
   const [inputValue, setInputValue] = useState({});
 
+  useEffect(() => {
+    let data = {};
+    for (let i = 0; i < propsKeys.length; i++) {
+      data[propsKeys[i]] = "";
+    }
+    setInputValue(data);
+  }, []);
+
   const propsKeys = Object.keys(props);
+
   const style = {
     position: "absolute",
     top: "50%",
@@ -22,19 +31,14 @@ const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
     boxShadow: 24,
     p: 4,
   };
-  useEffect(() => {
-    let data = {};
-    for (let i = 0; i < propsKeys.length; i++) {
-      data[propsKeys[i]] = "";
-    }
-    setInputValue(data);
-  }, []);
+
   const handleChangeInput = (e) => {
     setInputValue({
       ...inputValue,
       [e.target.name]: e.target.value,
     });
   };
+
   const handleSubmit = async (id, event) => {
     event.preventDefault();
     let data = { ...inputValue, id: `${getDataParams}/${id}` };
@@ -45,6 +49,7 @@ const ChangeItemForm = ({ props, open, handleClose, id, getDataParams }) => {
     if (item === "id") {
       return null;
     }
+
     return (
       <TextField
         sx={{ width: "90%", m: 2 }}

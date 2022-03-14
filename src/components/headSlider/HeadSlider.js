@@ -4,6 +4,7 @@ import Spinner from "../spinner/Spinner";
 
 const HeadSlider = () => {
   const { data = [], isLoading } = useGetDataQuery("headSliderImages");
+
   if (isLoading) {
     return <Spinner />;
   }
