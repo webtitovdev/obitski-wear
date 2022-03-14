@@ -1,5 +1,4 @@
 import React from "react";
-import { useSelector } from "react-redux";
 
 import Breadcrumbs from "../components/breadCrumbs/BreadCrumbs";
 import TotalProductList from "../components/totalProductList/TotalProductList";

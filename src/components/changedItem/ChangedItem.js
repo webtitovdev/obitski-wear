@@ -4,6 +4,7 @@ import ChangeItemForm from "../changeItemForm/ChangeItemForm";
 import trash from "../../images/trash.png";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { priceCorrector } from "./../../services/priceCorrector";
 const ChangedItem = ({
   getDataParams,
   image,
@@ -33,7 +34,7 @@ const ChangedItem = ({
 
           <div className="cart_product_name">
             <Link to={`../categories/products/${id}`}>
-              {name} {procent} {price} {text}
+              {name} {procent} {priceCorrector(price)} {text}
             </Link>
           </div>
           <div className="cart_product_info ml-auto">

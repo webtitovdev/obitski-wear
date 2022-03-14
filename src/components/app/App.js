@@ -30,7 +30,6 @@ const App = () => {
         <Route path="controlpanel/productitemchange" element={<ChangeItem />} />
         <Route path="controlpanel/contactinfochange" element={<ChangeItem />} />
         <Route path="controlpanel/newschange" element={<ChangeItem />} />
-        <Route path="controlpanel/faqchange" element={<ChangeItem />} />
         <Route path="controlpanel/categorieschange" element={<ChangeItem />} />
         <Route path="controlpanel/logindatachange" element={<ChangeItem />} />
         <Route path="categories" element={<Categories />} />

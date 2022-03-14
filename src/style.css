@@ -1581,11 +1581,17 @@ h5,
 .serach_value {
   position: absolute;
   background: white;
-  min-width: 400px;
+  min-width: 100%;
 }
 .serach_value ul li {
   text-align: center;
   padding: 10px;
+}
+.serach_value ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #937c6f;
+  text-transform: Capitalized;
 }
 .product_fav,
 .sidebar_title,

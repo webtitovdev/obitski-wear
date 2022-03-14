@@ -85,9 +85,6 @@ const Navbar = () => {
                 <NavLink to="categories">Каталог</NavLink>
               </li>
               <li>
-                <NavLink to="/">Доставка</NavLink>
-              </li>
-              <li>
                 <NavLink to="contact">Контакты</NavLink>
               </li>
             </ul>
@@ -143,7 +140,7 @@ const Navbar = () => {
         </div>
       </header>
       <ModalCustom open={open} handleClose={handleClose} />
-      <MobileMenu onHandleClick={onHandleClick} />
+      <MobileMenu data={data} onHandleClick={onHandleClick} />
     </>
   );
 };

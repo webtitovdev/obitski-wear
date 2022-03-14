@@ -3,6 +3,7 @@ import trash from "../../images/trash.png";
 import { useDispatch } from "react-redux";
 import { deletFromCart, deletFromFavorits } from "../../slice/productSlice";
 import { isLoadingSpinner } from "./../../services/isLoadingSpinner";
+import { priceCorrector } from "./../../services/priceCorrector";
 
 const TotalProductItem = ({ image, name, price, id, title, isLoading }) => {
   const dispatch = useDispatch();
@@ -29,7 +30,9 @@ const TotalProductItem = ({ image, name, price, id, title, isLoading }) => {
           </div>
           <div className="cart_product_info ml-auto">
             <div className="cart_product_info_inner d-flex flex-row align-items-center justify-content-md-end justify-content-start">
-              <div className="cart_product_price">{price} &#8381;</div>
+              <div className="cart_product_price">
+                {priceCorrector(price)} &#8381;
+              </div>
               <div className="cart_product_button">
                 <button
                   onClick={() => fndelete(id)}

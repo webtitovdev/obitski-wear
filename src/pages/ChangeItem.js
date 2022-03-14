@@ -25,9 +25,6 @@ const ChangeItem = () => {
     case "/controlpanel/newschange":
       getDataParams = "news";
       break;
-    case "/controlpanel/faqchange":
-      getDataParams = "faq";
-      break;
     case "/controlpanel/categorieschange":
       getDataParams = "categories";
       break;

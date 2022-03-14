@@ -20,9 +20,6 @@ const ControlPanel = () => {
         <Link to="newschange">Новости</Link>
       </Button>
       <Button variant="contained">
-        <Link to="faqchange">FAQ</Link>
-      </Button>
-      <Button variant="contained">
         <Link to="categorieschange">Категории</Link>
       </Button>
       <Button variant="contained">
