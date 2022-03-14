@@ -42,16 +42,13 @@ const Navbar = () => {
     (item) => item.name.indexOf(searchValue) > -1
   );
 
-  let searchRender;
-  if (searchValue) {
-    searchRender = filteredItems.map((item) => (
-      <ul key={item.id}>
-        <li>
-          <Link to={`/categories/products/${item.id}`}>{item.name}</Link>
-        </li>
-      </ul>
-    ));
-  }
+  let searchRender = filteredItems.map((item) => (
+    <ul key={item.id}>
+      <li>
+        <Link to={`/categories/products/${item.id}`}>{item.name}</Link>
+      </li>
+    </ul>
+  ));
 
   const onHandleClick = () => {
     dispatch(toggle());
@@ -115,7 +112,9 @@ const Navbar = () => {
               >
                 <img src={magnifyingGlass} alt="" />
               </button>
-              <div className="serach_value">{searchRender}</div>
+              {searchValue && (
+                <div className="serach_value">{searchRender}</div>
+              )}
             </div>
             <div className="shopping">
               <Link to="cart">
