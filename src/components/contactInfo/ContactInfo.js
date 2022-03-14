@@ -38,35 +38,6 @@ const ContactInfo = () => {
                   </li>
                 </ul>
               </div>
-              <div className="contact_info_social">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-pinterest" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-reddit-alien" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
           <div className="col-lg-7">
