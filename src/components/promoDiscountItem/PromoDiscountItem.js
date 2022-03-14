@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "react-router-dom";
 
 const PromoDiscountItem = ({ image, title, subtitle }) => {
   return (
@@ -12,7 +13,7 @@ const PromoDiscountItem = ({ image, title, subtitle }) => {
           </div>
         </div>
         <div className="promo_link">
-          <a href="#">КУПИТЬ СЕЙЧАС</a>
+          <Link to={"categories"}>КУПИТЬ СЕЙЧАС</Link>
         </div>
       </div>
     </div>

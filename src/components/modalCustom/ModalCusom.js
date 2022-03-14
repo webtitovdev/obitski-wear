@@ -10,14 +10,16 @@ import Container from "@mui/material/Container";
 import { login } from "../../slice/loginSlice";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { isLoadingSpinner } from "./../../services/isLoadingSpinner";
+import Spinner from "../components/spinner/Spinner";
 
 const ModalCusom = ({ open, handleClose }) => {
   const { data = [], isLoading } = useGetDataQuery("loginData");
   const [loginValue, setLoginValue] = useState({ login: "", password: "" });
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  isLoadingSpinner(isLoading);
+  if (isLoading) {
+    return <Spinner />;
+  }
   const handleSubmit = (event) => {
     event.preventDefault();
     if (

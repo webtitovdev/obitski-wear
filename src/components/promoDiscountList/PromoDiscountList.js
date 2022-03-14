@@ -2,11 +2,13 @@ import React from "react";
 
 import { useGetDataQuery } from "../../api/api";
 import PromoDiscountItem from "../promoDiscountItem/PromoDiscountItem";
-import { isLoadingSpinner } from "./../../services/isLoadingSpinner";
+import Spinner from "../components/spinner/Spinner";
 
 const PromoDiscountList = () => {
   const { data = [], isLoading } = useGetDataQuery("promoDiscount");
-  isLoadingSpinner(isLoading);
+  if (isLoading) {
+    return <Spinner />;
+  }
   const render = data.map((item, i) => (
     <PromoDiscountItem
       key={i}

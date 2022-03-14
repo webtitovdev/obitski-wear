@@ -10,11 +10,10 @@ import star from "../../images/star.svg";
 import avatar from "../../images/avatar.svg";
 import gear from "../../images/gear.png";
 import { useGetDataQuery } from "../../api/api";
-import { isLoadingSpinner } from "../../services/isLoadingSpinner";
+import Spinner from "../components/spinner/Spinner";
 
 const Navbar = () => {
   const { data = [], isLoading } = useGetDataQuery("productItem");
-  isLoadingSpinner(isLoading);
   const { cartItem, favorits } = useSelector((state) => state.productFunc);
   const [open, setOpen] = useState(false);
   const [searchValue, setSearchValue] = useState("");
@@ -22,6 +21,9 @@ const Navbar = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const dispatch = useDispatch();
+  if (isLoading) {
+    return <Spinner />;
+  }
   const panelLink = (
     <Link to="controlpanel">
       <div className="gear">

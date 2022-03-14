@@ -1,11 +1,13 @@
 import React from "react";
 import { useGetDataQuery } from "../../api/api";
 import SingleProduct from "../singleProduct/SingleProduct";
-import { isLoadingSpinner } from "./../../services/isLoadingSpinner";
+import Spinner from "../components/spinner/Spinner";
 
 const PreviewShopList = () => {
   const { data = [], isLoading } = useGetDataQuery("productItem");
-  isLoadingSpinner(isLoading);
+  if (isLoading) {
+    return <Spinner />;
+  }
   const itemArray = data.map((item) => (
     <SingleProduct
       id={item.id}

@@ -1,16 +1,20 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useGetDataQuery } from "../../api/api";
 import { priceCorrector } from "../../services/priceCorrector.js";
-import { isLoadingSpinner } from "./../../services/isLoadingSpinner";
+import Spinner from "../spinner/Spinner";
 import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../slice/productSlice";
 const ProductItem = () => {
+  const dispatch = useDispatch();
   const { data = [], isLoading } = useGetDataQuery("productItem");
   const { id } = useParams();
-  isLoadingSpinner(isLoading);
-  let getDataByid;
-  getDataByid = data.filter((item) => item.id === id);
-  const { src, name, price, about, size } = getDataByid[0];
+  if (isLoading) {
+    return <Spinner />;
+  }
+  const getItemByid = data.filter((item) => item.id === id);
+  const { src, name, price, about, size } = getItemByid[0];
   return (
     <>
       <BreadCrumbs />
@@ -33,42 +37,20 @@ const ProductItem = () => {
                 <div className="product_text">
                   <p>{about}</p>
                 </div>
-                <div className="product_item_quantity_container">
-                  <span>Количество</span>
-                  <div className="product_quantity clearfix">
-                    <input id="quantity_input" type="text" pattern="[0-9]*" />
-                    <div className="quantity_buttons">
-                      <div
-                        id="quantity_inc_button"
-                        className="quantity_inc quantity_control"
-                      >
-                        <i className="fa fa-caret-up" aria-hidden="true"></i>
-                      </div>
-                      <div
-                        id="quantity_dec_button"
-                        className="quantity_dec quantity_control"
-                      >
-                        <i className="fa fa-caret-down" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
                 <div className="product_item_size_container">
-                  <span>Размер</span>
+                  <span>Размеры</span>
                   <div className="product_size">
                     <ul className="d-flex flex-row align-items-start justify-content-start">
                       <li>
-                        <input
-                          type="radio"
-                          name="product_radio"
-                          className="regular_radio radio_1"
-                        />
-                        <label>{size}</label>
+                        <div className="size_productitem">{size}</div>
                       </li>
                     </ul>
                   </div>
                   <div className="button cart_button_item">
-                    <a href="#">add to cart</a>
+                    <Link onClick={() => dispatch(addToCart(id))} to={"/cart"}>
+                      Добавить в корзину
+                    </Link>
                   </div>
                 </div>
               </div>

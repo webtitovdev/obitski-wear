@@ -1983,6 +1983,13 @@ h5,
 .accordion {
   padding-left: 33px;
 }
+.cart_button_item a {
+  line-height: 22px;
+}
+.size_productitem {
+  font-size: 18px;
+  margin-left: 25px;
+}
 .accordion div {
   max-width: 90%;
 }

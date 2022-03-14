@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useGetDataQuery } from "../../api/api";
 import SingleProduct from "../singleProduct/SingleProduct";
-import { isLoadingSpinner } from "./../../services/isLoadingSpinner";
+import Spinner from "../components/spinner/Spinner";
 
 const ProductList = () => {
   const { categories, ofset, orderBy } = useSelector(
@@ -10,7 +10,9 @@ const ProductList = () => {
   );
   console.log(categories);
   const { data = [], isLoading } = useGetDataQuery("productItem");
-  isLoadingSpinner(isLoading);
+  if (isLoading) {
+    return <Spinner />;
+  }
   let dataCopied = [...data];
 
   switch (orderBy) {

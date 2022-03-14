@@ -1,11 +1,12 @@
 import { useGetDataQuery } from "../../api/api";
 import ImageGallery from "react-image-gallery";
-import { isLoadingSpinner } from "../../services/isLoadingSpinner";
+import Spinner from "../components/spinner/Spinner";
 
 const HeadSlider = () => {
   const { data = [], isLoading } = useGetDataQuery("headSliderImages");
-
-  isLoadingSpinner(isLoading);
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   return (
     <div className="home">

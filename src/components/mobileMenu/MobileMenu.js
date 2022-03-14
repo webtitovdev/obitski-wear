@@ -13,8 +13,8 @@ const MobileMenu = ({ onHandleClick, data }) => {
   const filteredItems = data.filter(
     (item) => item.name.indexOf(searchValue) > -1
   );
-  let searchRender = filteredItems.map((item) => {
-    if (searchValue) {
+  let searchRender = filteredItems.map((item) => ({
+    if(searchValue) {
       return (
         <ul key={item.id}>
           <li>
@@ -22,8 +22,8 @@ const MobileMenu = ({ onHandleClick, data }) => {
           </li>
         </ul>
       );
-    }
-  });
+    },
+  }));
   return (
     <div className={styleActiveAndNot}>
       <div onClick={() => onHandleClick()} className="menu_close_container">

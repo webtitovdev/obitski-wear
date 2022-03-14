@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { deletFromCart, deletFromFavorits } from "../../slice/productSlice";
 import { isLoadingSpinner } from "./../../services/isLoadingSpinner";
 import { priceCorrector } from "./../../services/priceCorrector";
+import { Link } from "react-router-dom";
 
 const TotalProductItem = ({ image, name, price, id, title, isLoading }) => {
   const dispatch = useDispatch();
@@ -26,7 +27,7 @@ const TotalProductItem = ({ image, name, price, id, title, isLoading }) => {
           </div>
 
           <div className="cart_product_name">
-            <a href="product.html">{name}</a>
+            <Link to={`/categories/products/${id}`}>{name}</Link>
           </div>
           <div className="cart_product_info ml-auto">
             <div className="cart_product_info_inner d-flex flex-row align-items-center justify-content-md-end justify-content-start">
