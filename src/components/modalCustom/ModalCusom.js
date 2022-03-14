@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import { login } from "../../slice/loginSlice";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import Spinner from "../components/spinner/Spinner";
+import Spinner from "../spinner/Spinner";
 
 const ModalCusom = ({ open, handleClose }) => {
   const { data = [], isLoading } = useGetDataQuery("loginData");

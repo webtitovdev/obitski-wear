@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { useGetDataQuery } from "../../api/api";
 import { priceCorrector } from "../../services/priceCorrector.js";
 import Spinner from "../spinner/Spinner";
-import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
+import BreadCrumbs from "../breadCrumbs/breadCrumbs";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../slice/productSlice";
 const ProductItem = () => {

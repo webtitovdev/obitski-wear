@@ -1,7 +1,7 @@
 import React from "react";
 import { useGetDataQuery } from "../../api/api";
 import NewsItem from "../newsItem/NewsItem";
-import Spinner from "../components/spinner/Spinner";
+import Spinner from "../spinner/Spinner";
 
 const NewsList = () => {
   const { data = [], isLoading } = useGetDataQuery("news");

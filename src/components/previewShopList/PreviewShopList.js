@@ -1,7 +1,7 @@
 import React from "react";
 import { useGetDataQuery } from "../../api/api";
 import SingleProduct from "../singleProduct/SingleProduct";
-import Spinner from "../components/spinner/Spinner";
+import Spinner from "../spinner/Spinner";
 
 const PreviewShopList = () => {
   const { data = [], isLoading } = useGetDataQuery("productItem");

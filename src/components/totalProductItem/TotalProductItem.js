@@ -2,13 +2,15 @@ import React from "react";
 import trash from "../../images/trash.png";
 import { useDispatch } from "react-redux";
 import { deletFromCart, deletFromFavorits } from "../../slice/productSlice";
-import { isLoadingSpinner } from "./../../services/isLoadingSpinner";
 import { priceCorrector } from "./../../services/priceCorrector";
 import { Link } from "react-router-dom";
+import Spinner from "../spinner/Spinner";
 
 const TotalProductItem = ({ image, name, price, id, title, isLoading }) => {
   const dispatch = useDispatch();
-  isLoadingSpinner(isLoading);
+  if (isLoading) {
+    <Spinner />;
+  }
 
   const fndelete = (id) => {
     if (title === "Корзина") {

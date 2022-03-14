@@ -10,7 +10,7 @@ import star from "../../images/star.svg";
 import avatar from "../../images/avatar.svg";
 import gear from "../../images/gear.png";
 import { useGetDataQuery } from "../../api/api";
-import Spinner from "../components/spinner/Spinner";
+import Spinner from "../spinner/Spinner";
 
 const Navbar = () => {
   const { data = [], isLoading } = useGetDataQuery("productItem");

@@ -1,9 +1,9 @@
 import React from "react";
 
-import BreadCrumbs from "./../components/breadCrumbs/BreadCrumbs";
-import ProductSort from "./../components/productSort/ProductSort";
-import LeftSideBar from "./../components/leftSideBar/LeftSideBar";
-import ProductList from "./../components/productList/ProductList";
+import BreadCrumbs from "../components/breadCrumbs/breadCrumbs";
+import ProductSort from "../components/productSort/ProductSort";
+import LeftSideBar from "../components/leftSideBar/LeftSideBar";
+import ProductList from "../components/productList/ProductList";
 
 const Categories = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Breadcrumbs from "../components/breadCrumbs/BreadCrumbs";
+import Breadcrumbs from "../components/breadCrumbs/breadCrumbs";
 import TotalProductList from "../components/totalProductList/TotalProductList";
 
 const Cart = () => {

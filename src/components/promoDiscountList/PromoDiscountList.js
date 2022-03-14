@@ -2,7 +2,7 @@ import React from "react";
 
 import { useGetDataQuery } from "../../api/api";
 import PromoDiscountItem from "../promoDiscountItem/PromoDiscountItem";
-import Spinner from "../components/spinner/Spinner";
+import Spinner from "../spinner/Spinner";
 
 const PromoDiscountList = () => {
   const { data = [], isLoading } = useGetDataQuery("promoDiscount");

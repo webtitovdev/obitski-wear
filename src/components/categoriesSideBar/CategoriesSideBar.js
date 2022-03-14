@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { useGetDataQuery } from "../../api/api";
 import SideBarSection from "../sideBarSection/SideBarSection";
 import { clearFilter } from "../../slice/filtersSLice";
-import Spinner from "../components/spinner/Spinner";
+import Spinner from "../spinner/Spinner";
 
 const CategoriesSideBar = ({ onCategoriesFilter }) => {
   const dispatch = useDispatch();

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { clearedCart, clearedFavorit } from "../../slice/productSlice";
 import { useGetDataQuery } from "../../api/api";
 import TotalProductItem from "../totalProductItem/TotalProductItem";
-import Spinner from "../components/spinner/Spinner";
+import Spinner from "../spinner/Spinner";
 
 const TotalProductList = ({ title }) => {
   const { data = [], isLoading } = useGetDataQuery("productItem");
