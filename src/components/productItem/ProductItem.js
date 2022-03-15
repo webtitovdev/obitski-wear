@@ -1,68 +1,62 @@
-import { Link, useParams } from "react-router-dom";
-import { useGetDataQuery } from "../../api/api";
+import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { addToFavorit, addToCart } from "../../slice/productSlice";
 import { priceCorrector } from "../../services/priceCorrector";
-import { useDispatch } from "react-redux";
-import { addToCart } from "../../slice/productSlice";
 
-import Spinner from "../spinner/Spinner";
-import BreadCrumbs from "../breadCrumbs/breadCrumbs";
+import bagShopW from "../../images/shopping-bag-white.svg";
 
-const ProductItem = () => {
+const ProductItem = ({ image, name, price, id, notCategories }) => {
+  const { favorits, cartItem } = useSelector((state) => state.productFunc);
   const dispatch = useDispatch();
-  const { data = [], isLoading } = useGetDataQuery("productItem");
-  const { id } = useParams();
 
-  if (isLoading) {
-    return <Spinner />;
-  }
+  const link = notCategories ? `categories/products/${id}` : `products/${id}`;
 
-  const getItemByid = data.filter((item) => item.id === id);
-  const { src, name, price, about, size } = getItemByid[0];
+  const onHandleFavorit = (id) => {
+    let ifArr = favorits.filter((item) => item === id);
+    if (ifArr.length <= 0) {
+      dispatch(addToFavorit(id));
+    } else {
+      throw new Error("Уже есть в избранном");
+    }
+  };
+
+  const onHandleCartItems = (id) => {
+    let ifArr = cartItem.filter((item) => item === id);
+    if (ifArr.length <= 0) {
+      dispatch(addToCart(id));
+    } else {
+      throw new Error("Уже есть в корзине");
+    }
+  };
 
   return (
-    <>
-      <BreadCrumbs />
-      <div className="product_item">
-        <div className="container">
-          <div className="row product_row">
-            <div className="col-lg-7">
-              <div className="product_image">
-                <div className="product_image_large">
-                  <img src={src} alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-5">
-              <div className="product_content">
-                <div className="product_name">{name}</div>
-                <div className="product_price">
-                  {priceCorrector(price)} &#8381;
-                </div>
-                <div className="product_text">
-                  <p>{about}</p>
-                </div>
-
-                <div className="product_item_size_container">
-                  <span>Размеры</span>
-                  <div className="product_size">
-                    <ul className="d-flex flex-row align-items-start justify-content-start">
-                      <li>
-                        <div className="size_productitem">{size}</div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="button cart_button_item">
-                    <Link onClick={() => dispatch(addToCart(id))} to={"/cart"}>
-                      Добавить в корзину
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div className="product">
+      <div className="product_image">
+        <img src={image} alt="" />
+      </div>
+      <div className="product_content clearfix">
+        <div className="product_info">
+          <div className="product_name">
+            <Link to={link}>{name}</Link>
+          </div>
+          <div className="product_price">{priceCorrector(price)} &#8381;</div>
+        </div>
+        <div className="product_options">
+          <div
+            onClick={() => onHandleCartItems(id)}
+            className="product_buy product_option"
+          >
+            <img src={bagShopW} alt="Добавить в корзину" />
+          </div>
+          <div
+            onClick={() => onHandleFavorit(id)}
+            className="product_fav product_option"
+          >
+            +
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

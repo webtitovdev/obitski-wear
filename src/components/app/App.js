@@ -2,15 +2,15 @@ import { Routes, Route } from "react-router-dom";
 
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
-import Categories from "./../../pages/Categories";
-import Main from "./../../pages/Main";
-import Cart from "./../../pages/Cart";
-import Contact from "./../../pages/Contact";
-import Favorit from "./../../pages/Favorit";
-import Product from "./../../pages/Product";
-import ControlPanel from "./../../pages/ControlPanel";
-import ChangeItem from "./../../pages/ChangeItem";
-import Error404 from "./../../pages/Error404";
+import Categories from "./../../pages/Categories/Categories";
+import Main from "./../../pages/Main/Main";
+import Cart from "./../../pages/Cart/Cart";
+import Contact from "./../../pages/Contact/Contact";
+import Favorit from "./../../pages/Favorit/Favorit";
+import SingleProduct from "./../../pages/SingleProduct/SingleProduct";
+import ControlPanel from "./../../pages/ControlPanel/ControlPanel";
+import ChangeItem from "./../../pages/ChangeItem/ChangeItem";
+import Error404 from "./../../pages/Error404/Error404";
 
 const App = () => {
   return (
@@ -33,7 +33,7 @@ const App = () => {
         <Route path="controlpanel/categorieschange" element={<ChangeItem />} />
         <Route path="controlpanel/logindatachange" element={<ChangeItem />} />
         <Route path="categories" element={<Categories />} />
-        <Route path="categories/products/:id" element={<Product />} />
+        <Route path="categories/products/:id" element={<SingleProduct />} />
         <Route path="cart" element={<Cart />} />
         <Route path="contact" element={<Contact />} />
         <Route path="favorit" element={<Favorit />} />
