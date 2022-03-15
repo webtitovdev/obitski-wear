@@ -129,11 +129,11 @@ const Navbar = () => {
                   {favoritsNumRender}
                 </div>
               </Link>
-              <a onClick={handleOpen}>
+              <Link to="controlpanel" onClick={handleOpen}>
                 <div className="avatar">
                   <img src={avatar} alt="" />
                 </div>
-              </a>
+              </Link>
               {renderPanelLink}
             </div>
           </div>
