@@ -19,15 +19,15 @@ const ChangeItemForm = ({
   const [addNewItem] = useAddNewItemMutation();
   const [inputValue, setInputValue] = useState({});
 
+  const propsKeys = Object.keys(props);
+
   useEffect(() => {
     let data = {};
     for (let i = 0; i < propsKeys.length; i++) {
       data[propsKeys[i]] = "";
     }
     setInputValue(data);
-  }, []);
-
-  const propsKeys = Object.keys(props);
+  }, [propsKeys]);
 
   const style = {
     position: "absolute",

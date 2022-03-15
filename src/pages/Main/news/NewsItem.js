@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const NewsItem = ({ image, title, text, link, index, discount }) => {
   return (
     <div className={`extra_promo extra_promo_${index + 1}`}>
@@ -17,7 +19,7 @@ const NewsItem = ({ image, title, text, link, index, discount }) => {
         <div className={`extra_${index + 1}_title`}>{title}</div>
         <div className={`extra_${index + 1}_text`}>{text}</div>
         <div className={`button extra_${index + 1}_button`}>
-          <a href="checkout.html">Посмотреть</a>
+          <Link to="categories">Посмотреть</Link>
         </div>
       </div>
     </div>

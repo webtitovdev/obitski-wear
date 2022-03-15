@@ -4,8 +4,8 @@ import { priceCorrector } from "../../services/priceCorrector";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../slice/productSlice";
 
-import Spinner from "../../components/spinner/Spinner";
-import BreadCrumbs from "../../components/breadCrumbs/breadCrumbs";
+import Spinner from "../../components/Spinner";
+import BreadCrumbs from "../../components/breadCrumbs";
 
 const SingleProduct = () => {
   const dispatch = useDispatch();

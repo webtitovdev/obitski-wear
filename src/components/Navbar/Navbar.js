@@ -3,10 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggle } from "../../slice/toggleSlice";
 import { NavLink, Link } from "react-router-dom";
 
-import MobileMenu from "../mobileMenu/MobileMenu";
-import ModalCustom from "../modalCustom/ModalCusom";
+import MobileMenu from "./MobileMenu";
+import LoginModal from "./LoginModal";
 import { useGetDataQuery } from "../../api/api";
-import Spinner from "../spinner/Spinner";
+import Spinner from "../Spinner";
 
 import shopingBag from "../../images/shopping-bag.svg";
 import magnifyingGlass from "../../images/magnifying-glass.svg";
@@ -148,7 +148,7 @@ const Navbar = () => {
           </div>
         </div>
       </header>
-      <ModalCustom open={open} handleClose={handleClose} />
+      <LoginModal open={open} handleClose={handleClose} />
       <MobileMenu data={data} onHandleClick={onHandleClick} />
     </>
   );

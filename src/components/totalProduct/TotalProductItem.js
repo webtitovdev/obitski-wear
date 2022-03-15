@@ -3,7 +3,7 @@ import { deletFromCart, deletFromFavorits } from "../../slice/productSlice";
 import { priceCorrector } from "../../services/priceCorrector";
 import { Link } from "react-router-dom";
 
-import Spinner from "../spinner/Spinner";
+import Spinner from "../Spinner";
 
 import trash from "../../images/trash.png";
 

@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 import { useGetDataQuery } from "../../api/api";
 
-import SingleProduct from "../../components/productItem/ProductItem";
-import Spinner from "../../components/spinner/Spinner";
+import SingleProduct from "../../components/ProductItem";
+import Spinner from "../../components/Spinner";
 
 const ProductList = () => {
   const { categories, ofset, orderBy } = useSelector(

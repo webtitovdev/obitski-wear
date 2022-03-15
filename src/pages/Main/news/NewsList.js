@@ -1,7 +1,7 @@
 import { useGetDataQuery } from "../../../api/api";
 
 import NewsItem from "./NewsItem";
-import Spinner from "../../../components/spinner/Spinner";
+import Spinner from "../../../components/Spinner";
 
 const NewsList = () => {
   const { data = [], isLoading } = useGetDataQuery("news");

@@ -1,4 +1,4 @@
-import Breadcrumbs from "../../components/breadCrumbs/breadCrumbs";
+import Breadcrumbs from "../../components/breadCrumbs";
 import TotalProductList from "../../components/totalProduct/TotalProductList";
 
 const Cart = () => {

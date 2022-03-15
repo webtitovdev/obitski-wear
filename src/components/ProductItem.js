@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { addToFavorit, addToCart } from "../../slice/productSlice";
-import { priceCorrector } from "../../services/priceCorrector";
+import { addToFavorit, addToCart } from "../slice/productSlice";
+import { priceCorrector } from "../services/priceCorrector";
 
-import bagShopW from "../../images/shopping-bag-white.svg";
+import bagShopW from "../images/shopping-bag-white.svg";
 
 const ProductItem = ({ image, name, price, id, notCategories }) => {
   const { favorits, cartItem } = useSelector((state) => state.productFunc);

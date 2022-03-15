@@ -1,4 +1,4 @@
-import BreadCrumbs from "../../components/breadCrumbs/breadCrumbs";
+import BreadCrumbs from "../../components/breadCrumbs";
 import LeftSideBar from "./LeftSideBar/LeftSideBar";
 import ProductSort from "./ProductSort/ProductSort";
 import ProductList from "./ProductList";

@@ -8,7 +8,7 @@ const Error404 = () => {
       <div className="title">Страница не найдена</div>
       <div className="subtitle"> Скорее всего вы попали сюда не случайно</div>
       <div className="subtext">
-        Больше разработок можно посмотреть
+        Больше проектов можно посмотреть
         <Link to="https://github.com/webtitovdev">тут</Link>
       </div>
     </div>

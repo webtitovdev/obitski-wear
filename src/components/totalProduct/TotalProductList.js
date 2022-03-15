@@ -1,9 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { clearedCart, clearedFavorit } from "../../slice/productSlice";
 import { useGetDataQuery } from "../../api/api";
 
 import TotalProductItem from "./TotalProductItem";
-import Spinner from "../spinner/Spinner";
+import Spinner from "../Spinner";
 
 const TotalProductList = ({ title }) => {
   const { data = [], isLoading } = useGetDataQuery("productItem");
@@ -74,8 +75,11 @@ const TotalProductList = ({ title }) => {
             >
               Очистить
             </button>
-            <button className="button_update cart_button_2 ml-md-auto">
-              Продолжить покупки
+            <button
+              to="categories"
+              className="button_update cart_button_2 ml-md-auto"
+            >
+              <Link to="categories">Продолжить покупки</Link>
             </button>
             <button className="button_update cart_button_2 ml-md-auto">
               Купить

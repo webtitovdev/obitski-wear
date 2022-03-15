@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { BrowserRouter } from "react-router-dom";
 import App from "./components/app/App";
-import Spinner from "./components/spinner/Spinner";
+import Spinner from "./components/Spinner";
 
 import { store, persistor } from "./store/index";
 

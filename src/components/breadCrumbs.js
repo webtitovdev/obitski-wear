@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 
-import cart from "../../images/cart.jpg";
+import cart from "../images/cart.jpg";
 
 const BreadCrumbs = () => {
   const { pathname } = useLocation();

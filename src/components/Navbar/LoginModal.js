@@ -11,9 +11,9 @@ import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import Container from "@mui/material/Container";
-import Spinner from "../spinner/Spinner";
+import Spinner from "../Spinner";
 
-const ModalCusom = ({ open, handleClose }) => {
+const LoginModal = ({ open, handleClose }) => {
   const { data = [], isLoading } = useGetDataQuery("loginData");
   const [loginValue, setLoginValue] = useState({ login: "", password: "" });
 
@@ -116,4 +116,4 @@ const ModalCusom = ({ open, handleClose }) => {
   );
 };
 
-export default ModalCusom;
+export default LoginModal;

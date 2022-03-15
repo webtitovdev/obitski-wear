@@ -1,6 +1,6 @@
 import { useGetDataQuery } from "../../api/api";
 import ImageGallery from "react-image-gallery";
-import Spinner from "../../components/spinner/Spinner";
+import Spinner from "../../components/Spinner";
 
 const HeadSlider = () => {
   const { data = [], isLoading } = useGetDataQuery("headSliderImages");

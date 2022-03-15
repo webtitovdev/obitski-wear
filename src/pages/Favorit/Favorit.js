@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 
-import BreadCrumbs from "../../components/breadCrumbs/breadCrumbs";
+import BreadCrumbs from "../../components/breadCrumbs";
 import TotalProductList from "../../components/totalProduct/TotalProductList";
 
 const Favorit = () => {

@@ -1,4 +1,4 @@
-import BreadCrumbs from "../../components/breadCrumbs/breadCrumbs";
+import BreadCrumbs from "../../components/breadCrumbs";
 import ContactInfo from "./ContactInfo";
 
 const Contact = () => {

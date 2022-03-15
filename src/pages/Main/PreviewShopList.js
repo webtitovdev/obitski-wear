@@ -1,6 +1,6 @@
 import { useGetDataQuery } from "../../api/api";
-import SingleProduct from "../../components/productItem/ProductItem";
-import Spinner from "../../components/spinner/Spinner";
+import SingleProduct from "../../components/ProductItem";
+import Spinner from "../../components/Spinner";
 
 const PreviewShopList = () => {
   const { data = [], isLoading } = useGetDataQuery("productItem");

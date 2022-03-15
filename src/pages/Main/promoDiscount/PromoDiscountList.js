@@ -1,7 +1,7 @@
 import { useGetDataQuery } from "../../../api/api";
 
 import PromoDiscountItem from "./PromoDiscountItem";
-import Spinner from "../../../components/spinner/Spinner";
+import Spinner from "../../../components/Spinner";
 
 const PromoDiscountList = () => {
   const { data = [], isLoading } = useGetDataQuery("promoDiscount");

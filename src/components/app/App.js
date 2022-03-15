@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "../navbar/Navbar";
-import Footer from "../footer/Footer";
+import Footer from "../Footer";
 import Categories from "./../../pages/Categories/Categories";
 import Main from "./../../pages/Main/Main";
 import Cart from "./../../pages/Cart/Cart";

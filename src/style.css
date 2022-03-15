@@ -2198,8 +2198,12 @@ h5,
   padding-left: 37px;
   padding-right: 37px;
 }
+.extra_2_price {
+  font-size: 30px;
+}
 .extra_2_title {
   transform: translateX(20px);
+  font-size: 24px;
 }
 .extra_2_center {
   font: 200px/0.75 "Lucida", serif;

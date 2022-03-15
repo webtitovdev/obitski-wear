@@ -4,7 +4,7 @@ import { useGetDataQuery, useDeleteByIdMutation } from "../../api/api";
 
 import ChangedItem from "./ChangedItem/ChangedItem";
 import ChangeItemForm from "./ChangeItemForm";
-import Spinner from "../../components/spinner/Spinner";
+import Spinner from "../../components/Spinner";
 
 import Button from "@mui/material/Button";
 
