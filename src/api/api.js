@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3001;
 export const crudApi = createApi({
   reducerPath: "crudApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: `http://localhost:${PORT}`,
+    baseUrl: `https://obitski.herokuapp.com:${PORT}`,
   }),
   tagTypes: ["data"],
   endpoints: (builder) => ({
