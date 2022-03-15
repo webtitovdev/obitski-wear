@@ -7,7 +7,6 @@ import ChangeItemForm from "../changeItemForm/ChangeItemForm";
 
 import trash from "../../images/trash.png";
 
-import { priceCorrector } from "./../../services/priceCorrector";
 const ChangedItem = ({
   getDataParams,
   image,
@@ -39,7 +38,7 @@ const ChangedItem = ({
 
           <div className="cart_product_name">
             <Link to={`../categories/products/${id}`}>
-              {name} {procent} {priceCorrector(price)} {text}
+              {name} {procent} {price} {text}
             </Link>
           </div>
           <div className="cart_product_info ml-auto">

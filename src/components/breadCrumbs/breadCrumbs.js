@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import cart from "../../images/cart.jpg";
 
@@ -31,7 +31,7 @@ const BreadCrumbs = () => {
   }
 
   return (
-    <div className="home">
+    <div className="home_breadcrumbs">
       <div
         className="home_background parallax-window"
         style={{
@@ -50,7 +50,7 @@ const BreadCrumbs = () => {
                 <div className="breadcrumbs">
                   <ul>
                     <li>
-                      <a href="index.html">{subTitle}</a>
+                      <Link to={`${pathname}`}>{subTitle}</Link>
                     </li>
                   </ul>
                 </div>

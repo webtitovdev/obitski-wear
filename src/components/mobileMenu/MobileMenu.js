@@ -36,7 +36,9 @@ const MobileMenu = ({ onHandleClick, data }) => {
         </div>
       </div>
       <div className="logo menu_mm">
-        <Link to="/">Obitski</Link>
+        <Link onClick={() => onHandleClick()} to="/">
+          Obitski
+        </Link>
       </div>
       <div className="search">
         <form action="#">
@@ -60,16 +62,24 @@ const MobileMenu = ({ onHandleClick, data }) => {
       <nav className="menu_nav">
         <ul className="menu_mm">
           <li className="menu_mm">
-            <Link to="/">ГЛАВНАЯ</Link>
+            <Link onClick={() => onHandleClick()} to="/">
+              ГЛАВНАЯ
+            </Link>
           </li>
           <li className="menu_mm">
-            <Link to="categories">КАТАЛОГ</Link>
+            <Link onClick={() => onHandleClick()} to="categories">
+              КАТАЛОГ
+            </Link>
           </li>
           <li className="menu_mm">
-            <Link to="/">ДОСТАВКА</Link>
+            <Link onClick={() => onHandleClick()} to="/">
+              ДОСТАВКА
+            </Link>
           </li>
           <li className="menu_mm">
-            <Link to="contacts">КОНТАКТЫ</Link>
+            <Link onClick={() => onHandleClick()} to="contacts">
+              КОНТАКТЫ
+            </Link>
           </li>
         </ul>
       </nav>
