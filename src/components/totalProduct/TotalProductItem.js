@@ -7,7 +7,8 @@ import Spinner from "../Spinner";
 
 import trash from "../../images/trash.png";
 
-const TotalProductItem = ({ image, name, price, id, title, isLoading }) => {
+const TotalProductItem = ({ props, title, isLoading }) => {
+  const { id, price, src, name } = props;
   const dispatch = useDispatch();
 
   if (isLoading) {
@@ -27,7 +28,7 @@ const TotalProductItem = ({ image, name, price, id, title, isLoading }) => {
       <ul>
         <li className=" cart_product d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-start">
           <div className="cart_product_image">
-            <img src={image} alt="" />
+            <img src={src} alt="" />
           </div>
 
           <div className="cart_product_name">

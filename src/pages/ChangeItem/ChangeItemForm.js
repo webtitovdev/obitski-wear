@@ -11,10 +11,10 @@ const ChangeItemForm = ({
   props,
   open,
   handleClose,
-  id,
   getDataParams,
   change,
 }) => {
+  const { id } = props;
   const [updateById] = useUpdateByIdMutation();
   const [addNewItem] = useAddNewItemMutation();
   const [inputValue, setInputValue] = useState({});
@@ -27,7 +27,7 @@ const ChangeItemForm = ({
       data[propsKeys[i]] = "";
     }
     setInputValue(data);
-  }, [propsKeys]);
+  }, []);
 
   const style = {
     position: "absolute",

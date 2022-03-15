@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useGetDataQuery, useDeleteByIdMutation } from "../../api/api";
 
-import ChangedItem from "./ChangedItem/ChangedItem";
+import ChangedItem from "./ChangedItem";
 import ChangeItemForm from "./ChangeItemForm";
 import Spinner from "../../components/Spinner";
 
@@ -51,13 +51,6 @@ const ChangeItem = () => {
         <ChangedItem
           getDataParams={getDataParams}
           key={item.id}
-          id={item.id}
-          name={item.name}
-          image={item.src}
-          procent={item.procent}
-          price={item.price}
-          title={item.title}
-          text={item.text}
           props={item}
           deleteById={(id) => deleteById(`${getDataParams}/${id}`).unwrap()}
         />

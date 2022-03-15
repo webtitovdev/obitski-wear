@@ -11,12 +11,7 @@ const PromoDiscountList = () => {
   }
 
   const render = data.map((item, i) => (
-    <PromoDiscountItem
-      key={i}
-      image={item.src}
-      subtitle={item.procent}
-      title={item.name}
-    />
+    <PromoDiscountItem key={i} props={item} />
   ));
 
   return (

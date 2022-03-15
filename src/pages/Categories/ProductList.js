@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { useGetDataQuery } from "../../api/api";
 
-import SingleProduct from "../../components/ProductItem";
+import ProductItem from "../../components/ProductItem";
 import Spinner from "../../components/Spinner";
 
 const ProductList = () => {
@@ -35,13 +35,7 @@ const ProductList = () => {
   }
 
   const render = dataCopied.map((item) => (
-    <SingleProduct
-      key={item.id}
-      image={item.src}
-      name={item.name}
-      price={item.price}
-      id={item.id}
-    />
+    <ProductItem key={item.id} props={item} />
   ));
 
   return (

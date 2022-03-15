@@ -5,7 +5,8 @@ import { priceCorrector } from "../services/priceCorrector";
 
 import bagShopW from "../images/shopping-bag-white.svg";
 
-const ProductItem = ({ image, name, price, id, notCategories }) => {
+const ProductItem = ({ props, notCategories }) => {
+  const { src, name, price, id } = props;
   const { favorits, cartItem } = useSelector((state) => state.productFunc);
   const dispatch = useDispatch();
 
@@ -32,7 +33,7 @@ const ProductItem = ({ image, name, price, id, notCategories }) => {
   return (
     <div className="product">
       <div className="product_image">
-        <img src={image} alt="" />
+        <img src={src} alt="" />
       </div>
       <div className="product_content clearfix">
         <div className="product_info">

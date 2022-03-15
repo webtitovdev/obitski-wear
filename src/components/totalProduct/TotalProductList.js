@@ -28,17 +28,15 @@ const TotalProductList = ({ title }) => {
     }
   }
 
-  const renderItem = renderItems.map((item, i) => (
+  const renderItem = renderItems.map((item) => (
     <TotalProductItem
       isLoading={isLoading}
-      key={i}
-      id={item.id}
-      name={item.name}
-      price={item.price}
-      image={item.src}
+      key={item.id}
+      props={item}
       title={title}
     />
   ));
+  const sellItems = renderItems.map((item) => item.name).join(" ,");
 
   const cartOrFavorit = title === "Корзина" ? emptyCart : emptyFavorite;
   const render = renderItems.length === 0 ? cartOrFavorit : renderItem;
@@ -79,10 +77,16 @@ const TotalProductList = ({ title }) => {
               to="categories"
               className="button_update cart_button_2 ml-md-auto"
             >
-              <Link to="categories">Продолжить покупки</Link>
+              <Link to="/categories">Продолжить покупки</Link>
             </button>
             <button className="button_update cart_button_2 ml-md-auto">
-              Купить
+              <a
+                href={`https://wa.me/+79515284271?text=Добрый день, интересуют товары: ${sellItems}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Купить
+              </a>
             </button>
           </div>
         </div>

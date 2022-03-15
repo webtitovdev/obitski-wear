@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { BrowserRouter } from "react-router-dom";
+
+import ScrollToTop from "./services/ScrollToTop";
 import App from "./components/app/App";
 import Spinner from "./components/Spinner";
 
@@ -15,6 +17,7 @@ ReactDOM.render(
     <Provider store={store}>
       <PersistGate loading={<Spinner />} persistor={persistor}>
         <BrowserRouter>
+          <ScrollToTop />
           <App />
         </BrowserRouter>
       </PersistGate>

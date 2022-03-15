@@ -11,15 +11,7 @@ const NewsList = () => {
   }
 
   const render = data.map((item, i) => (
-    <NewsItem
-      index={i}
-      key={item.id}
-      image={item.src}
-      title={item.name}
-      text={item.text}
-      link={item.link}
-      discount={item.procent}
-    />
+    <NewsItem index={i} key={item.id} props={item} />
   ));
 
   return <div className="extra clearfix">{render}</div>;

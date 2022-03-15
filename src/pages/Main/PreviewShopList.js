@@ -1,5 +1,5 @@
 import { useGetDataQuery } from "../../api/api";
-import SingleProduct from "../../components/ProductItem";
+import ProductItem from "../../components/ProductItem";
 import Spinner from "../../components/Spinner";
 
 const PreviewShopList = () => {
@@ -10,14 +10,7 @@ const PreviewShopList = () => {
   }
 
   const itemArray = data.map((item) => (
-    <SingleProduct
-      id={item.id}
-      key={item.id}
-      image={item.src}
-      name={item.name}
-      price={item.price}
-      notCategories={true}
-    />
+    <ProductItem key={item.id} props={item} notCategories={true} />
   ));
 
   return (
