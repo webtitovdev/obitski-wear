@@ -18,9 +18,6 @@ const LoginModal = ({ open, handleClose }) => {
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  if (!isLoading) {
-    throw Error("Ошибка");
-  }
 
   if (isLoading) {
     return <Spinner />;
