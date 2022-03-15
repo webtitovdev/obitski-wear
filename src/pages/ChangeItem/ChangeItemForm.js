@@ -22,12 +22,16 @@ const ChangeItemForm = ({
   const propsKeys = Object.keys(props);
 
   useEffect(() => {
+    setStateValue();
+  }, []);
+
+  const setStateValue = () => {
     let data = {};
     for (let i = 0; i < propsKeys.length; i++) {
       data[propsKeys[i]] = "";
     }
     setInputValue(data);
-  }, []);
+  };
 
   const style = {
     position: "absolute",
@@ -63,6 +67,8 @@ const ChangeItemForm = ({
     } else {
       addNewItem(data).unwrap();
     }
+    setStateValue();
+    handleClose();
   };
 
   const render = propsKeys.map(function (item, i) {
