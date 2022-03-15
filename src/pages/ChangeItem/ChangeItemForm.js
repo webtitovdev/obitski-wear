@@ -23,7 +23,7 @@ const ChangeItemForm = ({
 
   useEffect(() => {
     setStateValue();
-  }, []);
+  }, []); // eslint-disable-line
 
   const setStateValue = () => {
     let data = {};
