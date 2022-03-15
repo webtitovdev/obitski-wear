@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { ErrorBoundary } from "react-error-boundary";
 
 import Navbar from "../navbar/Navbar";
 import Footer from "../Footer";
@@ -11,11 +12,20 @@ import SingleProduct from "./../../pages/SingleProduct/SingleProduct";
 import ControlPanel from "./../../pages/ControlPanel/ControlPanel";
 import ChangeItem from "./../../pages/ChangeItem/ChangeItem";
 import Error404 from "./../../pages/Error404/Error404";
+import Spinner from "../Spinner";
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      <ErrorBoundary
+        fallbackRender={() => (
+          <div style={{ textAlign: "center", fontSize: "24px" }}>
+            Ошибка в данном компоненте , перезагрузите страницу
+          </div>
+        )}
+      >
+        <Navbar />
+      </ErrorBoundary>
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="controlpanel" element={<ControlPanel />} />
@@ -39,7 +49,9 @@ const App = () => {
         <Route path="favorit" element={<Favorit />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
-      <Footer />
+      <ErrorBoundary FallbackComponent={<Spinner />}>
+        <Footer />
+      </ErrorBoundary>
     </>
   );
 };

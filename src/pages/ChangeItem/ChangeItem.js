@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useGetDataQuery, useDeleteByIdMutation } from "../../api/api";
+import { ErrorBoundary } from "react-error-boundary";
 
 import ChangedItem from "./ChangedItem";
 import ChangeItemForm from "./ChangeItemForm";
@@ -58,7 +59,13 @@ const ChangeItem = () => {
   );
 
   return (
-    <>
+    <ErrorBoundary
+      fallbackRender={() => (
+        <div style={{ textAlign: "center", fontSize: "24px" }}>
+          Ошибка в данном компоненте , перезагрузите страницу
+        </div>
+      )}
+    >
       <div className="container">
         <div className="row mt-200">
           <div className="col">
@@ -94,7 +101,7 @@ const ChangeItem = () => {
           props={data[0]}
         />
       </div>
-    </>
+    </ErrorBoundary>
   );
 };
 

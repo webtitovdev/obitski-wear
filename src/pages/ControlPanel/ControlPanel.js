@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { ErrorBoundary } from "react-error-boundary";
 
 import Button from "@mui/material/Button";
 
@@ -32,11 +33,19 @@ const ControlPanel = () => {
   const render = auth ? component : "Авторизируйтесь";
 
   return (
-    <div className="container h-50vh">
-      <div className="mt-200">
-        <div className="list-button">{render}</div>
+    <ErrorBoundary
+      fallbackRender={() => (
+        <div style={{ textAlign: "center", fontSize: "24px" }}>
+          Ошибка в данном компоненте , перезагрузите страницу
+        </div>
+      )}
+    >
+      <div className="container h-50vh">
+        <div className="mt-200">
+          <div className="list-button">{render}</div>
+        </div>
       </div>
-    </div>
+    </ErrorBoundary>
   );
 };
 

@@ -3,6 +3,7 @@ import { useGetDataQuery } from "../../api/api";
 import { priceCorrector } from "../../services/priceCorrector";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../slice/productSlice";
+import { ErrorBoundary } from "react-error-boundary";
 
 import Spinner from "../../components/Spinner";
 import BreadCrumbs from "../../components/breadCrumbs";
@@ -20,7 +21,13 @@ const SingleProduct = () => {
   const { src, name, price, about, size } = getItemByid[0];
 
   return (
-    <>
+    <ErrorBoundary
+      fallbackRender={() => (
+        <div style={{ textAlign: "center", fontSize: "24px" }}>
+          Ошибка в данном компоненте , перезагрузите страницу
+        </div>
+      )}
+    >
       <BreadCrumbs />
       <div className="product_item">
         <div className="container">
@@ -62,7 +69,7 @@ const SingleProduct = () => {
           </div>
         </div>
       </div>
-    </>
+    </ErrorBoundary>
   );
 };
 
