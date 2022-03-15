@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const PORT = "3001";
+const PORT = process.env.PORT || 3001;
 
 export const crudApi = createApi({
   reducerPath: "crudApi",
