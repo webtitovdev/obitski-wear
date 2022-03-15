@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
-import magnifyingGlass from "../../images/magnifying-glass.svg";
+import magnifyingGlass from "../images/magnifying-glass.svg";
 
 const MobileMenu = ({ onHandleClick, data }) => {
   const [searchValue, setSearchValue] = useState("");
