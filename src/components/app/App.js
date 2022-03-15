@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
 
-import Navbar from "../navbar/Navbar";
+import Navbar from "../Navbar";
 import Footer from "../Footer";
 import Categories from "./../../pages/Categories/Categories";
 import Main from "./../../pages/Main/Main";

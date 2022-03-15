@@ -1,18 +1,18 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toggle } from "../../slice/toggleSlice";
+import { toggle } from "../slice/toggleSlice";
 import { NavLink, Link } from "react-router-dom";
 
-import MobileMenu from "./MobileMenu";
-import LoginModal from "./LoginModal";
-import { useGetDataQuery } from "../../api/api";
-import Spinner from "../Spinner";
+import MobileMenu from "./navbar/MobileMenu";
+import LoginModal from "./navbar/LoginModal";
+import { useGetDataQuery } from "../api/api";
+import Spinner from "./Spinner";
 
-import shopingBag from "../../images/shopping-bag.svg";
-import magnifyingGlass from "../../images/magnifying-glass.svg";
-import star from "../../images/star.svg";
-import avatar from "../../images/avatar.svg";
-import gear from "../../images/gear.png";
+import shopingBag from "../images/shopping-bag.svg";
+import magnifyingGlass from "../images/magnifying-glass.svg";
+import star from "../images/star.svg";
+import avatar from "../images/avatar.svg";
+import gear from "../images/gear.png";
 
 const Navbar = () => {
   const { data = [], isLoading } = useGetDataQuery("productItem");
