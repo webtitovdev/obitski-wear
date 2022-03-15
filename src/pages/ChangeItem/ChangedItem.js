@@ -8,7 +8,7 @@ import ChangeItemForm from "./ChangeItemForm";
 import trash from "../../images/trash.png";
 
 const ChangedItem = ({ getDataParams, deleteById, props }) => {
-  const { src, name, price, id, procent, text } = props;
+  const { src, name, price, id, procent, text, categories } = props;
   const isAuth = useSelector((state) => state.login.auth);
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
@@ -28,7 +28,7 @@ const ChangedItem = ({ getDataParams, deleteById, props }) => {
 
           <div className="cart_product_name">
             <Link to={`../categories/products/${id}`}>
-              {name} {procent} {price} {text}
+              {name} {procent} {price} {text} {categories}
             </Link>
           </div>
           <div className="cart_product_info ml-auto">

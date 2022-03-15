@@ -9,17 +9,15 @@ const NewsItem = ({ index, props }) => {
         style={{ backgroundImage: `url(${src})` }}
       ></div>
       <div
-        className={`extra_${
-          index + 1
-        }_content d-flex flex-column align-items-center justify-content-center text-center`}
+        className={`extra_1_content d-flex flex-column align-items-center justify-content-center text-center`}
       >
-        <div className={`extra_${index + 1}_price`}>
-          {procent || "30%"}
+        <div className={`extra_1_price`}>
+          {procent}
           <span></span>
         </div>
-        <div className={`extra_${index + 1}_title`}>{name}</div>
-        <div className={`extra_${index + 1}_text`}>{text}</div>
-        <div className={`button extra_${index + 1}_button`}>
+        <div className={`extra_1_title`}>{name}</div>
+        <div className={`extra_1_text`}>{text}</div>
+        <div className={`button extra_1_button`}>
           <Link to="categories">Посмотреть</Link>
         </div>
       </div>

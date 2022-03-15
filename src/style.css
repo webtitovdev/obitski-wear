@@ -2201,12 +2201,16 @@ h5,
   padding-left: 37px;
   padding-right: 37px;
 }
+.sidebar_section_content ul {
+  max-height: 188px;
+}
 .extra_2_price {
   font-size: 30px;
 }
 .extra_2_title {
   transform: translateX(20px);
-  font-size: 24px;
+  font-size: 40px;
+  color: White;
 }
 .extra_2_center {
   font: 200px/0.75 "Lucida", serif;
@@ -2288,6 +2292,7 @@ h5,
   margin-top: 95px;
 }
 .product_name {
+  max-width: 200px;
   font-size: 30px;
   line-height: 0.75;
 }
@@ -2710,6 +2715,7 @@ p a {
   .cart_products .cart_product_button {
     width: 20%;
   }
+
   .cart_products ul li {
     justify-content: center !important;
     align-items: center !important;

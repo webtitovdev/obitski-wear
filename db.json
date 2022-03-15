@@ -1,75 +1,136 @@
 {
   "headSliderImages": [
     {
-      "name": "Банер",
-      "original": "https://sun9-32.userapi.com/impg/Yq7CsaHdMHnF4BljzI9Bx8s6TWiYG8eOFm9zAw/h5n5yWkGKN4.jpg?size=1920x904&quality=95&sign=94ee88e8eee8ea0762eb06dd74c24320&type=album",
-      "src": "https://sun9-32.userapi.com/impg/Yq7CsaHdMHnF4BljzI9Bx8s6TWiYG8eOFm9zAw/h5n5yWkGKN4.jpg?size=1920x904&quality=95&sign=94ee88e8eee8ea0762eb06dd74c24320&type=album",
-      "id": 3
-    },
-    {
-      "name": "Тра та та ",
-      "original": "https://sun9-30.userapi.com/impg/-7oCpvo495c057EksQjH9JgyoUqiiXLN9WfgWw/-n70erptIAE.jpg?size=1620x2160&quality=95&sign=0b097fc7b1ffbce5b1753e36d872821e&type=album",
-      "src": "https://sun9-30.userapi.com/impg/-7oCpvo495c057EksQjH9JgyoUqiiXLN9WfgWw/-n70erptIAE.jpg?size=1620x2160&quality=95&sign=0b097fc7b1ffbce5b1753e36d872821e&type=album",
+      "name": "Патерн",
+      "original": "https://i.imgur.com/7nTYT3W.jpeg",
+      "src": "https://i.imgur.com/7nTYT3W.jpeg",
       "id": "d84c9def-6e8f-49ef-ae5e-7150b71ae633"
     }
   ],
   "promoDiscount": [
     {
-      "procent": "20",
-      "name": "На все",
-      "link": "",
-      "src": "2"
+      "procent": "3",
+      "name": "На все пиджаки",
+      "src": "https://i.imgur.com/wk1lNgA.jpg",
+      "id": "82f93226-0bb1-45bb-869a-9be53423a8ad"
+    },
+    {
+      "procent": "5",
+      "name": "На все юбки",
+      "src": "https://i.imgur.com/5fdG4Ba.jpg",
+      "id": "9c4b5d90-8543-458d-bf7a-98df66c209ed"
+    },
+    {
+      "procent": "7",
+      "name": "На пальто",
+      "src": "https://i.imgur.com/Xud3xy3.jpg",
+      "id": "062ad80b-1311-4033-af77-3bd13f629956"
     }
   ],
   "productItem": [
     {
-      "name": "Убка",
-      "about": "Убка",
-      "color": "Убка",
-      "categories": "Костюм",
-      "size": "Убка",
-      "composition": "Убка",
-      "src": "https://sun9-74.userapi.com/impg/xPwU9F1IUCTKoFdjbICM5X_JSGSSvGCpwP8Iig/R486ojS23tM.jpg?size=1620x2160&quality=95&sign=33dcd4f75f98f56fafba8fc0c32a35e6&type=album",
-      "price": "12500",
+      "name": "Двубортный пиджак",
+      "about": "Двубортный пиджак",
+      "color": "Черный, Коричневый",
+      "categories": "Пиджак",
+      "size": "XS-S, M-L",
+      "composition": "80% полиэстер, 17% вискоза, 3%эластан; подклада 100% полиэстер",
+      "src": "https://i.imgur.com/ArP19Ch.jpg",
+      "price": "7400",
       "id": "6"
     },
     {
-      "name": "Юбка",
-      "about": "Юбка",
-      "color": "Юбка",
-      "categories": "Юбка",
-      "size": "Юбка",
-      "composition": "Юбка",
-      "src": "https://sun9-74.userapi.com/impf/xPwU9F1IUCTKoFdjbICM5X_JSGSSvGCpwP8Iig/R486ojS23tM.jpg?size=1620x2160&quality=95&sign=33dcd4f75f98f56fafba8fc0c32a35e6&type=album",
-      "price": "Юбка",
+      "name": "Прямые брюки с защипами",
+      "about": "Прямые брюки с защипами",
+      "color": "Коричневый",
+      "categories": "Брюки",
+      "size": "XS-S, M-L",
+      "composition": "80% полиэстер, 17% вискоза, 3%эластан",
+      "src": "https://i.imgur.com/GRQl3xA.jpg",
+      "price": "3900",
       "id": "18052842-656d-418f-995a-764dca03a434"
     },
     {
-      "name": "Купальник",
-      "about": "Купальник",
-      "color": "Зеленый",
-      "categories": "Купальник",
-      "size": "one size",
-      "composition": "Из чего то там",
-      "src": "https://sun9-30.userapi.com/impf/-7oCpvo495c057EksQjH9JgyoUqiiXLN9WfgWw/-n70erptIAE.jpg?size=1620x2160&quality=95&sign=0b097fc7b1ffbce5b1753e36d872821e&type=album",
-      "price": "1050",
+      "name": "Юбка-килт в длине миди",
+      "about": "Юбка-килт в длине миди",
+      "color": "Черный",
+      "categories": "Юбка",
+      "size": "XS-S, M-L",
+      "composition": "80% полиэстер, 17% вискоза, 3%эластан",
+      "src": "https://i.imgur.com/rHV8oa1.jpg",
+      "price": "4900",
       "id": "8fd4b175-99fd-4753-845a-46af9b1bfcbd"
+    },
+    {
+      "name": "Платье-комбинация на бретелях",
+      "about": "Платье-комбинация на бретелях  в чёрном цвете",
+      "color": "Черный",
+      "categories": "Платье",
+      "size": "S-M",
+      "composition": "искусственный шёлк 100% полиэстер",
+      "src": "https://i.imgur.com/25Awovy.jpg",
+      "price": "3590",
+      "id": "192a1dd8-bd9e-4d4a-93a8-9e2d21af0967"
+    },
+    {
+      "name": "Минималистичный купальник DLYA ZAGARA",
+      "about": "Минималистичный купальник DLYA ZAGARA",
+      "color": "Черный, зеленый",
+      "categories": "Купальник",
+      "size": "One size",
+      "composition": "Бифлекс",
+      "src": "https://i.imgur.com/OBQzcYx.jpg",
+      "price": "3400",
+      "id": "17472486-7c5f-4115-8bd2-28c0af603c6c"
+    },
+    {
+      "name": "Костюм из футера утеплённый",
+      "about": "Костюм из футера утеплённый",
+      "color": "Черный, Синий",
+      "categories": "Костюм",
+      "size": "S, M, L, XL",
+      "composition": "70% хлопок, 30% полиэстер",
+      "src": "https://i.imgur.com/ZORHyRs.jpg",
+      "price": "7900",
+      "id": "f35defb7-fb54-433f-abee-3c72600aad41"
+    },
+    {
+      "name": "Классическое утеплённое пальто",
+      "about": "Классическое утеплённое пальто",
+      "color": "Черный",
+      "categories": "Пальто",
+      "size": "One size",
+      "composition": "верх 70% шерсть, 30% полиэстер, утеплитель шерстипон; подклада 100% полиэстер",
+      "src": "https://i.imgur.com/tlM9Iey.jpg",
+      "price": "13900",
+      "id": "3ce75252-7c4e-499f-bba0-34ed3888ef3d"
+    },
+    {
+      "name": "Капор из смесовой шерсти",
+      "about": "Капор из смесовой шерсти",
+      "color": "Черный, Молочный",
+      "categories": "Капор",
+      "size": "One size",
+      "composition": "50% шерсть меринноса, 50% акрил",
+      "src": "https://i.imgur.com/xsQuKHr.jpg",
+      "price": "2900",
+      "id": "5c7a18a6-5406-4d76-9ee6-4267c1a61d51"
     }
   ],
   "news": [
     {
-      "id": "7",
-      "src": "https://sun9-74.userapi.com/impg/C4b3cdn84vz1JFvNlQag_pSow4n5wq6cv_ARAA/X7GZ2cfQ32w.jpg?size=883x616&quality=95&sign=e49c2c59d4203f3d12366f33b68fde45&type=album",
-      "name": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
-      "text": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
-      "procent": "20%"
+      "src": "https://i.imgur.com/QHYJaya.jpg",
+      "name": "Мы в инстаграме",
+      "text": "@obitski_",
+      "procent": "",
+      "id": "7"
     },
     {
-      "id": "8",
-      "src": "https://sun9-11.userapi.com/impg/135ts0UlDFj4yuWIfCsrpTT98Bc1wQa6uBq-7g/DP_pMg8JgTI.jpg?size=883x616&quality=95&sign=1ead5bf63b941c38ab28a004249b24b8&type=album",
-      "name": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
-      "text": "Костюм pizhama из укороченного топа и свободных брюк на резинке",
-      "procent": "30%"
+      "src": "https://i.imgur.com/ti9qWX5.jpg",
+      "name": "Мы в вк",
+      "text": "OBITSKI",
+      "procent": "",
+      "id": "8"
     }
   ],
   "categories": [
@@ -86,8 +147,24 @@
       "name": "Юбка"
     },
     {
-      "id": "18",
-      "name": "Рубашка"
+      "id": "d2f03e46-9004-4993-b178-92119507fac3",
+      "name": "Брюки"
+    },
+    {
+      "id": "4003f46a-a6a1-4368-ae74-96bc6b0ab253",
+      "name": "Платье"
+    },
+    {
+      "id": "6ea01d62-0245-4543-b33c-4392f4a13239",
+      "name": "Купальник"
+    },
+    {
+      "id": "b8846bd8-5ae6-4028-8941-f73093fccf34",
+      "name": "Пальто"
+    },
+    {
+      "id": "4df61b78-8969-4aaf-878f-f57e33e9c674",
+      "name": "Капор"
     }
   ],
   "loginData": [
