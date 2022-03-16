@@ -485,7 +485,7 @@ h5,
 .gallery_title ul li a:hover,
 .current_page ul li a:hover,
 .main_nav ul li a:hover {
-  color: #937c6f;
+  color: #000;
 }
 
 @keyframes ldio-dn6nod1jzb {
@@ -507,7 +507,7 @@ h5,
   position: absolute;
   width: 22px;
   height: 152px;
-  background: #937c6f;
+  background: #000;
   left: 100px;
   top: 100px;
   transform: translate(-50%, -50%);
@@ -559,7 +559,7 @@ h5,
   height: 100%;
 }
 .active {
-  color: #937c6f !important;
+  color: #000 !important;
 }
 .section_subtitle,
 .section_title,
@@ -639,7 +639,7 @@ h5,
 .burger_container:hover div,
 .regular_radio:checked + label,
 .sidebar_section:hover .sidebar_title {
-  background: #937c6f;
+  background: #000;
 }
 .button,
 .cart_bar_title_price,
@@ -1348,7 +1348,7 @@ h5,
 }
 .cart_button:hover,
 .sidebar_section:hover {
-  border: solid 1px #937c6f;
+  border: solid 1px #000;
 }
 .button_clear,
 .item_sorting > li,
@@ -1490,7 +1490,7 @@ h5,
   cursor: pointer;
 }
 .categories_li_active {
-  background: #937c6f;
+  background: #000;
   color: #ffff !important;
 }
 .num_sorting_text {
@@ -1639,7 +1639,7 @@ h5,
 .serach_value ul li a {
   font-size: 18px;
   text-decoration: none;
-  color: #937c6f;
+  color: #000;
   text-transform: Capitalized;
 }
 .product_fav,
@@ -1790,7 +1790,7 @@ h5,
 .sidebar_promo_content,
 .extra_1_content,
 .extra_promo_2 {
-  border: solid 2px #937c6f;
+  border: solid 2px #000;
 }
 .sidebar_promo_title {
   font: 43px/0.75 "Beyond", sans-serif;
@@ -2084,7 +2084,7 @@ h5,
   object-fit: cover !important;
 }
 .image-gallery-bullets .image-gallery-bullet {
-  background-color: #937c6f !important;
+  background-color: #000 !important;
 }
 .home_slider_content {
   top: 56.3%;
@@ -2418,7 +2418,7 @@ a {
   color: #f5c06f;
 }
 .sidebar_section:hover .sidebar_section_content ul li {
-  border-bottom: 1px solid #937c6f;
+  border-bottom: 1px solid #000;
 }
 .payment_options,
 .page_nums {
@@ -2472,7 +2472,7 @@ p a {
   padding-right: 22px;
 }
 .page_nums li.active {
-  border-bottom: 3px solid #937c6f;
+  border-bottom: 3px solid #000;
 }
 .sidebar_section_content ul li,
 .sidebar_option {
@@ -2482,7 +2482,7 @@ p a {
   border-bottom: 0;
 }
 .sidebar_options:hover .sidebar_option {
-  border-bottom: 1px solid #937c6f;
+  border-bottom: 1px solid #000;
 }
 .product_image_thumbnail,
 .gallery_image,
