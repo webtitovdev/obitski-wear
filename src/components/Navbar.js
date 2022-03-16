@@ -12,6 +12,7 @@ import shopingBag from "../images/shopping-bag.svg";
 import magnifyingGlass from "../images/magnifying-glass.svg";
 import star from "../images/star.svg";
 import avatar from "../images/avatar.svg";
+import logo from "../images/logo.svg";
 import gear from "../images/gear.png";
 
 const Navbar = () => {
@@ -81,7 +82,9 @@ const Navbar = () => {
       <header className="header">
         <div className="header_inner d-flex flex-row align-items-center justify-content-start">
           <div className="logo">
-            <NavLink to="/">Obitski</NavLink>
+            <NavLink to="/">
+              <img src={logo} alt="Obitski" />
+            </NavLink>
           </div>
           <nav className="main_nav">
             <ul>
