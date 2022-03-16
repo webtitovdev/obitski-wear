@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+<h1 align=center>Магазин на React/Redux</h1>
+<h2 align='center'><a href="https://obitski.herokuapp.com/">Demo на heroku</a></h2>
+<h2 align='center'>Описание проекта</h2>
+<h3>Магазин каталог для бренда одежды <a href="https://www.instagram.com/obitski_wear/">obitski_wear</a></h3>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+<h2 align='center'>Установка проекта</h2>
+1.Клонирование проекта <br>
+    <code>git clone https://github.com/webtitovdev/obitski-wear.git</code><br>
+1. Установка <br>
+   <code>npm instal</code><br>
+2. Запуск <br>
+   <code>npm start</code><br>
+3. Сборка <br>
+   <code>npm run build</code> <br>
 
-In the project directory, you can run:
+---
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h2 align='center'>Технологии которые использовались</h2>
+<h3> <img style="max-width:20px;max-height:20px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"/> React (Использовал фунциональные компоненты и хуки) </h3>
+<h3> <img style="max-width:20px;max-height:20px;" src="https://res.cloudinary.com/practicaldev/image/fetch/s---xCsVK0j--/c_imagga_scale,f_auto,fl_progressive,h_1080,q_auto,w_1080/https://reacttraining.com/images/blog/reach-react-router-future.png"/> React router dom 6 (Использовал для роутинга между страницами) </h3>
+<h3> <img style="max-width:25px;max-height:25px;" src="https://redux-toolkit.js.org/img/redux.svg"/> Redux Toolkit (Использовал для запросов) </h3>
+<h3> <img style="max-width:25px;max-height:25px;" src="https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/redux-persist-machine/redux-persist-machine-logo.png"/> Redux Persist (Ипользовал для сохранения в local storage состояние) </h3>
+<h3> <img style="max-width:25px;max-height:25px;" src="https://www.sentry.dev/_assets2/static/be22c7c24f62ec149983212083ff65ad/5f035/nodejs.png"/> JSON server (Использовал как фейковую базу для получение данных из запроса) </h3>
+<h3> <img style="max-width:25px;max-height:25px;" src="https://ludwhe.gallerycdn.vsassets.io/extensions/ludwhe/vscode-uuid/1.0.6/1642780667291/Microsoft.VisualStudio.Services.Icons.Default"/> UUID (Использовал для генерации рандомных id) </h3>
+<h3> <img style="max-width:20px;max-height:20px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"/> React-error-boundary (Использовал для замены контента при ошибке в компоненте) </h3>
