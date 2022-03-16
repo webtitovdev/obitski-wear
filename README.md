@@ -8,11 +8,11 @@
 <h2 align='center'>Установка проекта</h2>
 1.Клонирование проекта <br>
     <code>git clone https://github.com/webtitovdev/obitski-wear.git</code><br>
-1. Установка <br>
+2. Установка <br>
    <code>npm instal</code><br>
-2. Запуск <br>
+3. Запуск <br>
    <code>npm start</code><br>
-3. Сборка <br>
+4. Сборка <br>
    <code>npm run build</code> <br>
 
 ---
