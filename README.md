@@ -1,7 +1,7 @@
 <h1 align=center>Магазин на React/Redux</h1>
 <h2 align='center'><a href="https://obitski.herokuapp.com/">Demo на heroku</a></h2>
 <h2 align='center'>Описание проекта</h2>
-<h3>Магазин каталог для бренда одежды <a href="https://www.instagram.com/obitski_wear/">obitski_wear</a></h3>
+<h3>Магазин каталог для бренда одежды <a target="_blank" href="https://www.instagram.com/obitski_wear/">obitski_wear</a></h3>
 
 ---
 
