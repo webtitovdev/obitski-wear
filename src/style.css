@@ -1486,6 +1486,9 @@ h5,
 .item_sorting > li span {
   font-size: 12px;
 }
+.categories_li {
+  cursor: pointer;
+}
 .categories_li_active {
   background: #937c6f;
   color: #ffff !important;
