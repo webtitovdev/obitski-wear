@@ -7,7 +7,7 @@ const ContactInfo = () => {
     <div className="contact_text">
       <div className="container">
         <div className="row">
-          <div className="col-lg-5">
+          <div className="col-lg-7">
             <div className="contact_info">
               <div className="contact_title">contact info</div>
               <div className="contact_info_content">
