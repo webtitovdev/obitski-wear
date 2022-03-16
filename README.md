@@ -18,10 +18,10 @@
 ---
 
 <h2 align='center'>Технологии которые использовались</h2>
-<h3> <img style="max-width:20px;max-height:20px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"/> React (Использовал фунциональные компоненты и хуки) </h3>
-<h3> <img style="max-width:20px;max-height:20px;" src="https://res.cloudinary.com/practicaldev/image/fetch/s---xCsVK0j--/c_imagga_scale,f_auto,fl_progressive,h_1080,q_auto,w_1080/https://reacttraining.com/images/blog/reach-react-router-future.png"/> React router dom 6 (Использовал для роутинга между страницами) </h3>
-<h3> <img style="max-width:25px;max-height:25px;" src="https://redux-toolkit.js.org/img/redux.svg"/> Redux Toolkit (Использовал для запросов) </h3>
-<h3> <img style="max-width:25px;max-height:25px;" src="https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/redux-persist-machine/redux-persist-machine-logo.png"/> Redux Persist (Ипользовал для сохранения в local storage состояние) </h3>
-<h3> <img style="max-width:25px;max-height:25px;" src="https://www.sentry.dev/_assets2/static/be22c7c24f62ec149983212083ff65ad/5f035/nodejs.png"/> JSON server (Использовал как фейковую базу для получение данных из запроса) </h3>
-<h3> <img style="max-width:25px;max-height:25px;" src="https://ludwhe.gallerycdn.vsassets.io/extensions/ludwhe/vscode-uuid/1.0.6/1642780667291/Microsoft.VisualStudio.Services.Icons.Default"/> UUID (Использовал для генерации рандомных id) </h3>
-<h3> <img style="max-width:20px;max-height:20px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"/> React-error-boundary (Использовал для замены контента при ошибке в компоненте) </h3>
+<h3> <img width="20" height="20" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"/> React (Использовал фунциональные компоненты и хуки) </h3>
+<h3> <img width="20" height="20" src="https://res.cloudinary.com/practicaldev/image/fetch/s---xCsVK0j--/c_imagga_scale,f_auto,fl_progressive,h_1080,q_auto,w_1080/https://reacttraining.com/images/blog/reach-react-router-future.png"/> React router dom 6 (Использовал для роутинга между страницами) </h3>
+<h3> <img width="20" height="20" src="https://redux-toolkit.js.org/img/redux.svg"/> Redux Toolkit (Использовал для запросов) </h3>
+<h3> <img width="20" height="20" src="https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/redux-persist-machine/redux-persist-machine-logo.png"/> Redux Persist (Ипользовал для сохранения в local storage состояние) </h3>
+<h3> <img width="20" height="20"" src="https://www.sentry.dev/_assets2/static/be22c7c24f62ec149983212083ff65ad/5f035/nodejs.png"/> JSON server (Использовал как фейковую базу для получение данных из запроса) </h3>
+<h3> <img width="20" height="20" src="https://ludwhe.gallerycdn.vsassets.io/extensions/ludwhe/vscode-uuid/1.0.6/1642780667291/Microsoft.VisualStudio.Services.Icons.Default"/> UUID (Использовал для генерации рандомных id) </h3>
+<h3> <img width="20" height="20" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"/> React-error-boundary (Использовал для замены контента при ошибке в компоненте) </h3>
