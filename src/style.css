@@ -1668,11 +1668,9 @@ h5,
   height: 52px;
   font: 16px/52px "Lucida", serif;
 }
-.loaderrr {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.footer_logo a img {
+  max-width: 250px;
+  max-height: 250px;
 }
 .sidebar_title,
 .review_form_input,

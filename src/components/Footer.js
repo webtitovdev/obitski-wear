@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import logo from "../images/logo.svg";
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -7,7 +9,9 @@ const Footer = () => {
         <div className="row">
           <div className="col text-center">
             <div className="footer_logo">
-              <Link to={"/"}>Obitski</Link>
+              <Link to={"/"}>
+                <img src={logo} alt="Obitski" />
+              </Link>
             </div>
             <nav className="footer_nav">
               <ul>

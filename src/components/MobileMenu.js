@@ -72,12 +72,7 @@ const MobileMenu = ({ onHandleClick, data }) => {
             </Link>
           </li>
           <li className="menu_mm">
-            <Link onClick={() => onHandleClick()} to="/">
-              ДОСТАВКА
-            </Link>
-          </li>
-          <li className="menu_mm">
-            <Link onClick={() => onHandleClick()} to="contacts">
+            <Link onClick={() => onHandleClick()} to="contact">
               КОНТАКТЫ
             </Link>
           </li>
