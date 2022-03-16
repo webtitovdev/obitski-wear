@@ -1,9 +1,10 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useGetDataQuery } from "../../../api/api";
 import { clearFilter } from "../../../slice/filtersSLice";
 import Spinner from "../../../components/Spinner";
 
 const CategoriesSideBar = ({ onCategoriesFilter }) => {
+  const { categories } = useSelector((state) => state.categoriesfilter.filters);
   const dispatch = useDispatch();
   const { data = [], isLoading } = useGetDataQuery("categories");
 
@@ -11,11 +12,29 @@ const CategoriesSideBar = ({ onCategoriesFilter }) => {
     return <Spinner />;
   }
 
-  const render = data.map((item) => (
-    <li key={item.id} onClick={(name) => onCategoriesFilter(item.name)}>
-      {item.name}
-    </li>
-  ));
+  const render = data.map((item) => {
+    if (item.name === categories) {
+      return (
+        <li
+          key={item.id}
+          className="categories_li_active"
+          onClick={(name) => onCategoriesFilter(item.name)}
+        >
+          {item.name}
+        </li>
+      );
+    } else {
+      return (
+        <li
+          key={item.id}
+          className="categories_li"
+          onClick={(name) => onCategoriesFilter(item.name)}
+        >
+          {item.name}
+        </li>
+      );
+    }
+  });
 
   return (
     <>

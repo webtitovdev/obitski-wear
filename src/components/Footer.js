@@ -22,7 +22,7 @@ const Footer = () => {
                   <Link to={"categories"}>КАТАЛОГ</Link>
                 </li>
                 <li>
-                  <Link to={"contacts"}>КОНТАКТЫ</Link>
+                  <Link to={"contact"}>КОНТАКТЫ</Link>
                 </li>
               </ul>
             </nav>

@@ -1478,10 +1478,17 @@ h5,
   line-height: 41px;
 }
 .item_sorting > li {
-  width: 173px;
-  padding-left: 15px;
+  width: 220px;
+  padding-left: 17px;
   padding-right: 17px;
   margin-bottom: 10px;
+}
+.item_sorting > li span {
+  font-size: 12px;
+}
+.categories_li_active {
+  background: #937c6f;
+  color: #ffff !important;
 }
 .num_sorting_text {
   padding-right: 11px;
