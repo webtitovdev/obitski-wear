@@ -487,6 +487,9 @@ h5,
 .main_nav ul li a:hover {
   color: #000;
 }
+.extra_1_title {
+  color: white;
+}
 
 @keyframes ldio-dn6nod1jzb {
   0% {
@@ -1146,7 +1149,16 @@ h5,
   width: 31%;
 }
 .cart_product_price {
-  width: 17%;
+  width: 35%;
+}
+.contact_info_text {
+  font-size: 12px !important;
+}
+.cart_button_item:hover a {
+  color: #fff !important;
+}
+.button_update:hover a {
+  color: #000;
 }
 .cart_bar_title_quantity {
   width: 37%;
@@ -2366,7 +2378,7 @@ a {
 }
 .star_num,
 .cart_num {
-  font-size: 9px;
+  font-size: 8px;
 }
 .shopping a {
   cursor: pointer;
