@@ -1,0 +1,296 @@
+{
+  "headSliderImages": [
+    {
+      "name": "Патерн",
+      "original": "https://i.imgur.com/7nTYT3W.jpeg",
+      "src": "https://i.imgur.com/7nTYT3W.jpeg",
+      "id": "d84c9def-6e8f-49ef-ae5e-7150b71ae633"
+    }
+  ],
+  "promoDiscount": [
+    {
+      "procent": "3",
+      "name": "На все пиджаки",
+      "src": "https://i.imgur.com/wk1lNgA.jpg",
+      "id": "82f93226-0bb1-45bb-869a-9be53423a8ad"
+    },
+    {
+      "procent": "5",
+      "name": "На все юбки",
+      "src": "https://i.imgur.com/5fdG4Ba.jpg",
+      "id": "9c4b5d90-8543-458d-bf7a-98df66c209ed"
+    },
+    {
+      "procent": "7",
+      "name": "На пальто",
+      "src": "https://i.imgur.com/Xud3xy3.jpg",
+      "id": "062ad80b-1311-4033-af77-3bd13f629956"
+    }
+  ],
+  "productItem": [
+    {
+      "name": "Двубортный пиджак",
+      "about": "Состав: 80% полиэстер, 17% вискоза, 3%эластан; подклада 100% полиэстер",
+      "color": "коричневый, черный",
+      "categories": "Пиджак",
+      "size": "XS-S, M-L",
+      "composition": "",
+      "src": "https://sun9-22.userapi.com/impf/SGdPbpVOYxD_2mT-4BJNgcl2CE3-i9D3A7Kruw/YxGdtavCnDQ.jpg?size=810x1080&quality=96&sign=e45391f5805fac690a9e516dd79cd176&type=album",
+      "price": "7400",
+      "id": "6"
+    },
+    {
+      "name": "Прямые брюки с защипами",
+      "about": "Прямые брюки с защипами",
+      "color": "Коричневый",
+      "categories": "Брюки",
+      "size": "XS-S, M-L",
+      "composition": "80% полиэстер, 17% вискоза, 3%эластан",
+      "src": "https://i.imgur.com/GRQl3xA.jpg",
+      "price": "3900",
+      "id": "18052842-656d-418f-995a-764dca03a434"
+    },
+    {
+      "name": "Юбка-килт в длине миди",
+      "about": "Юбка-килт в длине миди",
+      "color": "Черный",
+      "categories": "Юбка",
+      "size": "XS-S, M-L",
+      "composition": "80% полиэстер, 17% вискоза, 3%эластан",
+      "src": "https://i.imgur.com/rHV8oa1.jpg",
+      "price": "4900",
+      "id": "8fd4b175-99fd-4753-845a-46af9b1bfcbd"
+    },
+    {
+      "name": "Капор из смесовой шерсти",
+      "about": "Капор из смесовой шерсти",
+      "color": "Черный, Молочный",
+      "categories": "Капор",
+      "size": "One size",
+      "composition": "50% шерсть меринноса, 50% акрил",
+      "src": "https://i.imgur.com/xsQuKHr.jpg",
+      "price": "2900",
+      "id": "5c7a18a6-5406-4d76-9ee6-4267c1a61d51"
+    },
+    {
+      "name": "Костюм шорты + футболка свободного кроя",
+      "about": "Ткань: футер 2-х нитка",
+      "color": "фуксия, крем-брюле, белый, бежевый, зеленый, черный",
+      "categories": "Костюм",
+      "size": "one size",
+      "composition": "футер 2-х нитка",
+      "src": "https://sun9-60.userapi.com/lSdiCl0RG3CQFO7I2I8MauZjEUe3esMTx1pipQ/OErJf4RE06k.jpg",
+      "price": "5500",
+      "id": "ff0ea36b-128e-4090-8469-7b2362079e09"
+    },
+    {
+      "name": "Костюм шорты + футболка свободного кроя",
+      "about": "Ткань:футер 2-х нитка",
+      "color": "фуксия, крем-брюле, белый, бежевый, зеленый, черный",
+      "categories": "Костюм",
+      "size": "one size",
+      "composition": "",
+      "src": "https://sun9-46.userapi.com/NEqHgz1R4gZW9fRUoNg6eLyq5laCsZVfzFNfSQ/6dQOGc8RMWc.jpg",
+      "price": "5500",
+      "id": "44d96df0-95a1-4ebe-9fd1-8b498e4be9c3"
+    },
+    {
+      "name": "Костюм шорты + футболка свободного кроя",
+      "about": "Ткань: футер 2-х нитка",
+      "color": "фуксия, крем-брюле, белый, бежевый, зеленый, черный",
+      "categories": "Костюм",
+      "size": "one size",
+      "composition": "",
+      "src": "https://sun9-69.userapi.com/Tv4jC_WwoVbJ42pLbzs6dseDZW_m5VMHoP8J4Q/Oxupnlw5Z6A.jpg",
+      "price": "5500",
+      "id": "ec985081-eaab-4461-951d-cfd72295bbc0"
+    },
+    {
+      "name": "Костюм шорты + футболка свободного кроя",
+      "about": "Ткань:футер 2-х нитка",
+      "color": "фуксия, крем-брюле, белый, бежевый, зеленый, черный",
+      "categories": "",
+      "size": "one size",
+      "composition": "",
+      "src": "https://sun7-7.userapi.com/impg/TJshiBMQ6V_cy8LM13u-pTX0LP4u2QkMrsVl-w/WT2qH8AY2vs.jpg?size=520x0&quality=95&sign=4d680365b3fb9794493c1f9d3ba9ca35",
+      "price": "5500",
+      "id": "bb3a21b7-ac7e-405a-b7fc-3dfd38b8acf6"
+    },
+    {
+      "name": "Костюм шорты + футболка свободного кроя",
+      "about": "Ткань:футер 2-х нитка",
+      "color": "фуксия, крем-брюле, белый, бежевый, зеленый, черный",
+      "categories": "Костюм",
+      "size": "one size",
+      "composition": "",
+      "src": "https://sun7-6.userapi.com/impg/_m3V1PFWEyV_G1QSnD-EM-2y8R2a0MJm3EZTwQ/i1s6JY2j1Ak.jpg?size=520x0&quality=95&sign=8985649ed1f9de389bc54b33b8cca5e7",
+      "price": "5500",
+      "id": "8496f5d4-5234-4493-9aaf-77ba5b893e0c"
+    },
+    {
+      "name": "Платье",
+      "about": "",
+      "color": "черный",
+      "categories": "Платье",
+      "size": "m",
+      "composition": "",
+      "src": "https://sun7-7.userapi.com/impg/_64H0vS07wcU_L72empHQnixD3zDbwGeKeYgQA/eYr6UAAswwo.jpg?size=520x0&quality=95&sign=542df5e2b2628093b8d806d01f4c2b3a",
+      "price": "5500",
+      "id": "08fe0439-6fae-46a5-a43a-d4ccdaf9e0db"
+    },
+    {
+      "name": "Костюм pizhama",
+      "about": "Состав: 95% хлопок, 5% эластан",
+      "color": "оливковый, чёрный, молочный",
+      "categories": "Костюм",
+      "size": "XS-S, M-L",
+      "composition": "",
+      "src": "https://sun9-82.userapi.com/XmOOleIArYs0NTlXMcyT8caOMR7Rmgm29LGfsA/dozkqFUfHnk.jpg",
+      "price": "5500",
+      "id": "023b7c89-6373-4008-9387-ba7565344d02"
+    },
+    {
+      "name": "Костюм pizhama",
+      "about": "Состав: 95% хлопок, 5% эластан",
+      "color": "оливковый, чёрный, молочный",
+      "categories": "Костюм",
+      "size": "XS-S, M-L",
+      "composition": "",
+      "src": "https://sun9-18.userapi.com/oeo8zkwN46Ogqs-1fgBGWxslooEb5nlyGzW-6g/Z55XAQHFIxE.jpg",
+      "price": "5500",
+      "id": "e8ed7cf8-1806-47a5-8536-6a5220d4066d"
+    },
+    {
+      "name": "Костюмный жилет",
+      "about": "80% полиэстер, 17% вискоза, 3%эластан; подклада 100% полиэстер",
+      "color": "коричневый, черный",
+      "categories": "Костюм",
+      "size": "XS-S, M-L",
+      "composition": "",
+      "src": "https://sun7-8.userapi.com/impg/peGWoWvabWxbpeqj7R33GIimPcgWKiDQYhO5fA/W6PmG1VIUK4.jpg?size=520x0&quality=95&sign=a7344713bc7d608d2f3e357616b050dc",
+      "price": "3900",
+      "id": "dfa7db79-eab2-4160-9438-8b3029fdba0a"
+    },
+    {
+      "name": "Костюм из футера утеплённый",
+      "about": "Состав: 70% хлопок, 30% полиэстер",
+      "color": "черный ,графит",
+      "categories": "Костюм",
+      "size": "s, m, l, xl",
+      "composition": "",
+      "src": "https://sun7-13.userapi.com/impg/7U1QD3lyWfvz7_8CzJiq7oReF0h9eGq2DxQyVQ/1zNFYPUUzKI.jpg?size=520x0&quality=95&sign=b8bb030c444e4b8517b3ace18dfe17e7",
+      "price": "7900",
+      "id": "07b34ae3-3a75-484c-9312-d0bb576c4221"
+    },
+    {
+      "name": "Футболка оверсайз",
+      "about": "Состав: 95% хлопок, 5% эластан",
+      "color": "черный, молочный",
+      "categories": "Футболка",
+      "size": "s, m, l",
+      "composition": "",
+      "src": "https://sun7-8.userapi.com/impg/rvV6Uin6ZVTMAhhEbTf3sW79w1UkrOSdUhXd1g/h6DW0fNX1U4.jpg?size=520x0&quality=95&sign=cc8238b2844c37294918134bf6e4725c",
+      "price": "1900",
+      "id": "eb1de369-5c71-480f-942c-815eced55c4c"
+    },
+    {
+      "name": "Платье-комбинация",
+      "about": "Состав: искусственный шёлк 100% полиэстер",
+      "color": "черный",
+      "categories": "Платье",
+      "size": "s-m",
+      "composition": "",
+      "src": "https://sun7-6.userapi.com/impg/eQuD3y4B62OPGa_KU3OhS63g4ZX59wRJXVS91g/I8_hZfkXjP4.jpg?size=520x0&quality=95&sign=1ca91cfdfb0084a905b56a8dcb79c3ec",
+      "price": "3590",
+      "id": "d576e6b1-fb1e-45f0-8e75-cae5a4ca5b5a"
+    },
+    {
+      "name": "купальник DLYA ZAGARA",
+      "about": "Состав: бифлекс",
+      "color": "чёрный, зелёный, фуксия",
+      "categories": "Купальник",
+      "size": "one size",
+      "composition": "",
+      "src": "https://sun7-7.userapi.com/impg/8Kb0sljKrDa_xlsEAQAbZa-T8oDUaabBIEzCNA/P2YS6AMUUEU.jpg?size=520x0&quality=95&sign=d74029df724a448035401c6b0a8e4c31",
+      "price": "3400",
+      "id": "c2b2dc30-df02-4499-b891-acb28cd09f94"
+    },
+    {
+      "name": "купальник DLYA ZAGARA",
+      "about": "Состав: бифлекс",
+      "color": "чёрный, зелёный, фуксия",
+      "categories": "Купальник",
+      "size": "one size",
+      "composition": "",
+      "src": "https://sun7-7.userapi.com/impg/9oNKEynY-GujeWNBtdzTgaqgRniyzu8-n0zcnA/o80YQTzbM1U.jpg?size=520x0&quality=95&sign=94d93354adb568ca834340cc4d11b62a",
+      "price": "3400",
+      "id": "86ea4bb7-b821-494e-89d4-91015b2fdcce"
+    },
+    {
+      "name": "купальник DLYA ZAGARA",
+      "about": "Состав: бифлекс",
+      "color": "чёрный, зелёный, фуксия",
+      "categories": "Купальник",
+      "size": "one size",
+      "composition": "",
+      "src": "https://psv4.userapi.com/c235131/u214210664/docs/d55/c27e33f33ec6/IMG_6627.jpg?extra=mi7H19u6STUuY9sW4TbHUhYSC9GQR8Js2N4eP0hkbY0WELkaF6MV3yChwE9gAUXDSE5klxFvY-APOcYcmO4N-XX64X2DUFv2FLjvtJW55hjDma9AXx3JS8SWrIVH-mMB5X5wYY44OGR7vBZydApwiUhaDA",
+      "price": "3400",
+      "id": "76687f46-02a7-4c68-91ba-d515ffa30ce5"
+    }
+  ],
+  "news": [
+    {
+      "src": "https://i.imgur.com/ti9qWX5.jpg",
+      "name": "Мы в вк",
+      "text": "OBITSKI",
+      "procent": "",
+      "link": "",
+      "id": "8"
+    }
+  ],
+  "categories": [
+    {
+      "id": "15",
+      "name": "Костюм"
+    },
+    {
+      "id": "16",
+      "name": "Пиджак"
+    },
+    {
+      "id": "17",
+      "name": "Юбка"
+    },
+    {
+      "id": "d2f03e46-9004-4993-b178-92119507fac3",
+      "name": "Брюки"
+    },
+    {
+      "id": "4003f46a-a6a1-4368-ae74-96bc6b0ab253",
+      "name": "Платье"
+    },
+    {
+      "id": "6ea01d62-0245-4543-b33c-4392f4a13239",
+      "name": "Купальник"
+    },
+    {
+      "id": "b8846bd8-5ae6-4028-8941-f73093fccf34",
+      "name": "Пальто"
+    },
+    {
+      "id": "4df61b78-8969-4aaf-878f-f57e33e9c674",
+      "name": "Капор"
+    },
+    {
+      "id": "ede8337b-d830-46e6-9c3c-6225a815b581",
+      "name": "Футболка "
+    }
+  ],
+  "loginData": [
+    {
+      "id": "31",
+      "name": "obitskiramila",
+      "text": "2415123"
+    }
+  ]
+}
