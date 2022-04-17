@@ -29,7 +29,7 @@ const ProductList = () => {
       dataCopied = [...data];
   }
 
-  dataCopied = dataCopied.slice(0, ofset);
+  dataCopied = dataCopied.slice(0, ofset === "All" ? 999 : ofset);
   if (categories) {
     dataCopied = dataCopied.filter((item) => item.categories === categories);
   }

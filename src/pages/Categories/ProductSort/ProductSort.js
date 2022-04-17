@@ -48,6 +48,14 @@ const ProductSort = () => {
           name: "12",
           lable: "12",
         },
+        {
+          name: "24",
+          lable: "24",
+        },
+        {
+          name: "все",
+          lable: "All",
+        },
       ],
     },
   ];
@@ -81,7 +89,7 @@ const ProductSort = () => {
 
   const renderOfset = ofsetArr.map((item, i) => (
     <ProductSortSelect
-      title={ofset === "" ? `${item.title} 12` : `Показывает   ${ofset}`}
+      title={`Показывает   ${ofset === "All" ? "все" : ofset}`}
       key={i}
       button={item.button}
       sortf={(ofset) => ofsetFiltering(ofset)}

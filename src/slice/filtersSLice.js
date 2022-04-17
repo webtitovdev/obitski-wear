@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   filters: {
     categories: "",
-    ofset: "12",
+    ofset: "All",
     orderBy: "",
   },
 };
